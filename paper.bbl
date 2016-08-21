@@ -1,0 +1,252 @@
+\begin{thebibliography}{}
+
+\bibitem[Abernethy {\em et~al.}(2009)Abernethy, Bach, Evgeniou, and
+  Vert]{abernethy}
+Abernethy, J., Bach, F., Evgeniou, T., and Vert, J.~P. (2009).
+\newblock A new approach to collaborative filtering: Operator estimation with
+  spectral regularization.
+\newblock {\em Journal of Machine Learning Research (JMLR)\/}.
+
+\bibitem[Ando and Zhang(2005)Ando and Zhang]{ando2005}
+Ando, R.~K. and Zhang, T. (2005).
+\newblock A framework for learning predictive structures from multiple tasks
+  and unlabeled data.
+\newblock {\em The Journal of Machine Learning Research\/}, {\bf 6},
+  1817--1853.
+
+\bibitem[Ashburner {\em et~al.}(2000)Ashburner {\em et~al.}]{GO}
+Ashburner, M. {\em et~al.} (2000).
+\newblock Gene ontology: tool for the unification of biology.
+\newblock {\em Nat. Genet.}, {\bf 25}(1), 25--9.
+\newblock \url{http://www.geneontology.org/}.
+
+\bibitem[Candes and Recht(2008)Candes and Recht]{candes08}
+Candes, E. and Recht, B. (2008).
+\newblock Exact matrix completion via convex optimization.
+\newblock {\em Foundations of Computational Mathematics\/}.
+
+\bibitem[Cao {\em et~al.}(2010)Cao, Liu, and Yang]{cao_icml2010}
+Cao, B., Liu, N.~N., and Yang, Q. (2010).
+\newblock Transfer learning for collective link prediction in multiple
+  heterogenous domains.
+\newblock {\em ICML\/}.
+
+\bibitem[Chatraryamontri {\em et~al.}(2009)Chatraryamontri, Ceol, Peluso, {\em
+  et~al.}]{virusmint}
+Chatraryamontri, A., Ceol, A., Peluso, D., {\em et~al.} (2009).
+\newblock Virusmint: a viral protein interaction database.
+\newblock {\em Nucleic Acids Research\/}, {\bf 37}.
+
+\bibitem[Chen {\em et~al.}(2012)Chen, Liu, and Ye]{chen2012}
+Chen, J., Liu, J., and Ye, J. (2012).
+\newblock Learning incoherent sparse and low-rank patterns from multiple tasks.
+\newblock {\em ACM Transactions on Knowledge Discovery from Data (TKDD)\/},
+  {\bf 5}(4), 22.
+
+\bibitem[Chen {\em et~al.}(2013)Chen, Tang, Liu, and Ye]{chen2013}
+Chen, J., Tang, L., Liu, J., and Ye, J. (2013).
+\newblock A convex formulation for learning a shared predictive structure from
+  multiple tasks.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on\/}, {\bf 35}(5), 1025--1038.
+
+\bibitem[Chen and Liu(2005)Chen and Liu]{chen}
+Chen, X. and Liu, M. (2005).
+\newblock Prediction of protein-protein interactions using random decision
+  forest framework.
+\newblock {\em Bioinformatics\/}, {\bf 21}(24), 4394--400.
+
+\bibitem[Davis and Goadrich(2006)Davis and Goadrich]{davis2006}
+Davis, J. and Goadrich, M. (2006).
+\newblock The relationship between precision-recall and roc curves.
+\newblock {\em Proceedings of the 23rd international conference on Machine
+  learning\/}, pages 233--240.
+
+\bibitem[Dyer {\em et~al.}(2011)Dyer {\em et~al.}]{dyer11}
+Dyer, M. {\em et~al.} (2011).
+\newblock Supervised learning and prediction of physical interactions between
+  human and hiv proteins.
+\newblock {\em Infect., Genetics and Evol.}, {\bf 11}, 917--923.
+
+\bibitem[Dyer {\em et~al.}(2007)Dyer, Murali, and Sobral]{dyer07}
+Dyer, M., Murali, T., and Sobral, B. (2007).
+\newblock Computational prediction of host-pathogen protein-protein
+  interactions.
+\newblock {\em Bioinf.}, {\bf 23}(13), i159--66.
+
+\bibitem[Evgeniou and Pontil(2004)Evgeniou and Pontil]{pontil04}
+Evgeniou, T. and Pontil, M. (2004).
+\newblock Regularized multi-task learning.
+\newblock {\em ACM SIGKDD\/}.
+
+\bibitem[Hornbeck {\em et~al.}(2015)Hornbeck, Zhang, Murray, Kornhauser,
+  Latham, and Skrzypek]{phosphosite}
+Hornbeck, P.~V., Zhang, B., Murray, B., Kornhauser, J.~M., Latham, V., and
+  Skrzypek, E. (2015).
+\newblock Phosphositeplus, 2014: mutations, ptms and recalibrations.
+\newblock {\em Nucleic acids research\/}, {\bf 43}(D1), D512--D520.
+
+\bibitem[Jain and Dhillon(2013)Jain and Dhillon]{prateek}
+Jain, P. and Dhillon, I.~S. (2013).
+\newblock Provable inductive matrix completion.
+
+\bibitem[Jalali {\em et~al.}(2010)Jalali, Sanghavi, Ruan, and
+  Ravikumar]{jalali2010}
+Jalali, A., Sanghavi, S., Ruan, C., and Ravikumar, P.~K. (2010).
+\newblock A dirty model for multi-task learning.
+\newblock {\em Advances in Neural Information Processing Systems\/}, pages
+  964--972.
+
+\bibitem[Ji and Ye(2009)Ji and Ye]{ji2009}
+Ji, S. and Ye, J. (2009).
+\newblock An accelerated gradient method for trace norm minimization.
+\newblock In {\em Proceedings of the 26th Annual International Conference on
+  Machine Learning\/}, pages 457--464. ACM.
+
+\bibitem[Jin {\em et~al.}(2002)Jin, Si, and Zhai]{jin02}
+Jin, R., Si, L., and Zhai, C. (2002).
+\newblock Preference-based graphic models for collaborative filtering.
+\newblock In {\em UAI\/}, pages 329--336.
+
+\bibitem[Koren {\em et~al.}(2009)Koren, Bell, and Volinsky]{koren09}
+Koren, Y., Bell, R., and Volinsky, C. (2009).
+\newblock Matrix factorization techniques for recommender systems.
+\newblock {\em Computer\/}, (8), 30--37.
+
+\bibitem[Kshirsagar {\em et~al.}(2012)Kshirsagar, Carbonell, and
+  Klein-Seetharaman]{me12}
+Kshirsagar, M., Carbonell, J.~G., and Klein-Seetharaman, J. (2012).
+\newblock Techniques to cope with missing data in host-pathogen protein
+  interaction prediction.
+\newblock {\em Bioinformatics\/}.
+
+\bibitem[Kshirsagar {\em et~al.}(2013)Kshirsagar, Carbonell, and
+  Klein-Seetharaman]{me_ismb_2013}
+Kshirsagar, M., Carbonell, J.~G., and Klein-Seetharaman, J. (2013).
+\newblock Multi-task learning for host-pathogen protein interactions.
+\newblock {\em Bioinformatics\/}.
+
+\bibitem[Kumar and Nanduri(2010)Kumar and Nanduri]{hpidb}
+Kumar, R. and Nanduri, B. (2010).
+\newblock Hpidb--a unified resource for host-pathogen interactions.
+\newblock {\em BMC Bioinf.}
+
+\bibitem[Li {\em et~al.}(2009)Li, Yang, and Xue]{li09}
+Li, B., Yang, Q., and Xue, X. (2009).
+\newblock Transfer learning for collaborative filtering via a rating-matrix
+  generative model.
+\newblock In {\em International Conference on Machine Learning\/}, pages
+  617--624. ACM.
+
+\bibitem[Menon and Elkan(2011)Menon and Elkan]{menon_ecml11}
+Menon, A.~K. and Elkan, C. (2011).
+\newblock Link prediction via matrix factorization.
+\newblock {\em ECML\/}.
+
+\bibitem[Nanbo {\em et~al.}(2010)Nanbo, Imai, Watanabe, {\em
+  et~al.}]{nanbo2010}
+Nanbo, A., Imai, M., Watanabe, S., {\em et~al.} (2010).
+\newblock Ebolavirus is internalized into host cells via macropinocytosis in a
+  viral glycoprotein-dependent manner.
+\newblock {\em PLoS pathogens\/}, {\bf 6}(9), e1001121.
+
+\bibitem[Natarajan and Dhillon(2014)Natarajan and Dhillon]{nagarajan}
+Natarajan, N. and Dhillon, I.~S. (2014).
+\newblock Inductive matrix completion for predicting gene–disease
+  associations.
+\newblock {\em Bioinformatics\/}.
+
+\bibitem[Phung {\em et~al.}(2009)Phung, Venkatesh, {\em et~al.}]{phung09}
+Phung, D.~Q., Venkatesh, S., {\em et~al.} (2009).
+\newblock Ordinal boltzmann machines for collaborative filtering.
+\newblock In {\em UAI\/}, pages 548--556. AUAI Press.
+
+\bibitem[Qi {\em et~al.}(2006)Qi {\em et~al.}]{qi06}
+Qi, Y. {\em et~al.} (2006).
+\newblock Evaluation of different biological data and computational
+  classification methods for use in protein interaction prediction.
+\newblock {\em Proteins\/}, {\bf 63}(3), 490--500.
+
+\bibitem[Qi {\em et~al.}(2009)Qi, Dhiman, Bar-Joseph, {\em et~al.}]{qi09}
+Qi, Y., Dhiman, H., Bar-Joseph, Z., {\em et~al.} (2009).
+\newblock Systematic prediction of human membrane receptor interactions.
+\newblock {\em Proteomics\/}, {\bf 23}(9), 5243--55.
+
+\bibitem[Qi {\em et~al.}(2010)Qi, Tastan, Carbonell, Klein-Seetharaman, and
+  Weston]{qi2010}
+Qi, Y., Tastan, O., Carbonell, J.~G., Klein-Seetharaman, J., and Weston, J.
+  (2010).
+\newblock Semi-supervised multi-task learning for predicting interactions
+  between hiv-1 and human proteins.
+\newblock {\em Bioinformatics\/}.
+
+\bibitem[Sarwar {\em et~al.}(2001)Sarwar, Karypis, Konstan, and
+  Riedl]{sarwar01}
+Sarwar, B., Karypis, G., Konstan, J., and Riedl, J. (2001).
+\newblock Item-based collaborative filtering recommendation algorithms.
+\newblock In {\em WWW\/}, pages 285--295. ACM.
+
+\bibitem[Shen {\em et~al.}(2007)Shen {\em et~al.}]{shen:2007}
+Shen, J. {\em et~al.} (2007).
+\newblock Predicting protein-protein interactions based only on sequences
+  information.
+\newblock {\em PNAS\/}, {\bf 104}, 4337--4341.
+
+\bibitem[Singh and Gordon(2008)Singh and Gordon]{cmf}
+Singh, A.~P. and Gordon, G.~J. (2008).
+\newblock Relational learning via collective matrix factorization.
+\newblock {\em KDD\/}.
+
+\bibitem[Singh {\em et~al.}(2006)Singh, Xu, and Berger]{struct2net}
+Singh, R., Xu, J., and Berger, B. (2006).
+\newblock Struct2net: Integrating structure into protein-protein interaction
+  prediction.
+\newblock {\em Pacific Symposium on Biocomputing\/}.
+
+\bibitem[Tastan {\em et~al.}(2009)Tastan {\em et~al.}]{tastan09}
+Tastan, O. {\em et~al.} (2009).
+\newblock Prediction of interactions between hiv-1 and human proteins by
+  information integration.
+\newblock {\em Pac. Symp. Biocomput.}, (14), 516--527.
+
+\bibitem[Tekir {\em et~al.}(2012)Tekir, S., C., and U.]{phisto}
+Tekir, S.~D., S., A., C., T., and U., K.~O. (2012).
+\newblock Infection strategies of bacterial and viral pathogens through
+  pathogen-host protein protein interactions.
+\newblock {\em Frontiers in Microbial Immunology\/}.
+
+\bibitem[Thomsen and Nielsen(2012)Thomsen and Nielsen]{seq2logo}
+Thomsen, M. C.~F. and Nielsen, M. (2012).
+\newblock Seq2logo: a method for construction and visualization of amino acid
+  binding motifs and sequence profiles including sequence weighting, pseudo
+  counts and two-sided representation of amino acid enrichment and depletion.
+\newblock {\em Nucleic acids research\/}, {\bf 40}(W1), W281--W287.
+
+\bibitem[{UniProt Consortium}(2011){UniProt Consortium}]{uniprot}
+{UniProt Consortium} (2011).
+\newblock Ongoing and future developments at the universal protein resource.
+\newblock {\em Nucl. Acids Res.}, {\bf 39}, D214--D219.
+
+\bibitem[Vita {\em et~al.}(2015)Vita, Overton, Greenbaum, {\em et~al.}]{iedb}
+Vita, R., Overton, J.~A., Greenbaum, J.~A., {\em et~al.} (2015).
+\newblock The immune epitope database (iedb) 3.0.
+\newblock {\em Nucleic acids research\/}, {\bf 43}(D1), D405--D412.
+
+\bibitem[Wu {\em et~al.}(2006)Wu, Zhu, Guo, {\em et~al.}]{yeast}
+Wu, X., Zhu, L., Guo, J., {\em et~al.} (2006).
+\newblock Prediction of yeast protein-protein interaction network: insights
+  from the gene ontology and annotations.
+\newblock {\em Nucleic Acids Res.}, {\bf 34}(7), 2137--50.
+
+\bibitem[Xu {\em et~al.}(2010)Xu, Xiang, and Yang]{ppi_cmf}
+Xu, Q., Xiang, E.~W., and Yang, Q. (2010).
+\newblock Protein-protein interaction prediction via collective matrix
+  factorization.
+\newblock {\em International Conference on Bioinformatics and Biomedicine\/}.
+
+\bibitem[Zhang {\em et~al.}(2012)Zhang, Cao, and Yeung]{zhang12}
+Zhang, Y., Cao, B., and Yeung, D.-Y. (2012).
+\newblock Multi-domain collaborative filtering.
+\newblock {\em arXiv preprint arXiv:1203.3535\/}.
+
+\end{thebibliography}

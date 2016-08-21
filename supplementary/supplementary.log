@@ -1,0 +1,547 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  22 JAN 2016 21:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**supplementary.tex
+(./supplementary.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen103
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen104
+\subfiglabelskip=\skip46
+\c@subfigure=\count87
+\c@lofdepth=\count88
+\c@subtable=\count89
+\c@lotdepth=\count90
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@float@type=\count91
+\float@exts=\toks15
+\float@box=\box26
+\@floatcapt=\box27
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks16
+\flrow@foot=\insert233
+\FB@wd=\dimen112
+\FBo@wd=\dimen113
+\FBc@wd=\dimen114
+\FBo@ht=\skip49
+\FBc@ht=\skip50
+\FBf@ht=\skip51
+\FBo@max=\skip52
+\FBc@max=\skip53
+\FBf@max=\skip54
+\c@FBl@b=\count92
+\floatbox@depth=\count93
+\c@FRobj=\count94
+\c@FRsobj=\count95
+\Xhsize=\skip55
+\sXhsize=\skip56
+\Zhsize=\skip57
+\sZhsize=\skip58
+\flrow@rowbox=\box28
+\FR@Zunitlength=\dimen115
+\c@FBcnt=\count96
+\FPOScnt=\count97
+\LTleft=\skip59
+\LTright=\skip60
+\LTleft=\skip61
+\LTright=\skip62
+\flrow@types=\toks17
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count98
+\@cmidlb=\count99
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count100
+\@lastruleclass=\count101
+\@thisrulewidth=\dimen128
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (./supplementary.aux
+
+LaTeX Warning: Label `fig:hepc_motifs' multiply defined.
+
+
+LaTeX Warning: Label `fig:hepc_motifs' multiply defined.
+
+
+LaTeX Warning: Label `fig:flu_motifs' multiply defined.
+
+)
+\openout1 = `supplementary.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen131
+\scratchbox=\box29
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen132
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks19
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 63.
+
+<fig7-eps-converted-to.pdf, id=15, 642.4pt x 481.8pt>
+File: fig7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig7-eps-converted-to.pdf>
+Package pdftex.def Info: fig7-eps-converted-to.pdf used on input line 83.
+(pdftex.def)             Requested size: 159.177pt x 120.44969pt.
+
+Overfull \hbox (15.1792pt too wide) in paragraph at lines 83--83
+ [][] 
+ []
+
+File: fig7-eps-converted-to.pdf Graphic file (type pdf)
+<use fig7-eps-converted-to.pdf>
+Package pdftex.def Info: fig7-eps-converted-to.pdf used on input line 83.
+(pdftex.def)             Requested size: 159.177pt x 120.44969pt.
+
+Overfull \hbox (15.1792pt too wide) in paragraph at lines 83--83
+ [][] 
+ []
+
+<fig8-eps-converted-to.pdf, id=16, 642.4pt x 481.8pt>
+File: fig8-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig8-eps-converted-to.pdf>
+Package pdftex.def Info: fig8-eps-converted-to.pdf used on input line 91.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 91--91
+ [][] 
+ []
+
+File: fig8-eps-converted-to.pdf Graphic file (type pdf)
+<use fig8-eps-converted-to.pdf>
+Package pdftex.def Info: fig8-eps-converted-to.pdf used on input line 91.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 91--91
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig9-eps-converted-to.pdf, id=17, 642.4pt x 481.8pt>
+File: fig9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig9-eps-converted-to.pdf>
+Package pdftex.def Info: fig9-eps-converted-to.pdf used on input line 105.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 105--105
+ [][] 
+ []
+
+File: fig9-eps-converted-to.pdf Graphic file (type pdf)
+<use fig9-eps-converted-to.pdf>
+Package pdftex.def Info: fig9-eps-converted-to.pdf used on input line 105.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 105--105
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+Package epstopdf Info: Source file: <top10ebola_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:54:55
+(epstopdf)                    size: 17487 bytes
+(epstopdf)             Output file: <top10ebola_3mers_seq2logo-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-01-22 14:55:05
+(epstopdf)                    size: 10240 bytes
+(epstopdf)             Command: <repstopdf --outfile=top10ebola_3mers_seq2logo-
+eps-converted-to.pdf top10ebola_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+ <top10ebola_3mers_seq2logo-eps-converted-to.pdf, id=25, 642.4pt x 481.8pt>
+File: top10ebola_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+
+<use top10ebola_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top10ebola_3mers_seq2logo-eps-converted-to.pdf used on
+ input line 123.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 123--123
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <top10ebola_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:54:55
+(epstopdf)                    size: 17487 bytes
+(epstopdf)             Output file: <top10ebola_3mers_seq2logo-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-01-22 14:55:05
+(epstopdf)                    size: 10240 bytes
+(epstopdf)             Command: <repstopdf --outfile=top10ebola_3mers_seq2logo-
+eps-converted-to.pdf top10ebola_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+File: top10ebola_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+<use top10ebola_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top10ebola_3mers_seq2logo-eps-converted-to.pdf used on
+ input line 123.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 123--123
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <top10flavi_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:54:55
+(epstopdf)                    size: 17487 bytes
+(epstopdf)             Output file: <top10flavi_3mers_seq2logo-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-01-22 14:55:06
+(epstopdf)                    size: 10274 bytes
+(epstopdf)             Command: <repstopdf --outfile=top10flavi_3mers_seq2logo-
+eps-converted-to.pdf top10flavi_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+<top10flavi_3mers_seq2logo-eps-converted-to.pdf, id=26, 642.4pt x 481.8pt>
+File: top10flavi_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+
+<use top10flavi_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top10flavi_3mers_seq2logo-eps-converted-to.pdf used on
+ input line 131.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 131--131
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <top10flavi_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:54:55
+(epstopdf)                    size: 17487 bytes
+(epstopdf)             Output file: <top10flavi_3mers_seq2logo-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-01-22 14:55:06
+(epstopdf)                    size: 10274 bytes
+(epstopdf)             Command: <repstopdf --outfile=top10flavi_3mers_seq2logo-
+eps-converted-to.pdf top10flavi_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+File: top10flavi_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+<use top10flavi_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top10flavi_3mers_seq2logo-eps-converted-to.pdf used on
+ input line 131.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 131--131
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <top10flu_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:54:55
+(epstopdf)                    size: 17486 bytes
+(epstopdf)             Output file: <top10flu_3mers_seq2logo-eps-converted-to.p
+df>
+(epstopdf)                    date: 2016-01-22 14:55:08
+(epstopdf)                    size: 10408 bytes
+(epstopdf)             Command: <repstopdf --outfile=top10flu_3mers_seq2logo-ep
+s-converted-to.pdf top10flu_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 143.
+Package epstopdf Info: Output file is already uptodate.
+<top10flu_3mers_seq2logo-eps-converted-to.pdf, id=27, 642.4pt x 481.8pt>
+File: top10flu_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+
+<use top10flu_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top10flu_3mers_seq2logo-eps-converted-to.pdf used on i
+nput line 143.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 143--143
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <top10flu_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:54:55
+(epstopdf)                    size: 17486 bytes
+(epstopdf)             Output file: <top10flu_3mers_seq2logo-eps-converted-to.p
+df>
+(epstopdf)                    date: 2016-01-22 14:55:08
+(epstopdf)                    size: 10408 bytes
+(epstopdf)             Command: <repstopdf --outfile=top10flu_3mers_seq2logo-ep
+s-converted-to.pdf top10flu_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 143.
+Package epstopdf Info: Output file is already uptodate.
+File: top10flu_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+<use top10flu_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top10flu_3mers_seq2logo-eps-converted-to.pdf used on i
+nput line 143.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 143--143
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <top20human_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:57:02
+(epstopdf)                    size: 17489 bytes
+(epstopdf)             Output file: <top20human_3mers_seq2logo-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-01-22 14:57:08
+(epstopdf)                    size: 10158 bytes
+(epstopdf)             Command: <repstopdf --outfile=top20human_3mers_seq2logo-
+eps-converted-to.pdf top20human_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 150.
+Package epstopdf Info: Output file is already uptodate.
+<top20human_3mers_seq2logo-eps-converted-to.pdf, id=28, 642.4pt x 481.8pt>
+File: top20human_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+
+<use top20human_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top20human_3mers_seq2logo-eps-converted-to.pdf used on
+ input line 150.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 150--150
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <top20human_3mers_seq2logo.eps>
+(epstopdf)                    date: 2016-01-22 14:57:02
+(epstopdf)                    size: 17489 bytes
+(epstopdf)             Output file: <top20human_3mers_seq2logo-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-01-22 14:57:08
+(epstopdf)                    size: 10158 bytes
+(epstopdf)             Command: <repstopdf --outfile=top20human_3mers_seq2logo-
+eps-converted-to.pdf top20human_3mers_seq2logo.eps>
+(epstopdf)             \includegraphics on input line 150.
+Package epstopdf Info: Output file is already uptodate.
+File: top20human_3mers_seq2logo-eps-converted-to.pdf Graphic file (type pdf)
+<use top20human_3mers_seq2logo-eps-converted-to.pdf>
+Package pdftex.def Info: top20human_3mers_seq2logo-eps-converted-to.pdf used on
+ input line 150.
+(pdftex.def)             Requested size: 160.59961pt x 120.44969pt.
+
+Overfull \hbox (16.6018pt too wide) in paragraph at lines 150--150
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./supplementary.bbl) [3 <./fig7-eps-converted-to.pdf> <./fig8-eps-converted-to
+.pdf> <./fig9-eps-converted-to.pdf>] [4 <./top10ebola_3mers_seq2logo-eps-conver
+ted-to.pdf> <./top10flavi_3mers_seq2logo-eps-converted-to.pdf> <./top10flu_3mer
+s_seq2logo-eps-converted-to.pdf> <./top20human_3mers_seq2logo-eps-converted-to.
+pdf>] (./supplementary.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2994 strings out of 493117
+ 46348 string characters out of 6135433
+ 109581 words of memory out of 5000000
+ 6426 multiletter control sequences out of 15000+600000
+ 8885 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,12n,38p,738b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on supplementary.pdf (4 pages, 195931 bytes).
+PDF statistics:
+ 154 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+
+\bibitem{abernethy}
+J.~Abernethy, F.~Bach, T.~Evgeniou, and J.~P. Vert.
+\newblock A new approach to collaborative filtering: Operator estimation with
+  spectral regularization.
+\newblock {\em Journal of Machine Learning Research (JMLR)}, 2009.
+
+\bibitem{candes08}
+E.~Candes and B.~Recht.
+\newblock Exact matrix completion via convex optimization.
+\newblock {\em Foundations of Computational Mathematics}, 2008.
+
+\bibitem{chen2012}
+Jianhui Chen, Ji~Liu, and Jieping Ye.
+\newblock Learning incoherent sparse and low-rank patterns from multiple tasks.
+\newblock {\em ACM Transactions on Knowledge Discovery from Data (TKDD)},
+  5(4):22, 2012.
+
+\bibitem{davis2006}
+Jesse Davis and Mark Goadrich.
+\newblock The relationship between precision-recall and roc curves.
+\newblock {\em Proceedings of the 23rd international conference on Machine
+  learning}, pages 233--240, 2006.
+
+\bibitem{dyer11}
+M.D. Dyer et~al.
+\newblock Supervised learning and prediction of physical interactions between
+  human and hiv proteins.
+\newblock {\em Infect., Genetics and Evol.}, 11:917--923, 2011.
+
+\bibitem{dyer07}
+M.D. Dyer, T.M. Murali, and B.W. Sobral.
+\newblock Computational prediction of host-pathogen protein-protein
+  interactions.
+\newblock {\em Bioinf.}, 23(13):i159--66, 2007.
+
+\bibitem{pontil04}
+T.~Evgeniou and M.~Pontil.
+\newblock Regularized multi-task learning.
+\newblock {\em ACM SIGKDD}, 2004.
+
+\bibitem{prateek}
+Prateek Jain and Inderjit~S. Dhillon.
+\newblock Provable inductive matrix completion.
+\newblock 2013.
+
+\bibitem{me12}
+M.~Kshirsagar, J.~G. Carbonell, and J.~Klein-Seetharaman.
+\newblock Techniques to cope with missing data in host-pathogen protein
+  interaction prediction.
+\newblock {\em Bioinformatics}, 2012.
+
+\bibitem{me_ismb_2013}
+M.~Kshirsagar, J.~G. Carbonell, and J.~Klein-Seetharaman.
+\newblock Multi-task learning for host-pathogen protein interactions.
+\newblock {\em Bioinformatics}, 2013.
+
+\bibitem{nanbo2010}
+Asuka Nanbo, Masaki Imai, Shinji Watanabe, et~al.
+\newblock Ebolavirus is internalized into host cells via macropinocytosis in a
+  viral glycoprotein-dependent manner.
+\newblock {\em PLoS pathogens}, 6(9):e1001121, 2010.
+
+\bibitem{nagarajan}
+Nagarajan Natarajan and Inderjit~S. Dhillon.
+\newblock Inductive matrix completion for predicting gene–disease
+  associations.
+\newblock {\em Bioinformatics}, 2014.
+
+\bibitem{qi09}
+Y.~Qi, H.K. Dhiman, Z.~Bar-Joseph, et~al.
+\newblock Systematic prediction of human membrane receptor interactions.
+\newblock {\em Proteomics}, 23(9):5243--55, 2009.
+
+\bibitem{qi06}
+Y.~Qi et~al.
+\newblock Evaluation of different biological data and computational
+  classification methods for use in protein interaction prediction.
+\newblock {\em Proteins}, 63(3):490--500, 2006.
+
+\bibitem{qi2010}
+Y.~Qi, O.~Tastan, J.~G. Carbonell, J.~Klein-Seetharaman, and J.~Weston.
+\newblock Semi-supervised multi-task learning for predicting interactions
+  between hiv-1 and human proteins.
+\newblock {\em Bioinformatics}, 2010.
+
+\bibitem{shen:2007}
+J.~Shen et~al.
+\newblock Predicting protein-protein interactions based only on sequences
+  information.
+\newblock {\em PNAS}, 104:4337--4341, 2007.
+
+\bibitem{struct2net}
+R.~Singh, J.~Xu, and B.~Berger.
+\newblock Struct2net: Integrating structure into protein-protein interaction
+  prediction.
+\newblock {\em Pacific Symposium on Biocomputing}, 2006.
+
+\bibitem{tastan09}
+O.~Tastan et~al.
+\newblock Prediction of interactions between hiv-1 and human proteins by
+  information integration.
+\newblock {\em Pac. Symp. Biocomput.}, (14):516--527, 2009.
+
+\bibitem{phisto}
+S.~D. Tekir, Ali S., Tunahan C., and Kutlu~O. U.
+\newblock Infection strategies of bacterial and viral pathogens through
+  pathogen-host protein protein interactions.
+\newblock {\em Frontiers in Microbial Immunology}, 2012.
+
+\bibitem{seq2logo}
+Martin Christen~Fr{\o}lund Thomsen and Morten Nielsen.
+\newblock Seq2logo: a method for construction and visualization of amino acid
+  binding motifs and sequence profiles including sequence weighting, pseudo
+  counts and two-sided representation of amino acid enrichment and depletion.
+\newblock {\em Nucleic acids research}, 40(W1):W281--W287, 2012.
+
+\bibitem{widmer}
+C.~Widmer, J.~Leiva, Y.~Altun, and G.~Ratsch.
+\newblock Leveraging sequence classification by taxonomy-based multitask
+  learning.
+\newblock {\em RECOMB}, 2010.
+
+\bibitem{ppi_cmf}
+Q.~Xu, E.~W. Xiang, and Q.~Yang.
+\newblock Protein-protein interaction prediction via collective matrix
+  factorization.
+\newblock {\em International Conference on Bioinformatics and Biomedicine},
+  2010.
+
+\end{thebibliography}
