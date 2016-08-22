@@ -7,7 +7,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.\relax }}{2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:hpppigraph}{{1}{2}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Tasks and their sizes. Each column corresponds to one bipartite graph between human proteins and the pathogen indicated in the column header. All pathogens are single stranded RNA viruses. Row 4 shows that each of our graphs is extremely sparse.\relax }}{2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Tasks and their sizes. Each column corresponds to one bipartite graph between human proteins and the pathogen indicated in the column header. All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.\relax }}{2}}
 \newlabel{datasets}{{1}{2}}
 \citation{abernethy}
 \citation{virusmint}
@@ -20,6 +20,8 @@
 \citation{qi2010}
 \citation{me_ismb_2013}
 \citation{ppi_cmf}
+\@writefile{toc}{\contentsline {subsection}{Background: Host-pathogen protein interactions}{3}}
+\@writefile{toc}{\contentsline {subsection}{Prior work}{3}}
 \citation{sarwar01}
 \citation{koren09,menon_ecml11}
 \citation{jin02,phung09}
@@ -27,8 +29,6 @@
 \citation{menon_ecml11}
 \citation{abernethy}
 \citation{ando2005,ji2009,chen2012,chen2013}
-\@writefile{toc}{\contentsline {subsection}{Background: Host-pathogen protein interactions}{3}}
-\@writefile{toc}{\contentsline {subsection}{Prior work}{3}}
 \citation{abernethy}
 \@writefile{toc}{\contentsline {section}{Bilinear low-rank matrix decomposition}{4}}
 \newlabel{MCintro}{{1}{4}}
@@ -42,50 +42,64 @@
 \newlabel{mtl_objective}{{4}{5}}
 \@writefile{toc}{\contentsline {subsection}{Handling the `curse of missing negatives'}{5}}
 \newlabel{negs}{{1}{5}}
+\citation{malsar}
 \citation{pontil04}
-\citation{jalali2010}
 \citation{chen2012}
 \citation{prateek,nagarajan}
 \citation{me_ismb_2013}
-\citation{pontil04}
-\citation{chen2012}
-\citation{jalali2010}
-\citation{me_ismb_2013}
-\citation{nagarajan}
-\citation{davis2006}
 \@writefile{toc}{\contentsline {section}{Experimental setup}{6}}
 \@writefile{toc}{\contentsline {subsection}{Datasets and features}{6}}
 \newlabel{sec:datasets}{{1}{6}}
-\@writefile{toc}{\contentsline {subsection}{Competing methods}{6}}
-\@writefile{toc}{\contentsline {subsection}{Evaluation setup}{6}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Area Under the Precision-Recall curve for each task in the two settings. X\% training indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold.\relax }}{7}}
+\@writefile{toc}{\contentsline {subsection}{Comparison with other machine learning approaches}{6}}
+\newlabel{mlmethods}{{1}{6}}
+\@writefile{toc}{\contentsline {subsection}{Comparison with a homolog baseline}{6}}
+\citation{davis2006}
+\citation{pontil04}
+\citation{chen2012}
+\citation{me_ismb_2013}
+\citation{nagarajan}
+\citation{chen2012}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold.\relax }}{7}}
 \newlabel{resultsTable}{{2}{7}}
+\@writefile{toc}{\contentsline {subsection}{Evaluation setup}{7}}
 \@writefile{toc}{\contentsline {subsection}{Parameter tuning}{7}}
 \@writefile{toc}{\contentsline {section}{Results}{7}}
-\@writefile{toc}{\contentsline {subsection}{Biological significance of the model}{7}}
-\newlabel{bioanalysis}{{1}{7}}
-\citation{seq2logo}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Area Under the Precision-Recall curve for each task upon removal of the homologs within each task, on the 10\% setting\relax }}{8}}
+\newlabel{homresultsTable}{{3}{8}}
+\@writefile{toc}{\contentsline {subsection}{Disadvantages of the Homolog method}{8}}
+\newlabel{fig:ebolanet}{{2(a)}{8}}
+\newlabel{fig:flavinet}{{2(b)}{8}}
+\newlabel{fig:flunet}{{2(c)}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces PPI from each task that are found by our method but are missed by the homolog method\relax }}{8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Ebola-human PPI\relax }}{8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Hepatitis-human PPI\relax }}{8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline {(c)}{\ignorespaces Influenza-human PPI\relax }}{8}}
+\@writefile{toc}{\contentsline {subsection}{Biological significance of the model}{8}}
+\newlabel{bioanalysis}{{1}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{Clustering proteins based on interaction propensities}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Principal component analysis (PCA) of virus proteins in the original feature space (left) and the projected subspace (right). The first two principal components are shown. Shape of the points indicates which virus that protein comes from.\relax }}{8}}
-\newlabel{fig:pca}{{2}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Top tri-mer and four-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions.\relax }}{8}}
-\newlabel{fig:virus_motifs}{{3}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{Sequence motifs from virus proteins}{8}}
 \citation{iedb}
 \citation{phosphosite}
 \citation{nanbo2010}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Principal component analysis (PCA) of virus proteins in the original feature space\relax }}{9}}
+\newlabel{fig:pca1}{{3}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from.\relax }}{9}}
+\newlabel{fig:pca2}{{4}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{Novel interactions with Ebola proteins}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{Sequence motifs from virus proteins}{9}}
+\citation{seq2logo}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Top tri-mer and four-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions.\relax }}{10}}
+\newlabel{fig:virus_motifs}{{5}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Sequence motif constructed from the top four-mer features of human proteins\relax }}{10}}
+\newlabel{fig:human_motifs}{{6}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Sequence motif from top four-mer features specific to \textit  {Ebola} proteins\relax }}{10}}
+\newlabel{fig:ebola_motifs}{{7}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Sequence motifs specific to \textit  {Hepatitic-C} proteins that are also important to interactions.\relax }}{10}}
+\newlabel{fig:hepc_motifs}{{8}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Sequence motifs specific to \textit  {Influenza} proteins that are also important to interactions.\relax }}{10}}
+\newlabel{fig:flu_motifs}{{9}{10}}
 \bibstyle{natbib}
 \bibdata{references}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Sequence motif constructed from the top four-mer features of human proteins\relax }}{9}}
-\newlabel{fig:human_motifs}{{4}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Sequence motif from top four-mer features specific to \textit  {Ebola} proteins\relax }}{9}}
-\newlabel{fig:ebola_motifs}{{5}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Sequence motifs specific to \textit  {Hepatitic-C} proteins that are also important to interactions.\relax }}{9}}
-\newlabel{fig:hepc_motifs}{{6}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Sequence motifs specific to \textit  {Influenza} proteins that are also important to interactions.\relax }}{9}}
-\newlabel{fig:flu_motifs}{{7}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{Novel interactions with Ebola proteins}{9}}
-\@writefile{toc}{\contentsline {section}{Conclusions and future extensions}{9}}
+\@writefile{toc}{\contentsline {section}{Conclusions and future extensions}{11}}
 \bibcite{abernethy}{{1}{2009}{{Abernethy {\em  et~al.}}}{{Abernethy, Bach, Evgeniou, and Vert}}}
 \bibcite{ando2005}{{2}{2005}{{Ando and Zhang}}{{Ando and Zhang}}}
 \bibcite{GO}{{3}{2000}{{Ashburner {\em  et~al.}}}{{Ashburner {\em  et~al.}}}}
