@@ -1,15 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 AUG 2016 00:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 00:28
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **paper.tex
 (./paper.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, portuguese
+, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (./bioinfo.cls
 Document Class: bioinfo 2003/02/08 0.1
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 ) (./crop.sty
@@ -18,78 +24,71 @@ Package: crop 2001/11/16 v1.6 cropmarks (mf)
 \CROP@height=\dimen103
 \CROP@index=\count79
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count80
 ))
 \CROP@offset=\count81
 Package crop Info: Local config file crop.cfg used on input line 344.
 
-(./crop.cfg))
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/crop.cfg))
 Package crop Info: using pdf(la)tex graphics driver on input line 33.
  (./graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip41
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen106
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count82
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 211.
 \uproot@=\count83
 \leftroot@=\count84
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 307.
 \classnum@=\count85
 \DOTSCASE@=\count86
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen108
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count87
 \c@MaxMatrixCols=\count88
 \dotsspace@=\muskip10
@@ -110,8 +109,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip42
 \multlinetaggap=\skip43
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
 ) (./array.sty
 Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
 \col@sep=\dimen115
@@ -119,25 +118,24 @@ Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
 \NC@list=\toks22
 \extratabsurround=\skip44
 \backup@length=\skip45
-) (./color.sty
+)
+(./color.sty
 Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+ (/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 125.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(./flushend.sty
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)) (./flushend.sty
 Package: flushend 1997/10/01
 \@aaa=\box28
 \@ccc=\box29
@@ -146,13 +144,13 @@ Package: flushend 1997/10/01
 \atColsBreak=\toks23
 \@extra@skip=\dimen117
 \@nd@page@rule=\dimen118
-) (./stfloats.sty
+)
+(./stfloats.sty
 Package: stfloats 1999/10/22
 \@dblbotnum=\count94
 \c@dblbotnumber=\count95
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+) (/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks24
 \thm@bodyfont=\toks25
 \thm@headfont=\toks26
@@ -167,7 +165,7 @@ Package: amsthm 2015/03/04 v2.20.2
 Package: chngpage 2001/01/31 v1.1b change page layout
 \c@cp@cnt=\count96
 \c@cp@tempcnt=\count97
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/times.sty
+) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 \c@section=\count98
@@ -185,28 +183,26 @@ Package: times 2005/04/12 PSNFSS-v9.2a (SPQR)
 \rotdimen=\dimen119
 \tempdime=\dimen120
 \temptbox=\box32
- (./natbib.sty
+
+(./natbib.sty
 Package: natbib 2000/07/24 7.0a (PWD)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 508.
 \c@NAT@ctr=\count105
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/floatrow/floatrow.sty
+)) (/usr/share/texmf-texlive/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
 \captionmargin=\dimen121
 \captionmargin@=\dimen122
 \captionwidth=\dimen123
-\caption@tempdima=\dimen124
-\caption@indent=\dimen125
-\caption@parindent=\dimen126
-\caption@hangindent=\dimen127
+\caption@indent=\dimen124
+\caption@parindent=\dimen125
+\caption@hangindent=\dimen126
 Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
+(caption)             standard defaults will be used on input line 1068.
 )
 \c@float@type=\count106
 \float@exts=\toks30
@@ -216,10 +212,10 @@ Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
 \FR@everyfloat=\toks31
-\flrow@foot=\insert199
-\FB@wd=\dimen128
-\FBo@wd=\dimen129
-\FBc@wd=\dimen130
+\flrow@foot=\insert233
+\FB@wd=\dimen127
+\FBo@wd=\dimen128
+\FBc@wd=\dimen129
 \FBo@ht=\skip56
 \FBc@ht=\skip57
 \FBf@ht=\skip58
@@ -235,7 +231,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \Zhsize=\skip64
 \sZhsize=\skip65
 \flrow@rowbox=\box35
-\FR@Zunitlength=\dimen131
+\FR@Zunitlength=\dimen130
 \c@FBcnt=\count111
 \FPOScnt=\count112
 \LTleft=\skip66
@@ -243,30 +239,28 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTleft=\skip68
 \LTright=\skip69
 \flrow@types=\toks32
-)
-(./algorithm.sty
+) (./algorithm.sty
 Package: algorithm 
 
 Document Style `algorithm' - floating environment
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@algorithm=\count113
-)
-(./algorithmic.sty
+) (./algorithmic.sty
 Package: algorithmic 2006/06/02
 
 Document Style `algorithmic' - environment
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count114
 \calc@Bcount=\count115
-\calc@Adimen=\dimen132
-\calc@Bdimen=\dimen133
+\calc@Adimen=\dimen131
+\calc@Bdimen=\dimen132
 \calc@Askip=\skip70
 \calc@Bskip=\skip71
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count116
 \calc@Cskip=\skip72
 )
@@ -276,27 +270,27 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \ALC@tlm=\skip73
 \algorithmicindent=\skip74
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen134
-\lightrulewidth=\dimen135
-\cmidrulewidth=\dimen136
-\belowrulesep=\dimen137
-\belowbottomsep=\dimen138
-\aboverulesep=\dimen139
-\abovetopsep=\dimen140
-\cmidrulesep=\dimen141
-\cmidrulekern=\dimen142
-\defaultaddspace=\dimen143
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen133
+\lightrulewidth=\dimen134
+\cmidrulewidth=\dimen135
+\belowrulesep=\dimen136
+\belowbottomsep=\dimen137
+\aboverulesep=\dimen138
+\abovetopsep=\dimen139
+\cmidrulesep=\dimen140
+\cmidrulekern=\dimen141
+\defaultaddspace=\dimen142
 \@cmidla=\count120
 \@cmidlb=\count121
-\@aboverulesep=\dimen144
-\@belowrulesep=\dimen145
+\@aboverulesep=\dimen143
+\@belowrulesep=\dimen144
 \@thisruleclass=\count122
 \@lastruleclass=\count123
-\@thisrulewidth=\dimen146
+\@thisrulewidth=\dimen145
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 
 
@@ -312,9 +306,9 @@ Package subfigure Warning: Your document class has a bad definition
 
 \subfigtopskip=\skip75
 \subfigcapskip=\skip76
-\subfigcaptopadj=\dimen147
+\subfigcaptopadj=\dimen146
 \subfigbottomskip=\skip77
-\subfigcapmargin=\dimen148
+\subfigcapmargin=\dimen147
 \subfiglabelskip=\skip78
 \c@subfigure=\count124
 \c@lofdepth=\count125
@@ -323,16 +317,17 @@ Package subfigure Warning: Your document class has a bad definition
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip79
 \subfig@bottom=\skip80
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen149
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen148
 ) (./url.sty
 Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
  names
-) (./paper.aux
+)
+(./paper.aux
 
 LaTeX Warning: Label `homresultsTable' multiply defined.
 
@@ -352,74 +347,26 @@ LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 32.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
-\scratchdimen=\dimen150
+\scratchdimen=\dimen149
 \scratchbox=\box36
 \nofMPsegments=\count129
 \nofMParguments=\count130
 \everyMPshowfont=\toks33
 \MPscratchCnt=\count131
-\MPscratchDim=\dimen151
+\MPscratchDim=\dimen150
 \MPnumerator=\count132
-\makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks34
-) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 67.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
@@ -465,13 +412,13 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 67.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 67.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
@@ -509,7 +456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--80
  []
 
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 81.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 80--82
@@ -550,14 +497,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Try loading font information for OMS+phv on input line 127.
 
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsphv.fd
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -646,46 +593,18 @@ Overfull \hbox (4.75247pt too wide) detected at line 219
 []
  []
 
-
-LaTeX Warning: File `fig1.eps' not found on input line 236.
-
-Package epstopdf Info: Source file: <fig1.eps>
-(epstopdf)             Output file: <fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-21 12:41:04
-(epstopdf)                    size: 507807 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig1-eps-converted-to.pdf 
-fig1.eps>
-(epstopdf)             \includegraphics on input line 236.
-Package epstopdf Info: Output file is already uptodate.
-<fig1-eps-converted-to.pdf, id=23, 722.7pt x 542.025pt>
+<fig1-eps-converted-to.pdf, id=22, 722.7pt x 542.025pt>
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig1-eps-converted-to.pdf>
-Package pdftex.def Info: fig1-eps-converted-to.pdf used on input line 236.
-(pdftex.def)             Requested size: 213.04407pt x 98.09238pt.
-
 Overfull \hbox (71.92468pt too wide) in paragraph at lines 236--236
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
-
-LaTeX Warning: File `fig1.eps' not found on input line 236.
-
-Package epstopdf Info: Source file: <fig1.eps>
-(epstopdf)             Output file: <fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-21 12:41:04
-(epstopdf)                    size: 507807 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig1-eps-converted-to.pdf 
-fig1.eps>
-(epstopdf)             \includegraphics on input line 236.
-Package epstopdf Info: Output file is already uptodate.
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use fig1-eps-converted-to.pdf>
-Package pdftex.def Info: fig1-eps-converted-to.pdf used on input line 236.
-(pdftex.def)             Requested size: 213.04407pt x 98.09238pt.
-
 Overfull \hbox (71.92468pt too wide) in paragraph at lines 236--236
  [][] 
  []
@@ -715,6 +634,11 @@ onverge
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 349--353
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -731,10 +655,6 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
  []
 
 [4 <./fig1-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 349--353
-
- []
-
 
 Package natbib Warning: Citation `malsar' on page 5 undefined on input line 377
 .
@@ -750,6 +670,11 @@ Underfull \hbox (badness 2744) in paragraph at lines 377--378
  []
 
 
+Underfull \hbox (badness 1102) in paragraph at lines 392--394
+\OT1/ptm/m/n/9 We compare all the methods in two settings, where a small
+ []
+
+
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -758,10 +683,6 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
  [5]
-Underfull \hbox (badness 1102) in paragraph at lines 392--394
-\OT1/ptm/m/n/9 We compare all the methods in two settings, where a small
- []
-
 
 LaTeX Warning: Reference `fig:pca' on page 6 undefined on input line 510.
 
@@ -778,11 +699,31 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[6] <flavinet.pdf, id=46, 505.89pt x 505.89pt>
+File: flavinet.pdf Graphic file (type pdf)
+ <use flavinet.pdf>
+<flunet.pdf, id=47, 505.89pt x 505.89pt>
+File: flunet.pdf Graphic file (type pdf)
+ <use flunet.pdf>
+Overfull \hbox (9.24994pt too wide) in paragraph at lines 518--537
+ [][] 
+ []
+
+<fig2-eps-converted-to.pdf, id=48, 419.5675pt x 305.14pt>
+File: fig2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig2-eps-converted-to.pdf>
+<pca_with_clusters.pdf, id=49, 614.295pt x 794.97pt>
+File: pca_with_clusters.pdf Graphic file (type pdf)
+
+<use pca_with_clusters.pdf>
+Underfull \hbox (badness 1466) in paragraph at lines 553--553
+[]\OT1/ptm/b/n/8 Fig. 4. \OT1/ptm/m/n/8 Principal component analysis (PCA) of v
+irus proteins in the
+ []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
@@ -793,57 +734,15 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 Overfull \vbox (1.0pt too high) has occurred while \output is active []
 
  [7]
-<flavinet.pdf, id=51, 505.89pt x 505.89pt>
-File: flavinet.pdf Graphic file (type pdf)
- <use flavinet.pdf>
-Package pdftex.def Info: flavinet.pdf used on input line 527.
-(pdftex.def)             Requested size: 166.8117pt x 166.8117pt.
-
-<flunet.pdf, id=52, 505.89pt x 505.89pt>
-File: flunet.pdf Graphic file (type pdf)
- <use flunet.pdf>
-Package pdftex.def Info: flunet.pdf used on input line 533.
-(pdftex.def)             Requested size: 176.92361pt x 176.92361pt.
-
-Overfull \hbox (9.24994pt too wide) in paragraph at lines 518--537
- [][] 
+Underfull \hbox (badness 1694) in paragraph at lines 627--633
+\OT1/ptm/m/n/9 significant human protein features, obtained from the matrix
  []
 
 
-LaTeX Warning: File `fig2.eps' not found on input line 544.
-
-Package epstopdf Info: Source file: <fig2.eps>
-(epstopdf)             Output file: <fig2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-21 12:41:04
-(epstopdf)                    size: 35991 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig2-eps-converted-to.pdf 
-fig2.eps>
-(epstopdf)             \includegraphics on input line 544.
-Package epstopdf Info: Output file is already uptodate.
-<fig2-eps-converted-to.pdf, id=53, 419.5675pt x 305.14pt>
-File: fig2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig2-eps-converted-to.pdf>
-Package pdftex.def Info: fig2-eps-converted-to.pdf used on input line 544.
-(pdftex.def)             Requested size: 167.82402pt x 114.08725pt.
-
-<pca_with_clusters.pdf, id=54, 614.295pt x 794.97pt>
-File: pca_with_clusters.pdf Graphic file (type pdf)
-
-<use pca_with_clusters.pdf>
-Package pdftex.def Info: pca_with_clusters.pdf used on input line 552.
-(pdftex.def)             Requested size: 165.86186pt x 125.52951pt.
-
-Underfull \hbox (badness 1466) in paragraph at lines 553--553
-[]\OT1/ptm/b/n/8 Fig. 4. \OT1/ptm/m/n/8 Principal component analysis (PCA) of v
-irus proteins in the
+Underfull \hbox (badness 1297) in paragraph at lines 638--646
+\OT1/ptm/m/it/9 Evidence in IEDB$[]$\OT1/ptm/m/n/9 : We found experimental evid
+ence for the
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (261.0pt too wide) has occurred while \output is active
@@ -860,138 +759,57 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 
 [8 <./flavinet.pdf> <./flunet.pdf> <./fig2-eps-converted-to.pdf> <./pca_with_cl
 usters.pdf>]
-Underfull \hbox (badness 1694) in paragraph at lines 627--633
-\OT1/ptm/m/n/9 significant human protein features, obtained from the matrix
- []
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 638--646
-\OT1/ptm/m/it/9 Evidence in IEDB$[]$\OT1/ptm/m/n/9 : We found experimental evid
-ence for the
- []
-
-
 Overfull \hbox (8.09877pt too wide) in paragraph at lines 705--714
  [] 
  []
 
-
-LaTeX Warning: File `fig4.eps' not found on input line 729.
-
-Package epstopdf Info: Source file: <fig4.eps>
-(epstopdf)             Output file: <fig4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-21 12:41:04
-(epstopdf)                    size: 10128 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig4-eps-converted-to.pdf 
-fig4.eps>
-(epstopdf)             \includegraphics on input line 729.
-Package epstopdf Info: Output file is already uptodate.
-<fig4-eps-converted-to.pdf, id=110, 642.4pt x 481.8pt>
+<fig4-eps-converted-to.pdf, id=109, 642.4pt x 481.8pt>
 File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig4-eps-converted-to.pdf>
-Package pdftex.def Info: fig4-eps-converted-to.pdf used on input line 729.
-(pdftex.def)             Requested size: 105.99142pt x 75.73795pt.
-
-
-LaTeX Warning: File `fig8.eps' not found on input line 730.
-
-Package epstopdf Info: Source file: <fig8.eps>
-(epstopdf)             Output file: <fig8-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-21 12:41:04
-(epstopdf)                    size: 10357 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig8-eps-converted-to.pdf 
-fig8.eps>
-(epstopdf)             \includegraphics on input line 730.
-Package epstopdf Info: Output file is already uptodate.
-<fig8-eps-converted-to.pdf, id=111, 642.4pt x 481.8pt>
+<fig8-eps-converted-to.pdf, id=110, 642.4pt x 481.8pt>
 File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig8-eps-converted-to.pdf>
-Package pdftex.def Info: fig8-eps-converted-to.pdf used on input line 730.
-(pdftex.def)             Requested size: 105.99142pt x 79.49356pt.
- (./paper.bbl
+<use fig8-eps-converted-to.pdf> (./paper.bbl
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
- [9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+
+Overfull \hbox (261.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+Overfull \vbox (1.0pt too high) has occurred while \output is active []
+
+ [9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.44545pt when 429.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.44545pt when 430.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Extra height:10.0pt when 118.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.44545pt when 431.71619pt
+Extra height:10.0pt when 119.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Extra height:0.0pt when 120.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.44545pt when 432.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.44545pt when 433.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.44545pt when 434.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 435.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:435.71619pt Right:436.43239pt Output:435.71619pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:436.43239pt Right:436.43239pt Output:436.43239pt
+(2)Left:120.72272pt Right:120.44545pt Output:120.72272pt
 - LAST -
 Extra skip:0.0pt
-Left:436.43239pt
-Right:436.43239pt
-Output:436.43239pt
+Left:120.72272pt
+Right:120.44545pt
+Output:120.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1008,7 +826,9 @@ Overfull \hbox (261.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[10]
+[10
+
+]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1025,41 +845,37 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5088 strings out of 493014
- 69769 string characters out of 6133351
- 171034 words of memory out of 5000000
- 8468 multiletter control sequences out of 15000+600000
- 57917 words of font info for 117 fonts, out of 8000000 for 9000
- 1145 hyphenation exceptions out of 8191
- 38i,16n,38p,1190b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/he
-lvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/
-uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (10 pages, 939090 bytes).
+ 4432 strings out of 493878
+ 57619 string characters out of 1153452
+ 141801 words of memory out of 3000000
+ 7584 multiletter control sequences out of 15000+50000
+ 57917 words of font info for 117 fonts, out of 3000000 for 9000
+ 698 hyphenation exceptions out of 8191
+ 37i,16n,38p,1190b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/cou
+rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb><
+/usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf
+-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (10 pages, 968086 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
+ 216 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
