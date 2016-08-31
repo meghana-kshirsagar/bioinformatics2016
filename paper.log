@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 00:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 00:35
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -43,7 +43,7 @@ File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 Package crop Info: Local config file crop.cfg used on input line 344.
 
 (/usr/share/texmf-texlive/tex/xelatex/xetexconfig/crop.cfg))
-Package crop Info: using pdf(la)tex graphics driver on input line 33.
+Package crop Info: using pdf(la)tex graphics driver on input line 31.
  (./graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -168,6 +168,18 @@ Package: chngpage 2001/01/31 v1.1b change page layout
 ) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
+)
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 100.
+
+
+(/usr/share/texmf-texlive/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+))
 \c@section=\count98
 \c@subsection=\count99
 \c@subsubsection=\count100
@@ -183,14 +195,14 @@ Package: times 2005/04/12 PSNFSS-v9.2a (SPQR)
 \rotdimen=\dimen119
 \tempdime=\dimen120
 \temptbox=\box32
-
-(./natbib.sty
+ (./natbib.sty
 Package: natbib 2000/07/24 7.0a (PWD)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 508.
 \c@NAT@ctr=\count105
-)) (/usr/share/texmf-texlive/tex/latex/floatrow/floatrow.sty
+))
+(/usr/share/texmf-texlive/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 
 (/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
@@ -346,11 +358,9 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 32.
- (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
 \scratchdimen=\dimen149
@@ -365,53 +375,26 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 67.
- (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+LaTeX Font Info:    Try loading font information for LY1+phv on input line 67.
+ (/usr/share/texmf-texlive/tex/latex/ly1/ly1phv.fd
+File: ly1phv.fd 2001/02/01 scalable font definitions for LY1/phv using Berry na
+mes.
 )
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <19> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <19> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <16> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 67.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 67.
 
+pdfTeX warning: pdflatex (file ./OUP_First_SBk_Bot_8401-eps-converted-to.pdf): 
+PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<OUP_First_SBk_Bot_8401-eps-converted-to.pdf, id=1, 54.2025pt x 54.2025pt>
+File: OUP_First_SBk_Bot_8401-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 67.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 67.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 67.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 67.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 67.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 67.
-
+<use OUP_First_SBk_Bot_8401-eps-converted-to.pdf>
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <9> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <18> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <12> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 67.
 LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
@@ -421,119 +404,82 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 67.
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 67.
 
 
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 67.
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 67.
 
 
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 67.
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 67.
+
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 67.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.5> not available
+(Font)              size <8> substituted on input line 67.
 
 
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.25> not available
+(Font)              size <5> substituted on input line 67.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.5> not available
+(Font)              size <8> substituted on input line 67.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.25> not available
+(Font)              size <5> substituted on input line 67.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.5> not available
+(Font)              size <8> substituted on input line 67.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.25> not available
+(Font)              size <5> substituted on input line 67.
+
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <10> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <9> not available
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 67.
+LaTeX Font Info:    Try loading font information for LY1+pcr on input line 67.
+(/usr/share/texmf-texlive/tex/latex/ly1/ly1pcr.fd
+File: ly1pcr.fd 2001/02/01 font definitions for LY1/pcr using Berry names.
+)
 Underfull \hbox (badness 10000) detected at line 67
 []
  []
 
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 70.
-
-Underfull \hbox (badness 1584) in paragraph at lines 70--75
-\OT1/phv/m/n/8 their proteins into the host cells where they interact with the
- []
-
-
-Underfull \hbox (badness 1509) in paragraph at lines 70--75
-\OT1/phv/m/n/8 host's proteins enabling the virus to replicate inside the host.
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
-
- []
-
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 81.
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 87.
-
-Underfull \hbox (badness 1237) in paragraph at lines 102--114
-\OT1/ptm/m/n/9 is via a graph completion based framework, where we have
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 102--114
-\OT1/ptm/m/n/9 several bipartite graphs over multiple hosts and pathogens as
- []
-
-
-Underfull \hbox (badness 1509) in paragraph at lines 102--114
-\OT1/ptm/m/n/9 (author $[]$ paper), disease-gene networks (gene $[]$
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 102--114
-\OT1/ptm/m/n/9 disease) etc. In our problem, each bipartite graph $\OMS/cmsy/m/
-n/9 G$ \OT1/ptm/m/n/9 can be
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 115--124
-\OT1/ptm/m/n/9 to infect and hijack biological processes in the human body.
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 127.
-
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/omsphv.fd
-File: omsphv.fd 
-)
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 1755) in paragraph at lines 136--142
-\OT1/ptm/m/n/9 component involves a task specific parameter, on which we
- []
-
-
-Underfull \hbox (badness 1406) in paragraph at lines 143--153
-[]\OT1/ptm/m/n/9 The key challenges in inducing such a model are: (1) In
- []
-
-
-Overfull \hbox (0.13512pt too wide) in paragraph at lines 158--159
-\OT1/ptm/m/n/9 protein networks, for multiple related diseases. We demonstrate
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 164--165
-\OT1/ptm/m/n/9 involves biochemical and biophysical methods such as co-
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <7> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 114.
+
+Overfull \hbox (1.26001pt too wide) has occurred while \output is active
+ []
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+ <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 158--159
+\LY1/ptm/m/n/9 protein networks, for multiple related diseases. We
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 164--165
-\OT1/ptm/m/n/9 databases such as virus-MINTChatraryamontri \OT1/ptm/m/it/9 et a
-l. \OT1/ptm/m/n/9 (2009),
+Underfull \hbox (badness 1342) in paragraph at lines 164--165
+\LY1/ptm/m/n/9 involves biochemical and biophysical methods such as co-
  []
 
 
@@ -541,97 +487,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 166.
+LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 166.
 
-Underfull \hbox (badness 1092) in paragraph at lines 166--167
-\OT1/ptm/m/n/9 to test, experimentally. Computational techniques complement
+Underfull \hbox (badness 7595) in paragraph at lines 166--167
+\LY1/ptm/b/n/9 Prediction of host-pathogen PPIs\LY1/ptm/m/n/9 : The most reliab
+le
  []
 
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <8> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 178.
+LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 178.
 
-Underfull \hbox (badness 1454) in paragraph at lines 166--167
-\OT1/ptm/m/n/9 laboratory-based methods by predicting highly probable PPIs.
- []
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 166--167
-\OT1/ptm/m/n/9 ``interacting'' or ``non-interacting''. Features are derived usi
-ng
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 170--178
-\OT1/ptm/m/n/9 Wu \OT1/ptm/m/it/9 et al.\OT1/ptm/m/n/9 , 2006; Singh \OT1/ptm/m
-/it/9 et al.\OT1/ptm/m/n/9 , 2006; Qi \OT1/ptm/m/it/9 et al.\OT1/ptm/m/n/9 , 20
-06) or on
- []
-
-LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 190.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <8> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 190.
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [2]
+Underfull \hbox (badness 1502) in paragraph at lines 179--190
+[]\LY1/ptm/m/n/9 A majority of the prior work in the relevant areas of
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 205.
 
 
-Overfull \hbox (4.75247pt too wide) detected at line 219
+Overfull \hbox (9.26553pt too wide) detected at line 219
 []
  []
 
-<fig1-eps-converted-to.pdf, id=22, 722.7pt x 542.025pt>
+<fig1-eps-converted-to.pdf, id=31, 722.7pt x 542.025pt>
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig1-eps-converted-to.pdf>
-Overfull \hbox (71.92468pt too wide) in paragraph at lines 236--236
+Overfull \hbox (76.96466pt too wide) in paragraph at lines 236--236
  [][] 
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 236.
+
+LaTeX Font Info:    No file LY1phb.fd. on input line 236.
+
+LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
+(Font)              using `LY1/ptm/m/n' instead on input line 236.
+
+LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 236.
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use fig1-eps-converted-to.pdf>
-Overfull \hbox (71.92468pt too wide) in paragraph at lines 236--236
+Overfull \hbox (76.96466pt too wide) in paragraph at lines 236--236
  [][] 
  []
 
+LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 261.
 
-Underfull \hbox (badness 7944) in paragraph at lines 316--320
-\OT1/ptm/b/n/9 Optimization\OT1/ptm/m/n/9 : The function $\OMS/cmsy/m/n/9 L\OT1
-/cmr/m/n/9 (\OML/cmm/m/it/9 U; V; \OMS/cmsy/m/n/9 f\OML/cmm/m/it/9 S[]\OMS/cmsy
-/m/n/9 g\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 is non-convex.
- []
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.54997> not available
+(Font)              size <5> substituted on input line 261.
 
 
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.25> not available
+(Font)              size <5> substituted on input line 261.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.54997> not available
+(Font)              size <5> substituted on input line 261.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.25> not available
+(Font)              size <5> substituted on input line 261.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.54997> not available
+(Font)              size <5> substituted on input line 261.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.25> not available
+(Font)              size <5> substituted on input line 261.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.54997> not available
+(Font)              size <5> substituted on input line 261.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.25> not available
+(Font)              size <5> substituted on input line 261.
+
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
+[3]
+LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 294.
 
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 1325) in paragraph at lines 321--327
-\OT1/ptm/b/n/9 Convergence: \OT1/ptm/m/n/9 The ALS algorithm is guaranteed to c
-onverge
+Underfull \hbox (badness 2393) in paragraph at lines 316--320
+\LY1/ptm/b/n/9 Optimization\LY1/ptm/m/n/9 : The function $\OMS/cmsy/m/n/9 L\OT1
+/cmr/m/n/9 (\OML/cmm/m/it/9 U; V; \OMS/cmsy/m/n/9 f\OML/cmm/m/it/9 S[]\OMS/cmsy
+/m/n/9 g\OT1/cmr/m/n/9 )$ \LY1/ptm/m/n/9 is non-convex.
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 349--353
@@ -642,15 +598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--353
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
@@ -660,182 +608,124 @@ Package natbib Warning: Citation `malsar' on page 5 undefined on input line 377
 .
 
 
-Underfull \hbox (badness 5417) in paragraph at lines 377--378
-\OT1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
+Underfull \hbox (badness 1867) in paragraph at lines 377--378
+\LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 377--378
-\OT1/ptm/m/n/9 conventional multitask methods and prior work on HP PPI
+Underfull \hbox (badness 2205) in paragraph at lines 379--384
+\LY1/ptm/b/n/9 MTPL \LY1/ptm/m/n/9 (Kshirsagar \LY1/ptm/m/it/9 et al.\LY1/ptm/m
+/n/9 , 2013): A biologically inspired
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 392--394
-\OT1/ptm/m/n/9 We compare all the methods in two settings, where a small
- []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
+[5]
 
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
+LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
+(Font)              using `LY1/phb/m/n' instead on input line 399.
 
- [5]
+
+LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
+(Font)              using `LY1/phb/m/n' instead on input line 434.
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 503--506
+\LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
+mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
+ of rich
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 503--506
+\LY1/ptm/m/n/9 information which can be used to further understand host-
+ []
+
 
 LaTeX Warning: Reference `fig:pca' on page 6 undefined on input line 510.
 
 
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[6] <flavinet.pdf, id=46, 505.89pt x 505.89pt>
+[6] <flavinet.pdf, id=59, 505.89pt x 505.89pt>
 File: flavinet.pdf Graphic file (type pdf)
  <use flavinet.pdf>
-<flunet.pdf, id=47, 505.89pt x 505.89pt>
+<flunet.pdf, id=60, 505.89pt x 505.89pt>
 File: flunet.pdf Graphic file (type pdf)
  <use flunet.pdf>
-Overfull \hbox (9.24994pt too wide) in paragraph at lines 518--537
+Overfull \hbox (7.00647pt too wide) in paragraph at lines 518--537
  [][] 
  []
 
-<fig2-eps-converted-to.pdf, id=48, 419.5675pt x 305.14pt>
+<fig2-eps-converted-to.pdf, id=61, 419.5675pt x 305.14pt>
 File: fig2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig2-eps-converted-to.pdf>
-<pca_with_clusters.pdf, id=49, 614.295pt x 794.97pt>
+<pca_with_clusters.pdf, id=62, 614.295pt x 794.97pt>
 File: pca_with_clusters.pdf Graphic file (type pdf)
 
 <use pca_with_clusters.pdf>
-Underfull \hbox (badness 1466) in paragraph at lines 553--553
-[]\OT1/ptm/b/n/8 Fig. 4. \OT1/ptm/m/n/8 Principal component analysis (PCA) of v
-irus proteins in the
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 1694) in paragraph at lines 627--633
-\OT1/ptm/m/n/9 significant human protein features, obtained from the matrix
+[7 <./flavinet.pdf> <./flunet.pdf>]
+Underfull \hbox (badness 1584) in paragraph at lines 721--725
+\LY1/ptm/m/n/9 several avenues for studying host-pathogen interactions for
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 638--646
-\OT1/ptm/m/it/9 Evidence in IEDB$[]$\OT1/ptm/m/n/9 : We found experimental evid
-ence for the
- []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[8 <./flavinet.pdf> <./flunet.pdf> <./fig2-eps-converted-to.pdf> <./pca_with_cl
-usters.pdf>]
-Overfull \hbox (8.09877pt too wide) in paragraph at lines 705--714
- [] 
- []
-
-<fig4-eps-converted-to.pdf, id=109, 642.4pt x 481.8pt>
+[8 <./fig2-eps-converted-to.pdf> <./pca_with_clusters.pdf>]
+<fig4-eps-converted-to.pdf, id=122, 642.4pt x 481.8pt>
 File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig4-eps-converted-to.pdf>
-<fig8-eps-converted-to.pdf, id=110, 642.4pt x 481.8pt>
+<fig8-eps-converted-to.pdf, id=123, 642.4pt x 481.8pt>
 File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig8-eps-converted-to.pdf> (./paper.bbl
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
- [9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 118.72272pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 119.72272pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 120.72272pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:120.72272pt Right:120.44545pt Output:120.72272pt
+<use fig8-eps-converted-to.pdf> (./paper.bbl)
+Extra height:0.0pt when 601.49615pt
+(2)Left:601.49615pt Right:598.954pt Output:601.49615pt
 - LAST -
 Extra skip:0.0pt
-Left:120.72272pt
-Right:120.44545pt
-Output:120.72272pt
+Left:601.49615pt
+Right:598.954pt
+Output:601.49615pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-
-Overfull \vbox (1.0pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (261.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[10
-
-]
+[9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
 (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.0pt have occurred.
+(Font)              up to 1.75pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
@@ -845,37 +735,42 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4432 strings out of 493878
- 57619 string characters out of 1153452
- 141801 words of memory out of 3000000
- 7584 multiletter control sequences out of 15000+50000
- 57917 words of font info for 117 fonts, out of 3000000 for 9000
+ 4822 strings out of 493878
+ 61433 string characters out of 1153452
+ 159855 words of memory out of 3000000
+ 7987 multiletter control sequences out of 15000+50000
+ 52554 words of font info for 103 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
- 37i,16n,38p,1190b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb></usr/share/texmf-texlive/fonts/type1/urw/cou
-rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb><
-/usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf
--texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/ut
-mb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share
-/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (10 pages, 968086 bytes).
+ 37i,16n,38p,1192b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/texnansi.enc}</usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/lat
+xfont/lcircle1.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbol
+s/msam5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam7
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
+/usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-t
+exlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type
+1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uh
+vr8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
+share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-tex
+live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (9 pages, 1027614 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 242 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
