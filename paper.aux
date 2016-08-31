@@ -43,17 +43,19 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3}The bilinear sparse low-rank multitask model (BSL-MTL)}{3}}
 \newlabel{ourmodel}{{3}{3}}
 \newlabel{mtl_objective}{{4}{3}}
+\citation{qi06}
+\citation{qi09}
+\citation{dyer11}
+\citation{me_ismb_2013}
+\citation{phisto}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.}}{4}}
 \newlabel{fig:hpppigraph}{{1}{4}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section {4.1}\hbox {} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.}}{4}}
 \newlabel{datasets}{{1}{4}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Alternating Least Squares}}{4}}
 \newlabel{alg}{{1}{4}}
-\citation{qi06}
-\citation{qi09}
-\citation{dyer11}
-\citation{me_ismb_2013}
-\citation{phisto}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{3.1}}Handling the `curse of missing negatives'}{4}}
+\newlabel{negs}{{{3.1}}{4}}
 \citation{shen:2007}
 \citation{dyer07}
 \citation{me_ismb_2013}
@@ -63,8 +65,6 @@
 \citation{prateek}
 \citation{nagarajan}
 \citation{me_ismb_2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {{3.1}}Handling the `curse of missing negatives'}{5}}
-\newlabel{negs}{{{3.1}}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Dataset}{5}}
 \newlabel{sec:datasets}{{4}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{4.1}}Addressing the homologs in PHISTO}{5}}
@@ -72,50 +72,44 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5}Experimental setup}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{5.1}}Comparison with other machine learning approaches}{5}}
 \newlabel{mlmethods}{{{5.1}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{5.2}}Comparison with a homolog baseline}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{5.3}}Evaluation setup}{5}}
 \citation{davis2006}
 \citation{pontil04}
 \citation{chen2012}
 \citation{me_ismb_2013}
 \citation{nagarajan}
 \citation{funcAsso}
-\@writefile{toc}{\contentsline {subsection}{\numberline {{5.2}}Comparison with a homolog baseline}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {{5.3}}Evaluation setup}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Area Under the Precision-Recall curve for each task on the \textbf  {non-homologous PPI within each task}, in the 10\% setting. Only the most representative baselines are retained for this experiment. Our model does significantly better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}}{6}}
+\newlabel{homresultsTable}{{3}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{5.4}}Parameter tuning}{6}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Results}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Area Under the Precision-Recall curve for each task on the \textbf  {homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit  {Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit  {Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}}{6}}
+\newlabel{homresultsTable}{{4}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{6.1}}Disadvantages of the Homolog method}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{6.2}}Biological significance of the model}{6}}
 \newlabel{bioanalysis}{{{6.2}}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.1}}Clustering proteins based on interaction propensities}{6}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit  {Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}}{7}}
-\newlabel{resultsTable}{{2}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Area Under the Precision-Recall curve for each task on the \textbf  {non-homologous PPI within each task}, in the 10\% setting. Only the most representative baselines are retained for this experiment. Our model does significantly better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}}{7}}
-\newlabel{homresultsTable}{{3}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Area Under the Precision-Recall curve for each task on the \textbf  {homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit  {Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit  {Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}}{7}}
-\newlabel{homresultsTable}{{4}{7}}
 \citation{nanbo2010}
 \citation{seq2logo}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit  {Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}}{7}}
+\newlabel{resultsTable}{{2}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.1}}Clustering proteins based on interaction propensities}{7}}
+\newlabel{goterms}{{{{6.2}.1}}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces GO terms (for process, function, component) enriched in the highlighted clusters from Figure 4\hbox {}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster.}}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.2}}Novel interactions with Ebola proteins}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.3}}Sequence motifs from virus proteins}{7}}
+\citation{iedb}
+\citation{phosphosite}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces PPI from each task that are found by our method but are missed by the homolog method. To obtain these, we chose a random train/test split and picked examples from the test data on which the homolog method fails - these are ones for which sequence-similar proteins are not found. (a) shows \textit  {Ebola}-human PPI, (b) \textit  {Hepatitis-C} human PPI and (c) \textit  {Influenza}-human PPI.}}{8}}
 \newlabel{fig:network}{{2}{8}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}}{8}}
 \newlabel{fig:pca1}{{3}{8}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table {{6.2}.1}\hbox {}.}}{8}}
 \newlabel{fig:pca2}{{4}{8}}
-\newlabel{goterms}{{{{6.2}.1}}{8}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces GO terms (for process, function, component) enriched in the highlighted clusters from Figure 4\hbox {}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster.}}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.2}}Novel interactions with Ebola proteins}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.3}}Sequence motifs from virus proteins}{8}}
-\citation{iedb}
-\citation{phosphosite}
 \bibstyle{natbib}
 \bibdata{references}
 \bibcite{abernethy}{{1}{2009}{{Abernethy {\em  et~al.}}}{{Abernethy, Bach, Evgeniou, and Vert}}}
 \bibcite{ando2005}{{2}{2005}{{Ando and Zhang}}{{Ando and Zhang}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (\textit  {Left}) Top tri-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions and is derived from our model parameter $H = U V^{T}$. (\textit  {Right}) Motif corresponding to enriched 4-mer patterns found by our model (parameter: $S_{hepc}$) for the Hepatitis-C virus task.}}{9}}
-\newlabel{fig:virus_motifs}{{5}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Results on HIV data}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that the performance of STL and the homolog method on the previous three tasks is not influenced by the addition of a new task.}}{9}}
-\newlabel{hivresults}{{6}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions and future extensions}{9}}
 \bibcite{GO}{{3}{2000}{{Ashburner {\em  et~al.}}}{{Ashburner {\em  et~al.}}}}
 \bibcite{funcAsso}{{4}{2003}{{Berriz {\em  et~al.}}}{{Berriz, King, Bryant, {\em  et~al.}}}}
 \bibcite{candes08}{{5}{2008}{{Candes and Recht}}{{Candes and Recht}}}
@@ -147,6 +141,12 @@
 \bibcite{sarwar01}{{31}{2001}{{Sarwar {\em  et~al.}}}{{Sarwar, Karypis, Konstan, and Riedl}}}
 \bibcite{shen:2007}{{32}{2007}{{Shen {\em  et~al.}}}{{Shen {\em  et~al.}}}}
 \bibcite{cmf}{{33}{2008}{{Singh and Gordon}}{{Singh and Gordon}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (\textit  {Left}) Top tri-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions and is derived from our model parameter $H = U V^{T}$. (\textit  {Right}) Motif corresponding to enriched 4-mer patterns found by our model (parameter: $S_{hepc}$) for the Hepatitis-C virus task.}}{9}}
+\newlabel{fig:virus_motifs}{{5}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Results on HIV data}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that the performance of STL and the homolog method on the previous three tasks is not influenced by the addition of a new task.}}{9}}
+\newlabel{hivresults}{{6}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions and future extensions}{9}}
 \bibcite{struct2net}{{34}{2006}{{Singh {\em  et~al.}}}{{Singh, Xu, and Berger}}}
 \bibcite{tastan09}{{35}{2009}{{Tastan {\em  et~al.}}}{{Tastan {\em  et~al.}}}}
 \bibcite{phisto}{{36}{2012}{{Tekir {\em  et~al.}}}{{Tekir, S., C., and U.}}}
