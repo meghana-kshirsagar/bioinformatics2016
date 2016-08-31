@@ -20,6 +20,12 @@ Ashburner, M. {\em et~al.} (2000).
 \newblock {\em Nat. Genet.}, {\bf 25}(1), 25--9.
 \newblock \url{http://www.geneontology.org/}.
 
+\bibitem[Berriz {\em et~al.}(2003)Berriz, King, Bryant, {\em et~al.}]{funcAsso}
+Berriz, G., King, O., Bryant, B., {\em et~al.} (2003).
+\newblock Characterizing gene sets with funcassociate.
+\newblock {\em Bioinf.}, {\bf 19}(18), 2502--04.
+\newblock \url{http://llama.mshri.on.ca/funcassociate/}.
+
 \bibitem[Candes and Recht(2008)Candes and Recht]{candes08}
 Candes, E. and Recht, B. (2008).
 \newblock Exact matrix completion via convex optimization.
@@ -89,13 +95,6 @@ Hornbeck, P.~V., Zhang, B., Murray, B., Kornhauser, J.~M., Latham, V., and
 \bibitem[Jain and Dhillon(2013)Jain and Dhillon]{prateek}
 Jain, P. and Dhillon, I.~S. (2013).
 \newblock Provable inductive matrix completion.
-
-\bibitem[Jalali {\em et~al.}(2010)Jalali, Sanghavi, Ruan, and
-  Ravikumar]{jalali2010}
-Jalali, A., Sanghavi, S., Ruan, C., and Ravikumar, P.~K. (2010).
-\newblock A dirty model for multi-task learning.
-\newblock {\em Advances in Neural Information Processing Systems\/}, pages
-  964--972.
 
 \bibitem[Ji and Ye(2009)Ji and Ye]{ji2009}
 Ji, S. and Ye, J. (2009).
@@ -222,7 +221,7 @@ Thomsen, M. C.~F. and Nielsen, M. (2012).
   counts and two-sided representation of amino acid enrichment and depletion.
 \newblock {\em Nucleic acids research\/}, {\bf 40}(W1), W281--W287.
 
-\bibitem[{UniProt Consortium}(2011){UniProt Consortium}]{uniprot}
+\bibitem[{UniProt Consortium}(2011){UniProt Consortium}]{UniProt}
 {UniProt Consortium} (2011).
 \newblock Ongoing and future developments at the universal protein resource.
 \newblock {\em Nucl. Acids Res.}, {\bf 39}, D214--D219.

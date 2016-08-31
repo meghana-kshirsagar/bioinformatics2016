@@ -1,5 +1,7 @@
-\documentclass[runningheads,a4paper]{llncs}
-\usepackage[top=1.3in, bottom=1.3in, left=1in, right=1in]{geometry}
+\documentclass{bioinfo}
+\copyrightyear{2015} \pubyear{2015}
+
+%\usepackage[top=1.3in, bottom=1.3in, left=1in, right=1in]{geometry}
 \usepackage{floatrow}
 \usepackage{graphicx} % more modern
 \usepackage{amssymb}
@@ -9,68 +11,78 @@
 \usepackage{booktabs}
 \usepackage{subfigure} 
 \usepackage{natbib}
-\usepackage[footnotesize]{caption}
+%\usepackage[footnotesize]{caption}
 \usepackage{multirow}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newfloatcommand{capbtabbox}{table}[][11cm]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \usepackage{url}
-\urldef{\mailsa}\path|{mkshirsa,jgc,judithks,kmuruges}@cs.cmu.edu|
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\keywords}[1]{\par\addvspace\baselineskip
-\noindent\keywordname\enspace\ignorespaces#1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newfloatcommand{capbtabbox}{table}[][11cm]
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{tocdepth}{3}
+%\setcounter{secnumdepth}{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setcounter{tocdepth}{3}
 
-\setcounter{secnumdepth}{0}
-
+%\access{Advance Access Publication Date: Day Month Year}
+%\appnotes{Manuscript Category}
 
 \begin{document}
+\firstpage{1}
 
-\mainmatter  
+%\subtitle{Subject Section}
 
-\title{Multitask matrix completion for learning protein interactions across diseases}
+\title[Multitask matrix completion]{Multitask matrix completion for learning protein interactions across diseases}
 
-\titlerunning{Multitask matrix completion}
-
-\author{Meghana Kshirsagar$^{1}$%
-\and Jaime G. Carbonell$^{1}$
-\and Judith Klein-Seetharaman$^{2}$
-\and Keerthiram Murugesan$^{1}$}
-
-\authorrunning{Multitask matrix completion}
-% (feature abused for this document to repeat the title also on left hand pages)
-
-\institute{$^{1}$Language Technologies Institute, Carnegie Mellon Univ., 5000 Forbes Ave., Pittsburgh PA 15213, USA\\
-$^{2}$Metabolic \& Vascular Health, Warwick Medical School, Univ. of Warwick, Coventry, UK\\
-\mailsa
+\author[Kshirsagar \textit{et~al}.]{Meghana Kshirsagar$^{1}$, Keerthiram Murugesan$^{2}$, Jaime G. Carbonell$^{2}$ and Judith Klein-Seetharaman$^{3}$}
+\address{$^{1}$Memorial Sloan Kettering Cancer Center, 1275 York Ave., NY 10021\\
+$^{2}$Language Technologies Institute, Carnegie Mellon Univ., 5000 Forbes Ave., Pittsburgh PA 15213, USA\\
+$^{3}$Metabolic \& Vascular Health, Warwick Medical School, Univ. of Warwick, Coventry, UK
 }
 
-\toctitle{Matrix completion for transfer learning in host-pathogen PPI networks}
-\tocauthor{Meghana Kshirsagar, Jaime G. Carbonell, Judith Klein-Seetharaman and Keerthiram Murugesan}
+%\corresp{$^\ast$To whom correspondence should be addressed.}
+
+\history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
+
+\editor{Associate Editor: XXXXXXX}
+
+%\abstract{\textbf{Motivation:}
+%Disease causing pathogens such as viruses, introduce their proteins into the host cells 
+%where they interact with the host's proteins enabling the virus to replicate inside the host.
+%These interactions between pathogen and host proteins are key to understanding infectious diseases.
+%Often multiple diseases involve phylogenetically related or biologically similar pathogens. Here we present a multitask learning method to jointly model interactions between human proteins and three different, but related viruses: \textit{Hepatitis C}, \textit{Ebola} virus and \textit{Influenza A}. \\
+%\textbf{Results:}
+%Our multitask matrix completion based model uses a shared low-rank structure in addition to a task-specific sparse structure to incorporate the various interactions.
+%We obtain between 7 to 39 percentage points improvement in predictive performance over prior state-of-the-art models. 
+%We show how our model's parameters can be interpreted to reveal both general and specific
+%interaction-relevant characteristics of the viruses. \\
+%\textbf{Availability:}
+%Our code and data is available at: \url{http://www.cs.cmu.edu/~mkshirsa/bsl_mtl.tgz}\\
+%\textbf{Contact:}
+%\href{mkshirsa@cs.cmu.edu}{mkshirsa@cs.cmu.edu}
+%}
+
 \maketitle
 
 \begin{abstract}
-
+\section{Motivation}
 Disease causing pathogens such as viruses, introduce their proteins into the host cells 
 where they interact with the host's proteins enabling the virus to replicate inside the host.
 These interactions between pathogen and host proteins are key to understanding infectious diseases.
 Often multiple diseases involve phylogenetically related or biologically similar pathogens. Here we present a multitask learning method to jointly model interactions between human proteins and three different, but related viruses: \textit{Hepatitis C}, \textit{Ebola} virus and \textit{Influenza A}. 
+\section{Results}
 Our multitask matrix completion based model uses a shared low-rank structure in addition to a task-specific sparse structure to incorporate the various interactions.
-We obtain between 7 to 39 \% points improvement in predictive performance over prior state-of-the-art models. 
+We obtain between 7 to 39 percentage points improvement in predictive performance over prior state-of-the-art models. 
 We show how our model's parameters can be interpreted to reveal both general and specific
-interaction-relevant characteristics of the viruses. Our code and data is available at: \url{http://www.cs.cmu.edu/~mkshirsa/bsl_mtl.tgz}
-\keywords{host-pathogen protein interactions, multitask learning, matrix completion}
+interaction-relevant characteristics of the viruses. \\
+\section{Availability}
+Our code and data is available at: \url{http://www.cs.cmu.edu/~mkshirsa/bsl_mtl.tgz}\\
+\section{Contact}
+\href{mkshirsa@cs.cmu.edu}{mkshirsa@cs.cmu.edu}
 \end{abstract}
+
 
 \section{Introduction}
 
@@ -117,53 +129,14 @@ Our multitask matrix completion based model is motivated by the following biolog
 \item In addition to the shared properties discussed above, each pathogen has also evolved specialized mechanisms to target host proteins. These are unique to the pathogen and can be expressed using a \textit{task-specific} parameter in the model.
 \end{enumerate}
 
-This leads us to the following model that incorporates the above ideas. The interactions matrix $M_t$ of task $t$ can be written as: $M_t = \mu_t *\; \textrm{(shared component)} + (1-\mu_t) *\; \textrm{(specific component)} $, with hyperparameter $\mu_t$ allowing each task to customize its' amount of shared and specific components.
+This leads us to the following model that incorporates the above ideas. The interactions matrix $M_t$ of task $t$ can be written as: $M_t = \mu_t *\; \textrm{(shared component)} + (1-\mu_t) *\; \textrm{(specific component)} $, with hyperparameter $\mu_t$ allowing each task to customize its amount of shared and specific components.
 
-\begin{figure*}
-\begin{floatrow}
-\ffigbox[0.29\textwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.33, trim = 0.2 9.2cm 4cm 0]{fig1.eps}
-}
-{
-\caption{Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.}
-\label{fig:hpppigraph}
-}
-\capbtabbox[0.69\textwidth]{%
-\begin{footnotesize}
-\begin{tabular}{c|r|r|r} \toprule
-Task $\rightarrow$ &{\textit{Influenza A}} &\textit{Hepatitis C} & {\textit{Ebola}}\\
-& (28 strains) & (5 strains,  & (2 strains) \\
-& & many isolates) & \\ \midrule 
-number of HP PPIs (positives) & 848& 981 & 90 \\\hline
-number of non-homologous PPIs & 334 & 329 & 49 \\ \hline
-\# of unique virus proteins in dataset & 54 & 151 & 2 \\\hline
-\# of unique human proteins in dataset & 362 & 385 & 88 \\\hline
-total \# of virus proteins in & 542 & 163 & 38 \\
-UniprotKB across strains $^\dagger$ & & & \\ \hline
-number of negatives & 84800 & 98100 & 9000 \\\hline
-density of observed graph$^\ddagger$ (as \%) & .15 & .60 & .20 \\\hline
-\multicolumn{4}{l}{\scriptsize{HP PPI: host-pathogen protein protein interactions}}\\
-\multicolumn{4}{l}{\scriptsize{$\ddagger$ Density = (no. of positives + no. of negatives)/ total number of possible edges. The}} \\
-\multicolumn{4}{l}{\scriptsize{\hspace{0.1cm} denominator was computed considering all proteins from all strains of the virus and}}\\
-\multicolumn{4}{l}{\scriptsize{\hspace{0.1cm} $\approx$ 100,000 human proteins.}}\\
-\multicolumn{4}{l}{\scriptsize{$\dagger$ this is the number of `reviewed' proteins on UniprotKB from all strains in our data}} \\
-\bottomrule
-\end{tabular}
-\end{footnotesize}
-}
-{
-\caption{Tasks and their sizes. Each column corresponds to one bipartite graph between human proteins and the pathogen indicated in the column header. All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.} 
-\label{datasets}
-}
-\end{floatrow}
-\end{figure*}
 
 
 To incorporate the above ideas, we assume that the interactions matrix $M$ is generated from two components. 
 The first component has low-rank latent factors over the human and virus proteins,
 with these latent factors jointly learned over all tasks. The second component involves a task specific parameter, on which we
-additionally impose a sparsity constraint as we do not want this parameter to overfit the data. Section \ref{ourmodel} discusses
+additionally impose a sparsity constraint as we do not want this parameter to overfit the data. Section~\ref{ourmodel} discusses
 our model in detail. We trade-off the relative importance of the two components using task-specific hyperparameters.
 Our model can thus learn what is conserved and what is different across pathogens, rather than having to specify it manually. 
 
@@ -190,7 +163,7 @@ The main contributions of this work are:
 %An important part of our sustenance depends on how we counter infectious diseases -- those that are caused by external agents like pathogens. To understand how these microbial organisms reside and disrupt the host processes we need to comprehend the cross-organism protein interactions between the host species such as mammals, and the causative pathogen species such as viruses and bacteria. %These interactions  pathogen proteins physically bind with human proteins to manipulate important biological processes in the host cell, evade the host immune response and multiply within the host. 
 The experimental discovery of host-pathogen protein interactions involves biochemical and biophysical methods such as co-immunoprecipitation (co-IP), yeast two-hybrid (Y2H) assays, co-crystalization. The host-pathogen protein interactions from several small-scale and high throughput experiments are aggregated by databases such as virus-MINT\cite{virusmint}, HPIDB \cite{hpidb}, PHISTO \cite{phisto} etc by literature curation. These databases are valuable sources of information to bioinformaticians for developing models. \\
 
-\noindent\textbf{Prediction of host-pathogen PPIs}: The most reliable experimental methods for studying protein-protein interactions (PPI) are often very time-consuming and expensive, making it hard to investigate the prohibitively large set of possible host-pathogen interactions -- for example, the bacterium \textit{Bacillus anthracis} which causes anthrax has about 2321 proteins which when coupled with the 100,000 or so human proteins gives $\approx$232 million protein pairs to test, experimentally. Computational techniques complement laboratory-based methods by predicting highly probable PPIs. These techniques use the known interactions data from previous experiments and predict the most plausible new interactions. In particular, supervised machine learning based methods use the few known interactions as training data and formulate the interaction prediction problem in a classification setting, with target classes: ``interacting'' or ``non-interacting''. Features are derived using various attributes of the two proteins such as: protein sequences from Uniprot \cite{uniprot}, protein structure from PDB, gene ontology from GO database \cite{GO}.
+\noindent\textbf{Prediction of host-pathogen PPIs}: The most reliable experimental methods for studying protein-protein interactions (PPI) are often very time-consuming and expensive, making it hard to investigate the prohibitively large set of possible host-pathogen interactions -- for example, the bacterium \textit{Bacillus anthracis} which causes anthrax has about 2321 proteins which when coupled with the 100,000 or so human proteins gives $\approx$232 million protein pairs to test, experimentally. Computational techniques complement laboratory-based methods by predicting highly probable PPIs. These techniques use the known interactions data from previous experiments and predict the most plausible new interactions. In particular, supervised machine learning based methods use the few known interactions as training data and formulate the interaction prediction problem in a classification setting, with target classes: ``interacting'' or ``non-interacting''. Features are derived using various attributes of the two proteins such as: protein sequences from UniProt \cite{UniProt}, protein structure from PDB, gene ontology from GO database \cite{GO}.
 
 \subsection{Prior work}
 %\label{prior_work}
@@ -251,6 +224,45 @@ The constant $c_{ij}$ is the weight/cost associated with the edge $(i,j)$ which 
 
 %\noindent\textbf{Biological intuition}: The projection allows each feature to take on several different weights and hence allows for more flexibility as compared to a linear model. In the context of the host-pathogen PPI prediction, one can interpret this new subspace to represent latent biological characteristics of the features or binding propensities. In the Results section, we will analyze these parameters $U$ and $V$ and show how they can be used to understand the PPIs data better.
 
+\begin{figure*}
+\begin{floatrow}
+\ffigbox[0.28\textwidth]{%
+%trim option's parameter order: left bottom right top
+\includegraphics[scale=0.35, trim = 0.2 9.2cm 4cm 0]{fig1.eps}
+}
+{
+\caption{Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.}
+\label{fig:hpppigraph}
+}
+\capbtabbox[0.68\textwidth]{%
+\begin{footnotesize}
+\begin{tabular}{c|r|r|r} 
+\hline
+Task $\rightarrow$ &{\textit{Influenza A} } &\textit{Hepatitis C} & {\textit{Ebola}}\\
+& (28 strains) & (5 strains, many isolates)  & (3 strains) \\
+number of HP PPIs (positives) & 848 & 981 & 90 \\\hline
+number of non-homologous PPIs & 274 & 270 & 75 \\ \hline
+\# of unique virus proteins in dataset & 54 & 151 & 2 \\\hline
+\# of unique human proteins in dataset & 362 & 385 & 88 \\\hline
+total \# of virus proteins in & 542 & 163 & 38 \\
+UniProtKB across strains $^\dagger$ & & & \\ \hline
+number of negatives & 84800 & 98100 & 9000 \\\hline
+density of observed graph$^\ddagger$ (as \%) & .15 & .60 & .20 \\\hline
+\multicolumn{4}{l}{\scriptsize{HP PPI: host-pathogen protein protein interactions}}\\
+\multicolumn{4}{l}{\scriptsize{$\ddagger$ Density = (no. of positives + no. of negatives)/ total number of possible edges. The denominator was computed }} \\
+\multicolumn{4}{l}{\scriptsize{\hspace{0.1cm} considering all proteins from all strains of the virus and $\approx$ 100,000 human proteins.}}\\
+\multicolumn{4}{l}{\scriptsize{$\dagger$ this is the number of `reviewed' proteins on UniProtKB from all strains in our data}} \\ \hline
+\end{tabular}
+\end{footnotesize}
+}
+{
+\caption{Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref{sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.} 
+\label{datasets}
+}
+\end{floatrow}
+\end{figure*}
+
+
 \section{The bilinear sparse low-rank multitask model (BSL-MTL)} 
 \label{ourmodel}
 In the previous section, we described the bilinear low-rank model for matrix completion. 
@@ -264,7 +276,8 @@ As before, the shared factors $U$ and $V$ are both $\mathbb{R}^{d_t \times k}$ (
 \begin{equation}
 \label{mtl_objective}
 \begin{array}{ll}
-\mathcal{L}(U,V,\{S_t\}) & = \displaystyle{ \frac{1}{N} \sum_{t=1}^T \sum_{(i,j) \in \Omega_t}} c^t_{ij} \; \ell \big( M_{t_{ij}}, \mathbf{x}_{ti}^\intercal H_t \mathbf{y}_{tj} \big)^2 + \lambda ( \|U\|^2_F + \|V\|^2_F ) + \displaystyle{\sum_{t=1}^T \sigma_t \|S_t\|_1} 
+\mathcal{L}(U,V,\{S_t\}) & = \displaystyle{ \frac{1}{N} \sum_{t=1}^T \sum_{(i,j) \in \Omega_t}} c^t_{ij} \; \ell \big( M_{t_{ij}}, \mathbf{x}_{ti}^\intercal H_t \mathbf{y}_{tj} \big)^2 + \\
+& \lambda ( \|U\|^2_F + \|V\|^2_F ) + \displaystyle{\sum_{t=1}^T \sigma_t \|S_t\|_1} 
 \end{array}
 \end{equation}
 
@@ -273,34 +286,37 @@ Here $N = \sum_t | \Omega_t |$, is the total number of training examples (links 
 
 %\input{altmin_algo.tex}
 
-%\begin{algorithm}[h]   \caption{Alternating Least Squares}
-%   \label{alg}
-%   \begin{small}
-%\begin{algorithmic}[1]
-%\STATE \textbf{Input}: \\
-%$k$ : number of latent factors\\
-%$\Gamma$: pairs of entities for initialization\\
-%For every task $t$,\\
-%${\{\mathbf{x}_{ti}\}, \{\mathbf{y}_{tj}\}}$: feature vectors for pathogen and host proteins resp.\\
-%$\Omega_t$: the observed entries of the matrix $M_t$\\
-%\STATE \textbf{Initialization}: \\
-%\STATE An iteration $r$, let $\mathbf{S}^r$ represent $\{S^r_t\}_{t=1}^T$
-%\STATE $\mathbf{S}^0 \leftarrow 0$
-%\STATE $U^0 \leftarrow$ top-$k$ left singular vectors and $V^0 \leftarrow$ top-$k$ right singular vectors from the SVD of $\displaystyle{\sum_{(i,j) \in \Gamma}} \mathbf{x}_i \mathbf{y}_j^\intercal$\\
-%\STATE $\mathcal{L}^0$ : initial loss
-%\REPEAT
-%  \STATE $U^{r+1} \leftarrow \displaystyle{\argmin_{U}} \; \mathcal{L}(U, V^r, \mathbf{S}^r)$  \STATE $V^{r+1} \leftarrow \displaystyle{\argmin_{V}} \; \mathcal{L}(U^{r+1}, V, \mathbf{S}^r) $  \STATE For each task $t$\\
-%  \hspace{0.5cm} $S^{r+1}_t \leftarrow \displaystyle{\argmin_{S_t}} \; \mathcal{L}(U^{r+1}, V^{r+1}, \mathbf{S}^r_{-t}) $
-%  \STATE Compute $\mathcal{L}^{r+1}$ and let $\delta \leftarrow (\mathcal{L}^r - \mathcal{L}^{r+1})/\mathcal{L}^r$
-%\UNTIL {$\delta < \tau$}%\While
-%\end{algorithmic}\end{small}\end{algorithm}
+\begin{algorithm}[!t]   \caption{Alternating Least Squares}
+   \label{alg}
+   %\begin{minipage}{0.9\textwidth}
+   \begin{small}
+\begin{algorithmic}[1]
+\STATE \textbf{Input}: \\
+$k$ : number of latent factors\\
+$\Gamma$: pairs of entities for initialization\\
+For every task $t$,\\
+${\{\mathbf{x}_{ti}\}, \{\mathbf{y}_{tj}\}}$: feature vectors for pathogen and host proteins resp.\\
+$\Omega_t$: the observed entries of the matrix $M_t$\\
+\STATE \textbf{Initialization}: \\
+\STATE An iteration $r$, let $\mathbf{S}^r$ represent $\{S^r_t\}_{t=1}^T$
+\STATE $\mathbf{S}^0 \leftarrow 0$
+\STATE $U^0 \leftarrow$ top-$k$ left singular vectors and $V^0 \leftarrow$ top-$k$ right singular vectors from the SVD of $\displaystyle{\sum_{(i,j) \in \Gamma}} \mathbf{x}_i \mathbf{y}_j^\intercal$\\
+\STATE $\mathcal{L}^0$ : initial loss
+\REPEAT
+  \STATE $U^{r+1} \leftarrow \displaystyle{\argmin_{U}} \; \mathcal{L}(U, V^r, \mathbf{S}^r)$  \STATE $V^{r+1} \leftarrow \displaystyle{\argmin_{V}} \; \mathcal{L}(U^{r+1}, V, \mathbf{S}^r) $  \STATE For each task $t$\\
+  \hspace{0.5cm} $S^{r+1}_t \leftarrow \displaystyle{\argmin_{S_t}} \; \mathcal{L}(U^{r+1}, V^{r+1}, \mathbf{S}^r_{-t}) $
+  \STATE Compute $\mathcal{L}^{r+1}$ and let $\delta \leftarrow (\mathcal{L}^r - \mathcal{L}^{r+1})/\mathcal{L}^r$
+\UNTIL {$\delta < \tau$}%\While
+\end{algorithmic}\end{small}
+%\end{minipage}
+\end{algorithm}
 
 
 
 \noindent \textbf{Optimization}:
 The function $\mathcal{L}(U, V, \{S_t\})$ is non-convex. However, it is convex in every one of the parameters (i.e when the other parameters are fixed) 
 and a block coordinate descent method called alternating least squares (ALS) is commonly used to optimize such functions. 
-To speed up convergence we use an adaptive step size. %The detailed optimization procedure is shown in Algorithm \ref{alg}. 
+To speed up convergence we use an adaptive step size. The detailed optimization procedure is shown in Algorithm \ref{alg}. 
 
 \noindent \textbf{Convergence:} The ALS algorithm is guaranteed to converge only to a local minimum. There is work showing convergence guarantees to global optima for related simpler problems, however the assumptions on the matrix and the parameter structure are not very practical and 
 it is difficult to verify whether they hold for our setting. \\
@@ -311,6 +327,8 @@ the SVD of $\displaystyle{\sum_{(i,j) \in \Gamma}} m_{ij} \mathbf{x}_i \mathbf{y
 
 %(a) \textit{Training data}: $\Gamma$ is set to all the training examples from all tasks. This initialization from Jain et al. \cite{prateek} uses the labels of the examples.\\
 %(b) \textit{Unlabeled data}: $\Gamma$ is set to . Note that there are no labels $m_{ij}$ available here. In our experiments we found that using the unlabeled data for initialization gives us a better performance than using the training data or random initialization. 
+
+
 
 \subsection{Handling the `curse of missing negatives'}
 \label{negs}
@@ -325,15 +343,24 @@ $\approx$ 1/100 to 1/500. That is, the probability that our negatives contain tr
 100 times the number of gold standard positives.
 
 
-\section{Experimental setup}
-\subsection{Datasets and features}
+
+\section{Dataset}
 \label{sec:datasets}
 We use three human-virus PPI datasets from the PHISTO \citep{phisto} database (version from 2014), the characteristics of which are summarized in Table \ref{datasets}. 
-The \textit{Influenza A} task includes various strains of flu: H1N1, H3N2, H5N1, H7N3. 
-Similarly, the \textit{Hepatitis} task includes various strains of the virus. 
-All three are single-strand RNA viruses, with \textit{Hepatitis} being a positive-strand ssRNA whereas \textit{Influenza} and \textit{Ebola} are negative-strand viruses. Note that we use UniprotKB identifiers to refer to
-the proteins; hence if an identical protein appears in two strains it will be treated differently as it has a different
-UniprotKB id. The density of the known interactions is quite small when considering the entire proteome (i.e all known proteins) of the host and pathogen species (row-4 in Table \ref{datasets}). \\
+The \textit{Influenza A} task includes various strains of flu such as: H1N1 (Puerto Rico, Texas strains etc), H3N2 (England strain etc), H5N1, H7N3.
+Similarly, the \textit{Hepatitis} task includes strains such as of the virus. 
+All three are single-strand RNA viruses, with \textit{Hepatitis} being a positive-strand ssRNA whereas \textit{Influenza} and \textit{Ebola} are negative-strand viruses. The density of the known interactions is quite small when considering the entire proteome (i.e all known proteins) of the host and pathogen species (row-4 in Table \ref{datasets}). \\
+
+\subsection{Addressing the homologs in PHISTO}
+\label{sec:phisto}
+The interactions data reported in PHISTO database is aggregated from several host-pathogen interactions data sources such as Virus-Mint, PHI-base etc. We found that many of the interactions (within a task) involve homologous PPI - virus protein homologs from two strains interacting with either the same human protein or with homologous human proteins. Such PPI usually come from different publications/ studies, but they introduce a lot of redundancy in the dataset. Removing such PPI is challenging as there are several criteria to consider, the most important being: \textit{what threshold of sequence similarity constitutes a homolog}? The very existence of sequence similarity between proteins is what makes it possible for biologists to predict unknown interactions and most computational methods rely on it for PPI prediction. 
+
+In row-2 of Table \ref{datasets}, we give a conservative estimate of the number of non-homologous PPI. For this, we identify homologous PPI and retain only one of them in the dataset. Homologs were obtained using BLAST sequence alignment (blastp) using an e-value cut-off threshold of $1e^{-10}$. This is a relaxed cut-off since there are cases where two functionally different proteins (either virus-virus or human-human) with low query coverage and low identity end up as `homologs'. For example, human proteins Q8WV28 (gene BLNK, B-cell linker protein) and O00459 (gene PIK3R2, Phosphatidylinositol 3-kinase) are considered homologs by this cut-off. The number of non-homologous PPI should therefore be considered a lower limit.
+
+In our experiments section, we thus evaluate our models in two settings - (1) on the original dataset (2) by removing homologous PPI.
+
+%and thus interologs (within a task), the presence of which may not give a clear picture of a computational model. However these are reported by different publications/studies and were found using different experimental methods, so we do not exclude them and instead report performance on 
+
 \noindent\textbf{Features}: 
 Since the sequence of a protein determines its structure and consequently its function, it may be possible to predict PPIs using the amino acid sequence of a protein pair. \cite{shen:2007} introduced the ``conjoint triad model'' for predicting PPIs using only amino acid sequences. They partitioned the twenty amino acids into seven classes based on their electrostatic and water affinities.\footnote{For details of these classes, please refer to the supplementary or the original paper}
 A protein's amino acid sequence is first transformed to a class-sequence (by replacing each amino acid by its class).
@@ -343,6 +370,7 @@ To account for protein size, they normalized the counts by linearly transforming
 Thus the value of each feature in the feature vector is the normalized count for each of the possible amino acid three-mers. We use di-, tri- and four-mers thus leading to a total of 2793 features ($7^2 + 7^3 + 7^4$).
 Such features have been successfully applied in prior work \citep{dyer07,me_ismb_2013}.
 
+\section{Experimental setup}
 
 \subsection{Comparison with other machine learning approaches}
 \label{mlmethods}
@@ -357,7 +385,7 @@ Our baselines include recent low-rank and sparse models, conventional multitask 
 
 
 \subsection{Comparison with a homolog baseline}
-In addition to the machine learning methods presented in Section \ref{mlmethods}, we also tried a simple homology based approach that is based on protein sequence identity. We use the entire human-virus interactome from PHISTO as input to this method. Given a human protein $h$, we rank all virus proteins $v$ based on the following simple scheme. let $V(h)$ be a set of all virus proteins interacting with the human protein $h$ and let $H(v)$ be all human proteins interacting with the virus protein $v$. We score each pair $(h, v)$ from the bipartite graph as follows: $\max \{ \max $ sequence identity between $h$ and all host proteins in $H(v)$; $\max $ sequence identity between $ v $ and all virus proteins in $V(h) \}$.
+In addition to the machine learning methods presented in Section \ref{mlmethods}, we also tried a simple homology based approach that is based on protein sequence identity. We use the entire human-virus interactome from PHISTO as input to this method. Given a human protein $h$, we rank all virus proteins $v$ based on the following simple scheme. let $V(h)$ be a set of all virus proteins interacting with the human protein $h$ and let $H(v)$ be all human proteins interacting with the virus protein $v$. We score each pair $(h, v)$ from the bipartite graph as follows: $\max \{ \max $ sequence identity between $h$ and all host proteins in $H(v)$; $\max $ sequence identity between $ v $ and all virus proteins in $V(h) \}$. This baseline is shown in the first row as \textit{Homolog} in Table \ref{resultsTable}.
 
 
 \subsection{Evaluation setup}
@@ -368,22 +396,22 @@ We report the area under the precision recall curve (AUC-PR) along with the stan
 AUC-PR has been shown to give a more informative picture of an algorithm's performance than ROC curves in high class imbalance datasets \citep{davis2006} such as ours. 
 
 
-\begin{table*}[t]\caption{Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold.}
+\begin{table*}[t]\caption{Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
 \label{resultsTable}
 \begin{small}
 \begin{center}
 \def\arraystretch{1.2}
 \begin{tabular}{c|ccccccc}
 \toprule
-& \multicolumn{3}{c}{\textbf{10\% training}} && \multicolumn{3}{c}{\textbf{30\% training}} \\ \cline{2-4}\cline{6-8}
+& \multicolumn{3}{c}{\textbf{10\% training, 90\% test}} && \multicolumn{3}{c}{\textbf{30\% training, 70\% test}} \\ \cline{2-4}\cline{6-8}
 & \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} && \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
-Homolog & & & && & & \\
+Homolog & \textbf{0.230}$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 && \textbf{0.311}$\pm$.03 & 0.180$\pm$.01 & 0.198$\pm$.01 \\
 STL (Ridge Reg.)  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02 && 0.130$\pm$.03 & 0.802$\pm$.03 & 0.428$\pm$.03 \\ 
 MMTL \citep{pontil04} & 0.113$\pm$.04 & 0.767$\pm$.03 & 0.321$\pm$.02 && 0.129$\pm$.02 & 0.802$\pm$.04 & 0.430$\pm$.03  \\ 
 %Trace-norm  & 0.199$\pm$.11 & 0.767$\pm$.03 & 0.318$\pm$.02 && 0.207$\pm$.02 & 0.808$\pm$.02 & 0.409$\pm$.03 \\ 
 Sparse+low-rank \citep{chen2012} & 0.144$\pm$.07 & 0.767$\pm$.02 & 0.318$\pm$.02 && 0.153$\pm$.02 & \textbf{0.814}$\pm$.01 & 0.414$\pm$.03  \\ 
 %Dirty model \citep{jalali2010} & 0.074$\pm$.03 & 0.767$\pm$.04 & 0.324$\pm$.02 && 0.165$\pm$.02 & 0.813$\pm$.03 & 0.412$\pm$.03  \\ 
-MTPL \citep{me_ismb_2013} & \textbf{0.217}$\pm$.08 & 0.695$\pm$.02 & 0.345$\pm$.02 && \textbf{0.260}$\pm$.05 & 0.713$\pm$.01 & \textbf{0.496}$\pm$.03 \\ 
+MTPL \citep{me_ismb_2013} & 0.217$\pm$.08 & 0.695$\pm$.02 & 0.345$\pm$.02 && 0.260$\pm$.05 & 0.713$\pm$.01 & \textbf{0.496}$\pm$.03 \\ 
 IMC \citep{nagarajan} & 0.087$\pm$.04 & \textbf{0.779}$\pm$.02 & \textbf{0.362}$\pm$.01 && 0.122$\pm$.02 & 0.801$\pm$.01 & 0.410$\pm$.03  \\ \midrule
 BSL-MTL (this work) & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{0.486}$\pm$.02 && \textbf{0.361}$\pm$.03 & \textbf{0.842}$\pm$.01 & \textbf{0.560}$\pm$.02  \\ \bottomrule
 \end{tabular}
@@ -403,74 +431,72 @@ The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$,
 %For the task-specific regularization parameters, setting them all to a constant i.e $\forall t, \{\sigma_t\} = \sigma$ did not work well owing to the different sizes of the 3 tasks. For each task $t$, $\sigma_t$ was varied over the values $10^{-3}, 10^{-4}, 10^{-5}, 10^{-6}$. The optimal setting of parameters was found to be $k=10$, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
 
 
-\section{Results}
-As described in Section \ref{}, the PPI data we obtain from PHISTO has homologs within a task. We therefore present results on two sets of data: (a) with the original PPIs from PHISTO shown in Table \ref{resultsTable} and (b) after removal of all homologs within each task in Table \ref{homresultsTable}. The latter comparison gives us an idea of how much the approaches benefit from the redundancy within each task.
-
-Table \ref{resultsTable} has the AUC-PR for all methods. 
-Note that the AUC-PR of a random classifier model is $\approx 0.01$.
-The first row (STL) is the single-task baseline and all others are multitask models. In general, we notice that multitask learning benefits
-all tasks. The first three columns show the results in the 10\% setting. 
-%The number of training positive examples from each task are 8 for Ebola, 85 for Influenza and 98 for Hepatitis-C. 
-Our model (last row) has significant gains for Influenza (1.4 times better than the next best) and modest improvements for the other tasks.
-The variance in the performance is high for the Ebola task (column 1) owing to the small number of positives 
-in the training splits (8 positives).
-The most benefits for our model are seen in the 30\% setting for all tasks, with 
-improvements of 39, 3 and 12 percentage points on the \textit{Ebola}, \textit{Hepatitis} and \textit{Influenza} tasks, respectively. \textit{Ebola}, the data-poorest task, benefits the most.
-
-\begin{table}[t]\caption{Area Under the Precision-Recall curve for each task upon removal of the homologs within each task, on the 10\% setting}
+\begin{table}\caption{Area Under the Precision-Recall curve for each task on the \textbf{non-homologous PPI within each task}, in the 10\% setting. Only the most representative baselines are retained for this experiment. Our model does significantly better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
 \label{homresultsTable}
 \begin{small}
 \begin{center}
 \def\arraystretch{1.2}
 \begin{tabular}{c|ccc}
 \toprule
+\multicolumn{4}{c}{\textbf{10 \% training, 90\% test on Non-homologous PPI}} \\
 & \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
-Homolog & & & \\
-STL (Ridge Reg.)  & & & \\
-Sparse+low-rank \citep{chen2012} & & &  \\ 
-BSL-MTL (this work) & & &  \\ \bottomrule
+Homolog & 0.207 $\pm$.07 & 0.113 $\pm$.01 & 0.109 $\pm$ .01 \\
+STL  & 0.210 $\pm$.14 & 0.474 $\pm$ .06 & 0.302 $\pm$.03 \\
+Sparse+LR & 0.216 $\pm$.13 & 0.482 $\pm$.05 & 0.312 $\pm$.04 \\ 
+BSL-MTL & 0.295 $\pm$.10 & 0.544 $\pm$.06 & 0.505 $\pm$.05 \\ \bottomrule
 \end{tabular}
 \end{center}
 \end{small}
 \end{table}
 
-\subsection{Disadvantages of the Homolog method}
-In Figures \ref{fig:ebolanet}-\ref{fig:flunet} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the naive manner as done by the homologs model is not helpful - our model is able to learn what to borrow from the other tasks accurately.
 
-\begin{figure*}
-\ffigbox[\textwidth]
-{
-\begin{subfloatrow}[3]
-\ffigbox[0.22\textwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{1cm}
-}
-{
-\caption{Ebola-human PPI}
-\label{fig:ebolanet}
-}
-\ffigbox[0.33\textwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.33, trim = 0.2 0.2 0.2 0.2]{flavinet.pdf}
-}
-{
-\caption{Hepatitis-human PPI}
-\label{fig:flavinet}
-}
-\ffigbox[0.34\textwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.35, trim = 0.2 0.2 0.2 0.2]{flunet.pdf}
-}
-{
-\caption{Influenza-human PPI}
-\label{fig:flunet}
-}
-\end{subfloatrow}
-}
-{
-\caption{PPI from each task that are found by our method but are missed by the homolog method}
-}
-\end{figure*}
+\section{Results}
+The PPI data we obtain from PHISTO has homologous PPI within a task. Note that the presence of sequence similarity across virus proteins is a strong criterion for computational methods to work, however orthologs or paralogs of proteins within a task lead to redundancy in the data and some readers may find it harder to judge the contribution of the methods. We therefore present results on two sets of data: 
+\begin{enumerate}[a]
+\item with the original PPIs from PHISTO shown in Table \ref{resultsTable}
+\item after removal of all homologous PPI. Here we ensure that the test data does not contain any homologs of PPI observed in the training data. A BLAST sequence similarity cut-off of $1e^{-10}$ was used to find homologs (see Section \ref{sec:phisto} for details). Note that the number of negatives in the test data is still 100 times the number of positives. Table \ref{homresultsTable} shows these results. 
+\end{enumerate}
+
+Table \ref{resultsTable} has the AUC-PR for all methods. 
+Note that the AUC-PR of a random classifier model is $\approx 0.01$.
+The first row is the Homolog heuristic based approach, STL is the single-task baseline and all others are multitask models. In general, we notice that multitask learning benefits
+all tasks. The first three columns show the results in the 10\% setting. 
+%The number of training positive examples from each task are 8 for Ebola, 85 for Influenza and 98 for Hepatitis-C. 
+Our model (last row) has significant gains for Influenza (1.4 times better than the next best) and modest improvements for the other tasks.
+The variance in the AUC is high for the Ebola task (column 1) owing to the small number of positives 
+in the training splits (8 positives).
+The most benefits for our model are seen in the 30\% setting for all tasks.
+Notably, Homolog performs comparably to our model. In addition to the training data seen by all other methods, this baseline also uses additional data in the form of the virus-host interactome from several other viruses. Results on the no-homolog part of our dataset sheds further light on this.
+
+In Table \ref{homresultsTable} we show AUC for all the representative baselines in the 10\% setting. Our method outperforms all others by large margins on the non-homologous portion of the test data, by intelligently sharing information with other tasks. There are thus two components to the prediction performance - (1) the presence of sequence-similar proteins within a task (2) non-linear similarities between the interactions within a task and across tasks. We are able to capture the latter well via the shared subspace structure of our model.
+
+
+%Homolog & 0.010 $\pm$.03 & 0.079 $\pm$.01 & 0.135 $\pm$.02 \\  
+%STL (Ridge Reg.)  & 0.054 $\pm$.03 &  0.400 $\pm$.06 & 0.192 $\pm$.03 \\
+%BSL-MTL (this work) & 0.071 $\pm$.03 & \textbf{0.501} $\pm$.05 & \textbf{0.331} $\pm$.03  \\ \bottomrule 
+
+
+\subsection{Disadvantages of the Homolog method}
+In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
+
+\begin{table}\caption{Area Under the Precision-Recall curve for each task on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
+\label{homresultsTable}
+\begin{small}
+\begin{center}
+\def\arraystretch{1.2}
+\begin{tabular}{c|ccc}
+\toprule
+\multicolumn{4}{c}{\textbf{10 \% training, test on Homologous PPI }} \\
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
+Homolog & 0.399 $\pm$.07 & 0.161 $\pm$.01 & 0.180 $\pm$ .01 \\
+STL   & 0.192 $\pm$.15 & 0.504 $\pm$.10 & 0.305 $\pm$.03 \\
+Sparse+LR & 0.184 $\pm$.13 & 0.512 $\pm$.10 & 0.315 $\pm$.04 \\ 
+BSL-MTL & 0.130 $\pm$.10 & 0.815 $\pm$.02 & 0.475 $\pm$.02 \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{small}
+\end{table}
+
 
 \subsection{Biological significance of the model}
 \label{bioanalysis}
@@ -483,46 +509,74 @@ We analyze the proteins by projecting them using the model parameters $U$ and $V
 (i.e computing $X U^\intercal$ and $Y V^\intercal$ to get projections of the virus and human proteins respectively).  
 The principal component analysis (PCA) of this lower dimensional representation is compared with PCA in the original feature space (protein sequence features) in Fig \ref{fig:pca}. 
 Firstly, the projected data has a much better separation than the original data.
-Secondly, Fig \ref{fig:pca} (right) tells us that Hepatitis-C and Influenza have many proteins with similar binding tendencies, and that these behave differently than most Ebola virus proteins. This observation is not obvious in the PCA of the original feature space (Fig \ref{fig:pca} left), where proteins with similar sequences cluster together.
-These clusters of proteins can be analyzed further for enrichment of Gene Ontology (GO) annotations.
+Secondly, Fig \ref{fig:pca2} tells us that Hepatitis-C and Influenza have many proteins with similar binding tendencies, and that these behave differently than most Ebola virus proteins. This observation is not obvious in the PCA of the original feature space (Fig \ref{fig:pca1}), where proteins with similar sequences group together.
+We analyze the projected data further by looking at the clusters of proteins for enrichment of Gene Ontology (GO) annotations (proteins were first clustered in this lower dimensional space using k-means and setting the number of clusters to 6). Of particular interest are the highlighted three clusters which contain either proteins projected far from others (such as cluster-1) and proteins from different viruses projected close together (cluster-2 and cluster-3).
+For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and GO annotations for the three viruses from UniProtKB.
+
 
 \begin{figure}
-\begin{floatrow}
-\ffigbox[0.49\columnwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.35, trim = 0 0.8cm 0 0]{fig2.eps}
-}{%
-\caption{Principal component analysis (PCA) of virus proteins in the original feature space}%
-\label{fig:pca1}
-}
-\ffigbox[0.49\columnwidth]{%
-\includegraphics[scale=0.33, trim = 0 0 0 0]{fig3.eps}
-}{%
-\caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from.}%
-\label{fig:pca2}
-}
-\end{floatrow}
+\begin{tabular}{c}
+%\begin{minipage}{0.3\textwidth}
+%\begin{center}
+%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
+%\end{center}
+%\end{minipage}
+%&
+\begin{minipage}{\textwidth}
+\begin{center}
+\includegraphics[scale=0.33, trim = 0.2 0.2 0.2 0.2]{flavinet.pdf}
+\end{center}
+\end{minipage}
+\\
+\begin{minipage}{\textwidth}
+\begin{center}
+\includegraphics[scale=0.35, trim = 0.2 0.2 0.2 0.2]{flunet.pdf}
+\end{center}
+\end{minipage}
+\end{tabular}
+\caption{PPI from each task that are found by our method but are missed by the homolog method. To obtain these, we chose a random train/test split and picked examples from the test data on which the homolog method fails - these are ones for which sequence-similar proteins are not found. (a) shows \textit{Ebola}-human PPI, (b) \textit{Hepatitis-C} human PPI and (c) \textit{Influenza}-human PPI.}
+\label{fig:network}
 \end{figure}
 
 
-\noindent\emph{Evidence in IEDB}\footnote{\url{www.iedb.org}}:
-We found experimental evidence for the significance for the virus motifs in the Immune Epitope\footnote{An epitope is a very short sequence from the virus that binds to human antibodies} database (IEDB) \citep{iedb}.
-The pattern \texttt{IVGG} from the \textit{Hepatitis-C} motif in Fig. \ref{fig:hepc_motifs} is found in 53 epitopes.
-From the \textit{Ebola} motifs in Fig \ref{fig:ebola_motifs}, we find that \texttt{TLAT} is part of six different epitopes, \texttt{SLTT} appears in three epitopes. \texttt{PLIK}, \texttt{SLLL} from the \textit{Influenza} motif are also found in many epitopes.
-Finding that the virus k-mer patterns predicted by our method are recognized by human antibodies
-is a further validation of its performance.
-Further, using higher dimensional $k$-mers (where $k$=7, 8, 9) as
-features in our model will give motifs from which complete epitopes can be derived. % which can then be verified by biochemical peptide interaction assays.
-Our model thus has applications in epitope prediction as well, where conventional methods consist of scanning all possible $k$-mers from protein sequences to identify likely epitopes.
+\begin{figure}
+\centering
+\includegraphics[scale=0.4, trim = 0 0.2cm 0 0.5cm]{fig2.eps}
+\caption{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}%
+\label{fig:pca1}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.27, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
+\caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref{goterms}.}%
+\label{fig:pca2}
+\end{figure}
+
+\begin{table}[bht]
+\label{goterms}
+\begin{scriptsize}
+\begin{center}
+\def\arraystretch{1.1}
+\begin{tabular}{|c|c|}
+\multicolumn{2}{c}{Gene Ontology terms for clusters from Figure \ref{fig:pca2}} \\ \hline
+cluster 1 & mRNA (guanine-N7-)-methyltransferase  \\
+(ebola only)& activity; RNA-directed RNA   \\
+& polymerase activity; ATP binding \\ \hline
+cluster 2 & host cell endoplasmic reticulum membrane; \\ 
+(hepatitis \& & host cell lipid particle; induction by virus \\
+influenza & of host autophagy; host cell mitochondrial membrane; \\
+proteins) & suppression by virus of host STAT1 activity \\ \hline
+cluster 3 & fusion of virus membrane with \\
+(all) & host plasma membrane \\ \hline
+\end{tabular}
+\caption{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref{fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster.}
+\end{center}
+\end{scriptsize}
+\end{table}
+
  
-\noindent\emph{Phosphorylation sites}: 
-We found the frequent occurrence of S and T and sometimes Y in the motifs striking and suspected this may be
-related to the amino acids being frequent targets of phosphorylation.
-Phosphorylated sites often serve as PPI sites, and databases such as Phosphosite \citep{phosphosite} are
- repositories for known sites in human proteins. Since these are sites in human proteins, we searched for the patterns
-from the 4-mer motif in Fig \ref{fig:human_motifs} and found several to be flanking known phosphorylation sites in human proteins:
-\texttt{LLLs}, \texttt{LLLt}, \texttt{ILLs}, \texttt{PPPs}, \texttt{PIPs}, \texttt{PIPt}, \texttt{LIPs}, \texttt{PLLt} (lower-case indicates the putative phosphorylation site). This observation also supports the notion that the motifs predictive
-of interaction are biologically significant.
 
 
 \subsubsection{Novel interactions with Ebola proteins}
@@ -547,8 +601,11 @@ The top four Ebola-human PPI are all predictions for the Ebola envelope glycopro
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
 \subsubsection{Sequence motifs from virus proteins}
-In Figures \ref{fig:virus_motifs}-\ref{fig:flu_motifs}, we show sequence motifs derived from the top $k$-mers that contribute to interactions. The significant entries of the model parameters $U$, $V$ and $\{S_t\}$ were used to 
+We analyze sequence motifs derived from the top $k$-mers that contribute to interactions. The significant entries of the model parameters $U$, $V$ and $\{S_t\}$ were used to 
 compute these motifs. The top positive-valued entries from the product $U V^T$ indicate which pairs of features: ($(f_v, f_h)$: virus protein feature, human protein feature) are important for interactions across all the virus-human PPI tasks.
 Analogously, the entries from $S_t$ give us pairs of features important to a particular virus-human task `$t$'.
 We find that most of the top entries from $U V^T$ correspond to linear virus features, whereas those from the various $S_t$
@@ -564,68 +621,100 @@ The logos for the two-, three-, four-mers from $I_v$ are generated independently
 want to summarize, we use the Shannon logo type (which does not consider any background amino-acid distribution)
 with the following settings: clustering-method=None, weight-on-prior=1 (pseudo-counts do not make sense in our
 analysis). Figure \ref{fig:virus_motifs} shows the motif that is common across viruses. %, while the other figures highlight those motifs important in a specific species.
+We observe that the shared tri-mer motif for virus proteins in Figure \ref{fig:virus_motifs} is dominated by 
+hydrophilic amino acids (T, K, R, D, E).
 
 This procedure described above is used to analyze the most significant human protein features, obtained from
-the matrix $U V^T$. These motifs are shown in Figure \ref{fig:human_motifs}. The task-specific features i.e significant $k$-mers from virus-proteins of \textit{Ebola}, \textit{Hepatitis} and \textit{Influenza} are obtained from the matrices $S_{ebola}$, $S_{hepC}$ and $S_{flu}$ respectively. Knowledge of these pathogen-specific $k$-mers can help in design of drugs to target specific pathogens. These are shown in Figures \ref{fig:ebola_motifs}, \ref{fig:hepc_motifs} and
-\ref{fig:flu_motifs}.
-
-We observe that the shared tri-mer motif for virus proteins in Figure \ref{fig:virus_motifs} is dominated by 
-hydrophilic amino acids (T, K, R, D, E). All other motifs seem to be dominated by hydrophobic residues (I, P, L, V, A, G)
-though S and T do appear in some motifs as well.
+the matrix $U V^T$. These motifs are shown in the supplementary. The task-specific features i.e significant $k$-mers from virus-proteins of \textit{Ebola}, \textit{Hepatitis} and \textit{Influenza} are obtained from the matrices $S_{ebola}$, $S_{hepc}$ and $S_{flu}$ respectively. The motif for Hepatitis is shown in Figure \ref{fig:virus_motifs}(right); the rest can be found in the supplementary. %Knowledge of these pathogen-specific $k$-mers can help in design of drugs to target specific pathogens. These are shown in Figures \ref{fig:ebola_motifs}, \ref{fig:hepc_motifs} and \ref{fig:flu_motifs}.
+The virus-specific motifs seem to be dominated by hydrophobic residues (I, P, L, V, A, G) though S and T do appear in some motifs as well.
 %The human protein motifs are shown in \ref{fig:human_motifs}; the 3-mer motif show less of a pattern, in particular the first residue does not seem to have any dominant amino-acids.
 %However the 4-mer seems to be dominated by hydrophobic amino-acids L, P, I, F in the first three positions and hydrophilic residues S, T, Y in the fourth.
-The human protein motifs are shown in Fig \ref{fig:human_motifs}. In most cases, the first position of the tri-mer was less significant than the second and third, while for the tetramer all four positions show clear preferences.
+%The human protein motifs are shown in Fig \ref{fig:human_motifs}. In most cases, the first position of the tri-mer was less significant than the second and third, while for the tetramer all four positions show clear preferences.
 
-The motifs for tri-mers are shown in the supplementary.
+%The motifs for tri-mers are shown in the supplementary.
+
+
+
+\noindent\emph{Evidence in IEDB}\footnote{\url{www.iedb.org}}:
+We found experimental evidence for the significance for the virus motifs in the Immune Epitope\footnote{An epitope is a very short sequence from the virus that binds to human antibodies} database (IEDB) \citep{iedb}.
+The pattern \texttt{IVGG} from the \textit{Hepatitis-C} motif in Fig. \ref{fig:virus_motifs}(right) is found in 53 epitopes.
+From the \textit{Ebola} motif (supplementary), we find that \texttt{TLAT} is part of six different epitopes, \texttt{SLTT} appears in three epitopes. \texttt{PLIK}, \texttt{SLLL} from the \textit{Influenza} motif are also found in many epitopes. Finding that the virus k-mer patterns predicted by our method are recognized by human antibodies
+is a further validation of its performance.
+Further, using higher dimensional $k$-mers (where $k$=7, 8, 9) as
+features in our model will give motifs from which complete epitopes can be derived. % which can then be verified by biochemical peptide interaction assays.
+Our model thus has applications in epitope prediction as well, where conventional methods consist of scanning all possible $k$-mers from protein sequences to identify likely epitopes.
+
+
+\noindent\emph{Phosphorylation sites}: 
+We found the frequent occurrence of S and T and sometimes Y in the motifs striking and suspected this may be
+related to the amino acids being frequent targets of phosphorylation.
+Phosphorylated sites often serve as PPI sites, and databases such as Phosphosite \citep{phosphosite} are
+ repositories for known sites in human proteins. Since these are sites in human proteins, we searched for the patterns from the 4-mer motif of human proteins (supplementary) and found several to be flanking known phosphorylation sites in human proteins:
+\texttt{LLLs}, \texttt{LLLt}, \texttt{ILLs}, \texttt{PPPs}, \texttt{PIPs}, \texttt{PIPt}, \texttt{LIPs}, \texttt{PLLt} (lower-case indicates the putative phosphorylation site). This observation also supports the notion that the motifs predictive
+of interaction are biologically significant.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}
-\begin{floatrow}
-\ffigbox[0.62\columnwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.165, trim = 0 0.8cm 0 0]{fig4.eps}
-\includegraphics[scale=0.165, trim = 0 0 0 0]{fig5.eps}
-}{%
-\caption{Top tri-mer and four-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions.}%
-\label{fig:virus_motifs}
-}
-\ffigbox[0.31\columnwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.165, trim = 0 0 0 0]{fig6.eps}
-}{%
-\caption{Sequence motif constructed from the top four-mer features of human proteins}%
-\label{fig:human_motifs}
-}
-\end{floatrow}
-\begin{floatrow}
-\ffigbox[0.3\columnwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.165, trim = 0.2cm 0 0 0]{fig7.eps}
-}{%
-\caption{Sequence motif from top four-mer features specific to \textit{Ebola} proteins}%
-\label{fig:ebola_motifs}
-}
 
-\ffigbox[0.01\columnwidth]{}
+%}
+%\ffigbox[0.31\columnwidth]{%
+%%trim option's parameter order: left bottom right top
+%\includegraphics[scale=0.165, trim = 0 0 0 0]{fig6.eps}
+%}{%
+%\caption{Sequence motif constructed from the top four-mer features of human proteins}%
+%\label{fig:human_motifs}
+%}
+%\end{floatrow}
+%\begin{floatrow}
+%\ffigbox[0.3\columnwidth]{%
+%%trim option's parameter order: left bottom right top
+%\includegraphics[scale=0.165, trim = 0.2cm 0 0 0]{fig7.eps}
+%}{%
+%\caption{Sequence motif from top four-mer features specific to \textit{Ebola} proteins}%
+%\label{fig:ebola_motifs}
+%}
+%
+%\ffigbox[0.01\columnwidth]{}
+%
+%\ffigbox[0.3\columnwidth]{%
+%%trim option's parameter order: left bottom right top
+%\includegraphics[scale=0.165, trim = 0 0 0 0]{fig8.eps}
+%}{%
+%\caption{Sequence motifs specific to \textit{Hepatitic-C} proteins that are also important to interactions.}%
+%\label{fig:hepc_motifs}
+%}
+%
+%\ffigbox[0.3\columnwidth]{%
+%%trim option's parameter order: left bottom right top
+%\includegraphics[scale=0.165, trim = 0 0 0 0]{fig9.eps}
+%}{%
+%\caption{Sequence motifs specific to \textit{Influenza} proteins that are also important to interactions.}%
+%\label{fig:flu_motifs}
+%}
+%\end{floatrow}
+%\end{figure*}
 
-\ffigbox[0.3\columnwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.165, trim = 0 0 0 0]{fig8.eps}
-}{%
-\caption{Sequence motifs specific to \textit{Hepatitic-C} proteins that are also important to interactions.}%
-\label{fig:hepc_motifs}
-}
+\section{Results on HIV data}
+We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data is from XXXX database and has XXXX human-HIV PPI. In Table \ref{hivresults} we show the AUC-PR for our method and the representative baselines.
 
-\ffigbox[0.3\columnwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.165, trim = 0 0 0 0]{fig9.eps}
-}{%
-\caption{Sequence motifs specific to \textit{Influenza} proteins that are also important to interactions.}%
-\label{fig:flu_motifs}
-}
-\end{floatrow}
-\end{figure}
+\begin{table}[h]\caption{Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that the performance of STL and the homolog method on the previous three tasks is not influenced by the addition of a new task.}
+\label{hivresults}
+\begin{small}
+\begin{center}
+\def\arraystretch{1.2}
+\begin{tabular}{c|cccc}
+\toprule
+& \multicolumn{4}{c}{10 \% training } \\
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} & \textit{HIV} \\ \midrule
+Homolog & 0.230$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 & 0.170 $\pm$.01 \\
+STL  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02  & 0.208 $\pm$.01 \\ 
+Sparse+LR & 0.135 $\pm$.06 & 0.724 $\pm$.05 & 0.280 $\pm$.01 & 0.205 $\pm$.03  \\ 
+BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\pm$.01 & \textbf{0.354} $\pm$.01  \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{small}
+\end{table}
+
 
 \section{Conclusions and future extensions}
 %Multitask link prediction is an important area with many applications ranging from recommendation systems to biomedical host-pathogen interactions.  
@@ -633,6 +722,15 @@ This work developed and tested a new method based on low-rank matrix completion 
 %and showed significant increases in prediction performance. 
 The method was evaluated in the host-pathogen protein interaction domain for three pathogens (three tasks) and exhibited significant increases in prediction accuracy. The model parameters provide several avenues for
 studying host-pathogen interactions for biologists that can lead to interesting observations and insights. Finally, the model we present is general enough to be applicable on other problems such as: gene-disease relevance prediction across organisms or disease conditions. 
+
+
+\begin{figure}
+%trim option's parameter order: left bottom right top
+\includegraphics[scale=0.165, trim = 0 0.8cm 0 0]{fig4.eps}
+\includegraphics[scale=0.165, trim = 0 0 0 0]{fig8.eps}
+\caption{(\textit{Left}) Top tri-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions and is derived from our model parameter $H = U V^{T}$. (\textit{Right}) Motif corresponding to enriched 4-mer patterns found by our model (parameter: $S_{hepc}$) for the Hepatitis-C virus task.}%
+\label{fig:virus_motifs}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -643,9 +741,7 @@ studying host-pathogen interactions for biologists that can lead to interesting 
 %\input{appendix.tex}
 
 
-%\bibliographystyle{plainnat}
 \bibliographystyle{natbib}
-%\bibliographystyle{agsm}
 \begin{scriptsize}
 \bibliography{references}
 \end{scriptsize}

@@ -1,50 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
+This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: natbib.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for "malsar"
 Warning--empty journal in prateek
 Warning--there's a number but no volume in koren09
 Warning--there's a number but no volume in tastan09
 You've used 42 entries,
             2378 wiz_defined-function locations,
-            753 strings with 10277 characters,
-and the built_in function-call counts, 21043 in all, are:
-= -- 2085
+            759 strings with 10285 characters,
+and the built_in function-call counts, 20983 in all, are:
+= -- 2077
 > -- 1142
-< -- 25
-+ -- 341
+< -- 24
++ -- 339
 - -- 327
-* -- 1887
-:= -- 3543
-add.period$ -- 222
+* -- 1898
+:= -- 3539
+add.period$ -- 225
 call.type$ -- 42
 change.case$ -- 264
 chr.to.int$ -- 42
 cite$ -- 45
-duplicate$ -- 918
-empty$ -- 1335
+duplicate$ -- 913
+empty$ -- 1332
 format.name$ -- 398
-if$ -- 4222
+if$ -- 4199
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 42
-newline$ -- 213
+newline$ -- 214
 num.names$ -- 168
-pop$ -- 313
+pop$ -- 309
 preamble$ -- 1
 purify$ -- 264
 quote$ -- 0
-skip$ -- 615
+skip$ -- 603
 stack$ -- 0
-substring$ -- 1274
-swap$ -- 214
-text.length$ -- 7
+substring$ -- 1267
+swap$ -- 208
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 378
 warning$ -- 3
-while$ -- 176
+while$ -- 175
 width$ -- 0
-write$ -- 536
-(There were 3 warnings)
+write$ -- 538
+(There were 4 warnings)
