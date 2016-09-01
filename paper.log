@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 21:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:17
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -599,6 +599,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--354
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1867) in paragraph at lines 378--379
 \LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
@@ -662,12 +665,6 @@ File: pca_with_clusters.pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -705,44 +702,24 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 96.25949pt
+Extra height:10.0pt when 100.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 97.25949pt
+Extra height:10.0pt when 101.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 98.25949pt
+Extra height:0.0pt when 102.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 99.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 100.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 101.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 102.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 103.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:103.25949pt Right:102.519pt Output:103.25949pt
+(2)Left:102.75949pt Right:102.519pt Output:102.75949pt
 - LAST -
 Extra skip:0.0pt
-Left:103.25949pt
+Left:102.75949pt
 Right:102.519pt
-Output:103.25949pt
+Output:102.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -804,7 +781,7 @@ vr8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (11 pages, 1034637 bytes).
+Output written on paper.pdf (11 pages, 1034694 bytes).
 PDF statistics:
  248 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

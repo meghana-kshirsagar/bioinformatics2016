@@ -76,6 +76,7 @@
 \newlabel{sec:datasets}{{4}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{4.1}}Addressing the homologs in PHISTO}{5}}
 \newlabel{sec:phisto}{{{4.1}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{4.2}}Features}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Experimental setup}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{5.1}}Comparison with other machine learning approaches}{5}}
 \newlabel{mlmethods}{{{5.1}}{5}}
@@ -109,7 +110,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table {{6.2}.1}\hbox {}.}}{8}}
 \newlabel{fig:pca2}{{4}{8}}
 \newlabel{goterms}{{{{6.2}.1}}{8}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces GO terms (for process, function, component) enriched in the highlighted clusters from Figure 4\hbox {}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster.}}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces GO terms (for process, function, component) enriched in the highlighted clusters from Figure 4\hbox {}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster).}}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {{{6.2}.3}}Sequence motifs from virus proteins}{8}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Results on HIV data}{8}}
 \bibstyle{natbib}
@@ -156,12 +157,12 @@
 \bibcite{struct2net}{{40}{2006}{{Singh {\em  et~al.}}}{{Singh, Xu, and Berger}}}
 \bibcite{tastan09}{{41}{2009}{{Tastan {\em  et~al.}}}{{Tastan {\em  et~al.}}}}
 \bibcite{phisto}{{42}{2012}{{Tekir {\em  et~al.}}}{{Tekir, S., C., and U.}}}
-\bibcite{seq2logo}{{43}{2012}{{Thomsen and Nielsen}}{{Thomsen and Nielsen}}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that the performance of STL and the homolog method on the previous three tasks is not influenced by the addition of a new task.}}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2\hbox {}. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}}{9}}
 \newlabel{hivresults}{{6}{9}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (\textit  {Left}) Top tri-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions and is derived from our model parameter $H = U V^{T}$. (\textit  {Right}) Motif corresponding to enriched 4-mer patterns found by our model (parameter: $S_{hepc}$) for the Hepatitis-C virus task.}}{9}}
 \newlabel{fig:virus_motifs}{{5}{9}}
 \@writefile{toc}{\contentsline {section}{\numberline {8}Conclusions and future extensions}{9}}
+\bibcite{seq2logo}{{43}{2012}{{Thomsen and Nielsen}}{{Thomsen and Nielsen}}}
 \bibcite{UniProt}{{44}{2011}{{UniProt Consortium}}{{UniProt Consortium}}}
 \bibcite{iedb}{{45}{2015}{{Vita {\em  et~al.}}}{{Vita, Overton, Greenbaum, {\em  et~al.}}}}
 \bibcite{vidal:2001}{{46}{2001}{{Walhout and Vidal}}{{Walhout and Vidal}}}

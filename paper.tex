@@ -362,7 +362,7 @@ In our experiments section, we thus evaluate our models in two settings - (1) on
 
 %and thus interologs (within a task), the presence of which may not give a clear picture of a computational model. However these are reported by different publications/studies and were found using different experimental methods, so we do not exclude them and instead report performance on 
 
-\noindent\textbf{Features}: 
+\subsection{Features}
 Since the sequence of a protein determines its structure and consequently its function, it may be possible to predict PPIs using the amino acid sequence of a protein pair. \cite{shen:2007} introduced the ``conjoint triad model'' for predicting PPIs using only amino acid sequences. They partitioned the twenty amino acids into seven classes based on their electrostatic and water affinities.\footnote{For details of these classes, please refer to the supplementary or the original paper}
 A protein's amino acid sequence is first transformed to a class-sequence (by replacing each amino acid by its class).
 For $k$=3, they count the number of times each distinct tri-mer (set of three consecutive amino acids) occurred in the sequence.
@@ -543,7 +543,7 @@ For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and 
 %&
 \begin{minipage}{\textwidth}
 \begin{center}
-\includegraphics[scale=0.33, trim = 0.2 0.2 0.2 0.2]{flavinet.pdf}
+\includegraphics[scale=0.28, trim = 0.5cm 0.5cm 0.5cm 0.5cm]{flavinet.pdf}
 \end{center}
 \end{minipage}
 \\
@@ -580,17 +580,15 @@ For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and 
 \def\arraystretch{1.1}
 \begin{tabular}{|c|c|}
 \multicolumn{2}{c}{Gene Ontology terms for clusters from Figure \ref{fig:pca2}} \\ \hline
-cluster 1 & mRNA (guanine-N7-)-methyltransferase  \\
-(ebola only)& activity; RNA-directed RNA   \\
-& polymerase activity; ATP binding \\ \hline
+cluster 1 & mRNA (guanine-N7-)-methyltransferase activity; RNA-directed \\
+(ebola only)& RNA polymerase activity; ATP binding \\ \hline
 cluster 2 & host cell endoplasmic reticulum membrane; \\ 
 (hepatitis \& & host cell lipid particle; induction by virus \\
 influenza & of host autophagy; host cell mitochondrial membrane; \\
 proteins) & suppression by virus of host STAT1 activity \\ \hline
-cluster 3 & fusion of virus membrane with \\
-(all) & host plasma membrane \\ \hline
+cluster 3 (all) & fusion of virus membrane with host plasma membrane \\ \hline
 \end{tabular}
-\caption{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref{fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster.}
+\caption{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref{fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster).}
 \end{center}
 \end{scriptsize}
 \end{table}
@@ -714,9 +712,11 @@ of interaction are biologically interesting.
 %\end{figure*}
 
 \section{Results on HIV data}
-We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data is from XXXX database and has XXXX human-HIV PPI. In Table \ref{hivresults} we show the AUC-PR for our method and the representative baselines.
+We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data has $\approx$4000 human-HIV PPI across several strains of which 1320 are non-homologous PPI. 
+This experiment particularly tests the robustness of all the multitask learning approaches by the addition of an unrelated task.
+Table \ref{hivresults} shows the results. 
 
-\begin{table}[h]\caption{Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that the performance of STL and the homolog method on the previous three tasks is not influenced by the addition of a new task.}
+\begin{table}[h]\caption{Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table \ref{resultsTable}. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
 \label{hivresults}
 \begin{small}
 \begin{center}
