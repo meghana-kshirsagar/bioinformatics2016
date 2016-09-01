@@ -277,7 +277,7 @@ As before, the shared factors $U$ and $V$ are both $\mathbb{R}^{d_t \times k}$ (
 \begin{equation}
 \label{mtl_objective}
 \begin{array}{ll}
-\mathcal{L}(U,V,\{S_t\}) & = \displaystyle{ \frac{1}{N} \sum_{t=1}^T \sum_{(i,j) \in \Omega_t}} c^t_{ij} \; \ell \big( M_{t_{ij}}, \mathbf{x}_{ti}^\intercal H_t \mathbf{y}_{tj} \big)^2 + \\
+\mathcal{L}(U,V,\{S_t\}) & = \displaystyle{ \frac{1}{N} \sum_{t=1}^T \sum_{(i,j) \in \Omega_t}} c^t_{ij} \; \ell \big( M_{t_{ij}}, \mathbf{x}_{ti}^\intercal H_t \mathbf{y}_{tj} \big) + \\
 & \lambda ( \|U\|^2_F + \|V\|^2_F ) + \displaystyle{\sum_{t=1}^T \sigma_t \|S_t\|_1} 
 \end{array}
 \end{equation}
