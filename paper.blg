@@ -7,16 +7,16 @@ Warning--there's a number but no volume in koren09
 Warning--there's a number but no volume in tastan09
 You've used 47 entries,
             2378 wiz_defined-function locations,
-            785 strings with 11275 characters,
-and the built_in function-call counts, 23403 in all, are:
-= -- 2308
+            783 strings with 11196 characters,
+and the built_in function-call counts, 23385 in all, are:
+= -- 2304
 > -- 1294
 < -- 27
 + -- 381
 - -- 371
 * -- 2113
-:= -- 3965
-add.period$ -- 247
+:= -- 3961
+add.period$ -- 245
 call.type$ -- 47
 change.case$ -- 296
 chr.to.int$ -- 47
@@ -24,13 +24,13 @@ cite$ -- 50
 duplicate$ -- 1016
 empty$ -- 1479
 format.name$ -- 451
-if$ -- 4687
+if$ -- 4683
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 47
-newline$ -- 239
+newline$ -- 237
 num.names$ -- 188
-pop$ -- 345
+pop$ -- 347
 preamble$ -- 1
 purify$ -- 296
 quote$ -- 0
@@ -45,5 +45,5 @@ type$ -- 423
 warning$ -- 3
 while$ -- 196
 width$ -- 0
-write$ -- 603
+write$ -- 599
 (There were 3 warnings)

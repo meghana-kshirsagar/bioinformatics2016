@@ -18,13 +18,11 @@ Ando, R.~K. and Zhang, T. (2005).
 Ashburner, M. {\em et~al.} (2000).
 \newblock Gene ontology: tool for the unification of biology.
 \newblock {\em Nat. Genet.}, {\bf 25}(1), 25--9.
-\newblock \url{http://www.geneontology.org/}.
 
 \bibitem[Berriz {\em et~al.}(2003)Berriz, King, Bryant, {\em et~al.}]{funcAsso}
 Berriz, G., King, O., Bryant, B., {\em et~al.} (2003).
 \newblock Characterizing gene sets with funcassociate.
 \newblock {\em Bioinf.}, {\bf 19}(18), 2502--04.
-\newblock \url{http://llama.mshri.on.ca/funcassociate/}.
 
 \bibitem[Candes and Recht(2008)Candes and Recht]{candes08}
 Candes, E. and Recht, B. (2008).

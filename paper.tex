@@ -513,8 +513,8 @@ We analyze the proteins by projecting them using the model parameters $U$ and $V
 The principal component analysis (PCA) of this lower dimensional representation is compared with PCA in the original feature space (protein sequence features) in Figures \ref{fig:pca1} and \ref{fig:pca2}. 
 Firstly, the projected data has a much better separation than the original data.
 Secondly, Fig \ref{fig:pca2} tells us that Hepatitis-C and Influenza have many proteins with similar binding tendencies, and that these behave differently than most Ebola virus proteins. This observation is not obvious in the PCA of the original feature space (Fig \ref{fig:pca1}), where proteins with similar sequences group together.
-We analyze the projected data further by looking at the clusters of proteins for enrichment of Gene Ontology (GO) annotations (proteins were first clustered in this lower dimensional space using k-means and setting the number of clusters to 6). Of particular interest are the highlighted three clusters which contain either proteins projected far from others (such as cluster-1) and proteins from different viruses projected close together (cluster-2 and cluster-3).
-For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and GO annotations for the three viruses from UniProtKB.
+We analyze the projected data further by looking at the clusters of proteins for enrichment of Gene Ontology (GO) \footnote{\url{http://www.geneontology.org/}} \citep{GO} annotations (proteins were first clustered in this lower dimensional space using k-means and setting the number of clusters to 6). Of particular interest are the highlighted three clusters which contain either proteins projected far from others (such as cluster-1) and proteins from different viruses projected close together (cluster-2 and cluster-3).
+For enrichment analysis, we use the FuncAssociate 3.0 \footnote{\url{http://llama.mshri.on.ca/funcassociate/}} \citep{funcAsso} tool and GO annotations for the three viruses from UniProtKB.
 
 
 \begin{table}[bht]
