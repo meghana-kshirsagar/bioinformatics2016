@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:18
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:19
 entering extended mode
  %&-line parsing enabled.
 **supplementary.tex
@@ -351,96 +351,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-Overfull \hbox (6.15814pt too wide) in paragraph at lines 52--53
-\OT1/cmr/m/n/24.88 dis-sim-i-lar to our orig-i-nal set-ting in-volv-ing three
- []
+) [1
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (17.10478pt too wide) in paragraph at lines 54--56
-\OT1/cmr/m/n/24.88 bust-ness of all the mul-ti-task learn-ing ap-proaches
- []
-
-
-Overfull \hbox (2.27557pt too wide) in paragraph at lines 79--84
-\OT1/cmr/m/n/24.88 cross-validation (CV) on the train-ing split. For
- []
-
-
-Overfull \hbox (68.3903pt too wide) in paragraph at lines 79--84
-\OML/cmm/m/it/24.88 ^^[[]$ \OT1/cmr/m/n/24.88 was var-ied over the val-ues $[10
-[]\OML/cmm/m/it/24.88 ; \OT1/cmr/m/n/24.88 10[]\OML/cmm/m/it/24.88 ; \OT1/cmr/m
-/n/24.88 10[]\OML/cmm/m/it/24.88 ; \OT1/cmr/m/n/24.88 10[]]$
- []
-
-[2]
-Overfull \hbox (6.82068pt too wide) in paragraph at lines 88--93
-\OT1/cmr/m/n/24.88 top $\OML/cmm/m/it/24.88 k$\OT1/cmr/m/n/24.88 -mers that con
--tribute to in-ter-ac-tions. The
- []
-
-
-Overfull \hbox (24.71756pt too wide) in paragraph at lines 88--93
-\OT1/cmr/m/n/24.88 tein fea-ture) are im-por-tant for in-ter-ac-tions across
- []
-
-[3]
-Overfull \hbox (5.80641pt too wide) in paragraph at lines 96--108
-\OT1/cmr/m/n/24.88 weight-on-prior=1 (pseudo-counts do not make
- []
-
-[4]
-Overfull \hbox (14.52512pt too wide) in paragraph at lines 109--115
-\OT1/cmr/m/n/24.88 fea-tures, ob-tained from the ma-trix $\OML/cmm/m/it/24.88 U
-V[]$\OT1/cmr/m/n/24.88 . These
- []
-
-
-Overfull \hbox (6.56342pt too wide) in paragraph at lines 109--115
-\OT1/cmr/m/n/24.88 task-specific fea-tures i.e sig-nif-i-cant $\OML/cmm/m/it/24
-.88 k$\OT1/cmr/m/n/24.88 -mers from
- []
-
-
-Overfull \hbox (20.66597pt too wide) in paragraph at lines 109--115
-\OT1/cmr/m/n/24.88 virus-proteins of \OT1/cmr/m/it/24.88 Ebola\OT1/cmr/m/n/24.8
-8 , \OT1/cmr/m/it/24.88 Hep-ati-tis \OT1/cmr/m/n/24.88 and \OT1/cmr/m/it/24.88 
-In-fluenza
- []
-
-
-Overfull \hbox (4.26736pt too wide) in paragraph at lines 120--128
-\OT1/cmr/m/it/24.88 Phosphorylation sites\OT1/cmr/m/n/24.88 : We found the fre-
-quent
- []
-
-[5]
-Overfull \hbox (7.86212pt too wide) in paragraph at lines 129--138
-\OT1/cmr/m/n/24.88 Find-ing that the virus k-mer pat-terns pre-dicted
- []
-
-
-Overfull \hbox (10.73564pt too wide) in paragraph at lines 129--138
-\OT1/cmr/m/n/24.88 ap-pli-ca-tions in epi-tope pre-dic-tion as well, where
- []
-
-
-Overfull \hbox (4.82779pt too wide) in paragraph at lines 129--138
-\OT1/cmr/m/n/24.88 pos-si-ble $\OML/cmm/m/it/24.88 k$\OT1/cmr/m/n/24.88 -mers f
-rom pro-tein se-quences to iden-
- []
-
-[6] <fig4-eps-converted-to.pdf, id=39, 642.4pt x 481.8pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<fig4-eps-converted-to.pdf, id=26, 642.4pt x 481.8pt>
 File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig4-eps-converted-to.pdf>
-<fig8-eps-converted-to.pdf, id=40, 642.4pt x 481.8pt>
+<fig8-eps-converted-to.pdf, id=27, 642.4pt x 481.8pt>
 File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig8-eps-converted-to.pdf>
-<fig7-eps-converted-to.pdf, id=41, 642.4pt x 481.8pt>
+<fig7-eps-converted-to.pdf, id=28, 642.4pt x 481.8pt>
 File: fig7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig7-eps-converted-to.pdf>
@@ -466,7 +388,7 @@ Overfull \hbox (24.70787pt too wide) in paragraph at lines 165--165
  [][] 
  []
 
-<fig9-eps-converted-to.pdf, id=42, 642.4pt x 481.8pt>
+<fig9-eps-converted-to.pdf, id=29, 642.4pt x 481.8pt>
 File: fig9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig9-eps-converted-to.pdf>
@@ -480,29 +402,28 @@ Overfull \hbox (24.70787pt too wide) in paragraph at lines 173--173
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>]
-<top10ebola_3mers_seq2logo.pdf, id=70, 642.4pt x 481.8pt>
+<top10ebola_3mers_seq2logo.pdf, id=30, 642.4pt x 481.8pt>
 File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10ebola_3mers_seq2logo.pdf>
 File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
  <use top10ebola_3mers_seq2logo.pdf>
-<top10flavi_3mers_seq2logo.pdf, id=71, 642.4pt x 481.8pt>
+<top10flavi_3mers_seq2logo.pdf, id=31, 642.4pt x 481.8pt>
 File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10flavi_3mers_seq2logo.pdf>
 File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
  <use top10flavi_3mers_seq2logo.pdf>
-<top10flu_3mers_seq2logo.pdf, id=72, 642.4pt x 481.8pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<top10flu_3mers_seq2logo.pdf, id=32, 642.4pt x 481.8pt>
 File: top10flu_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10flu_3mers_seq2logo.pdf>
 File: top10flu_3mers_seq2logo.pdf Graphic file (type pdf)
  <use top10flu_3mers_seq2logo.pdf>
-<top10human_3mers_seq2logo.pdf, id=73, 642.4pt x 481.8pt>
+<top10human_3mers_seq2logo.pdf, id=33, 642.4pt x 481.8pt>
 File: top10human_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10human_3mers_seq2logo.pdf>
@@ -511,47 +432,43 @@ File: top10human_3mers_seq2logo.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./supplementary.bbl
-Underfull \hbox (badness 2591) in paragraph at lines 4--8
-\OT1/cmr/m/it/24.88 Nu-cleic acids re-search\OT1/cmr/m/n/24.88 , 43(D1):D512--
- []
-
-[8 <./fig7-eps-converted-to.pdf> <./fig9-eps-converted-to.pdf> <./top10ebola_3m
-ers_seq2logo.pdf> <./top10flavi_3mers_seq2logo.pdf>]) [9 <./top10flu_3mers_seq2
-logo.pdf> <./top10human_3mers_seq2logo.pdf>] (./supplementary.aux)
+(./supplementary.bbl [3 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.
+pdf> <./fig7-eps-converted-to.pdf> <./fig9-eps-converted-to.pdf>]) [4 <./top10e
+bola_3mers_seq2logo.pdf> <./top10flavi_3mers_seq2logo.pdf> <./top10flu_3mers_se
+q2logo.pdf> <./top10human_3mers_seq2logo.pdf>] (./supplementary.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3907 strings out of 493878
- 53518 string characters out of 1153452
- 114524 words of memory out of 3000000
- 7119 multiletter control sequences out of 15000+50000
- 21235 words of font info for 81 fonts, out of 3000000 for 9000
+ 3884 strings out of 493878
+ 53148 string characters out of 1153452
+ 118524 words of memory out of 3000000
+ 7098 multiletter control sequences out of 15000+50000
+ 15627 words of font info for 60 fonts, out of 3000000 for 9000
  694 hyphenation exceptions out of 8191
- 37i,12n,38p,641b,582s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,12n,38p,641b,578s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr
-9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
-msam7.pfb>
-Output written on supplementary.pdf (9 pages, 314241 bytes).
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msa
+m7.pfb>
+Output written on supplementary.pdf (4 pages, 301438 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
