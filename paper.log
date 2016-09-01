@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:48
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -643,21 +643,11 @@ Underfull \hbox (badness 1024) in paragraph at lines 524--527
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
 
-<flavinet.pdf, id=59, 505.89pt x 505.89pt>
-File: flavinet.pdf Graphic file (type pdf)
- <use flavinet.pdf>
-<flunet.pdf, id=60, 505.89pt x 505.89pt>
-File: flunet.pdf Graphic file (type pdf)
- <use flunet.pdf>
-Overfull \hbox (7.00647pt too wide) in paragraph at lines 539--558
- [][] 
- []
-
-<fig2-eps-converted-to.pdf, id=61, 419.5675pt x 305.14pt>
+<fig2-eps-converted-to.pdf, id=59, 419.5675pt x 305.14pt>
 File: fig2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig2-eps-converted-to.pdf>
-<pca_with_clusters.pdf, id=62, 614.295pt x 794.97pt>
+<pca_with_clusters.pdf, id=60, 614.295pt x 794.97pt>
 File: pca_with_clusters.pdf Graphic file (type pdf)
 
 <use pca_with_clusters.pdf>
@@ -665,18 +655,11 @@ File: pca_with_clusters.pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[7 <./flavinet.pdf> <./flunet.pdf> <./fig2-eps-converted-to.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[7 <./fig2-eps-converted-to.pdf> <./pca_with_clusters.pdf>]
 Underfull \hbox (badness 1038) in paragraph at lines 742--746
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
@@ -686,48 +669,65 @@ Underfull \hbox (badness 1755) in paragraph at lines 742--746
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
 
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[8 <./pca_with_clusters.pdf>]
-<fig4-eps-converted-to.pdf, id=122, 642.4pt x 481.8pt>
+<fig4-eps-converted-to.pdf, id=103, 642.4pt x 481.8pt>
 File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig4-eps-converted-to.pdf>
-<fig8-eps-converted-to.pdf, id=123, 642.4pt x 481.8pt>
+<fig8-eps-converted-to.pdf, id=104, 642.4pt x 481.8pt>
 File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig8-eps-converted-to.pdf> (./paper.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>])
+[8 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 100.75949pt
-
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 101.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 102.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:102.75949pt Right:102.519pt Output:102.75949pt
+Extra height:20.519pt when 537.97699pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 538.97699pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 539.97699pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 540.97699pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 541.97699pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:541.97699pt Right:535.954pt Output:541.97699pt
 - LAST -
 Extra skip:0.0pt
-Left:102.75949pt
-Right:102.519pt
-Output:102.75949pt
+Left:541.97699pt
+Right:535.954pt
+Output:541.97699pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -736,9 +736,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[10
-
-]
+[9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -746,7 +744,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[11] (./paper.aux)
+[10] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -756,10 +754,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4829 strings out of 493878
- 61534 string characters out of 1153452
- 147497 words of memory out of 3000000
- 7994 multiletter control sequences out of 15000+50000
+ 4818 strings out of 493878
+ 61373 string characters out of 1153452
+ 167487 words of memory out of 3000000
+ 7985 multiletter control sequences out of 15000+50000
  52554 words of font info for 103 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1192b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -789,9 +787,9 @@ vr8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (11 pages, 1034561 bytes).
+Output written on paper.pdf (10 pages, 1006706 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 229 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
