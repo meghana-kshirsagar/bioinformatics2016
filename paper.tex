@@ -100,7 +100,7 @@ allows us to learn models that generalize better across diseases by
 modeling global phenomena related to infection.
 
 An elegant way to formulate the interaction prediction problem is via a graph completion based framework, where we have several bipartite 
-graphs over multiple hosts and pathogens as illustrated in Figure \ref{fig:hpppigraph}.
+graphs over multiple hosts and pathogens. % as illustrated in Figure \ref{fig:hpppigraph}.
 Nodes in the graphs represent host proteins (circles) and pathogen proteins (triangles), with edges between them representing interactions 
 (host protein $\frac{interacts}{}$ pathogen protein).
 Given some observed edges (interactions obtained from laboratory based experiments), we wish to predict the other edges in the graphs.
@@ -361,13 +361,13 @@ Such features have been successfully applied in prior work \citep{dyer07,me_ismb
 & \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} && \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
 Homolog & \textbf{0.230}$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 && \textbf{0.311}$\pm$.03 & 0.180$\pm$.01 & 0.198$\pm$.01 \\
 STL (Ridge Reg.)  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02 && 0.130$\pm$.03 & 0.802$\pm$.03 & 0.428$\pm$.03 \\ 
-MMTL \citep{pontil04} & 0.113$\pm$.04 & 0.767$\pm$.03 & 0.321$\pm$.02 && 0.129$\pm$.02 & 0.802$\pm$.04 & 0.430$\pm$.03  \\ 
+MMTL & 0.113$\pm$.04 & 0.767$\pm$.03 & 0.321$\pm$.02 && 0.129$\pm$.02 & 0.802$\pm$.04 & 0.430$\pm$.03  \\ 
 %Trace-norm  & 0.199$\pm$.11 & 0.767$\pm$.03 & 0.318$\pm$.02 && 0.207$\pm$.02 & 0.808$\pm$.02 & 0.409$\pm$.03 \\ 
-Sparse+low-rank \citep{chen2012} & 0.144$\pm$.07 & 0.767$\pm$.02 & 0.318$\pm$.02 && 0.153$\pm$.02 & \textbf{0.814}$\pm$.01 & 0.414$\pm$.03  \\ 
+Sparse+low-rank & 0.144$\pm$.07 & 0.767$\pm$.02 & 0.318$\pm$.02 && 0.153$\pm$.02 & \textbf{0.814}$\pm$.01 & 0.414$\pm$.03  \\ 
 %Dirty model \citep{jalali2010} & 0.074$\pm$.03 & 0.767$\pm$.04 & 0.324$\pm$.02 && 0.165$\pm$.02 & 0.813$\pm$.03 & 0.412$\pm$.03  \\ 
-MTPL \citep{me_ismb_2013} & 0.217$\pm$.08 & 0.695$\pm$.02 & 0.345$\pm$.02 && 0.260$\pm$.05 & 0.713$\pm$.01 & \textbf{0.496}$\pm$.03 \\ 
-IMC \citep{nagarajan} & 0.087$\pm$.04 & \textbf{0.779}$\pm$.02 & \textbf{0.362}$\pm$.01 && 0.122$\pm$.02 & 0.801$\pm$.01 & 0.410$\pm$.03  \\ \midrule
-BSL-MTL (this work) & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{0.486}$\pm$.02 && \textbf{0.361}$\pm$.03 & \textbf{0.842}$\pm$.01 & \textbf{0.560}$\pm$.02  \\ \bottomrule
+MTPL & 0.217$\pm$.08 & 0.695$\pm$.02 & 0.345$\pm$.02 && 0.260$\pm$.05 & 0.713$\pm$.01 & \textbf{0.496}$\pm$.03 \\ 
+IMC & 0.087$\pm$.04 & \textbf{0.779}$\pm$.02 & \textbf{0.362}$\pm$.01 && 0.122$\pm$.02 & 0.801$\pm$.01 & 0.410$\pm$.03  \\ \midrule
+BSL-MTL & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{0.486}$\pm$.02 && \textbf{0.361}$\pm$.03 & \textbf{0.842}$\pm$.01 & \textbf{0.560}$\pm$.02  \\ \bottomrule
 \end{tabular}
 \end{center}
 \end{small}
@@ -378,7 +378,7 @@ BSL-MTL (this work) & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{
 }
 
 \ffigbox[0.28\textwidth]{%
-\includegraphics[scale=0.23, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
+\includegraphics[scale=0.21, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
 }
 {
 \caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref{goterms}.}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:36
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -451,18 +451,11 @@ Underfull \hbox (badness 10000) detected at line 67
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 103.
-
-
-LaTeX Warning: Reference `fig:hpppigraph' on page 1 undefined on input line 103
-.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <7> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 114.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 115.
 
 Overfull \hbox (1.26001pt too wide) has occurred while \output is active
  []
@@ -490,6 +483,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
+LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 166.
 
 Underfull \hbox (badness 7595) in paragraph at lines 166--167
 \LY1/ptm/b/n/9 Prediction of host-pathogen PPIs\LY1/ptm/m/n/9 : The most reliab
@@ -584,9 +579,6 @@ Underfull \hbox (badness 2393) in paragraph at lines 294--299
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 328--332
 
  []
@@ -600,34 +592,16 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `LY1/ptm/b/n' tried instead on input line 378.
 
-Overfull \hbox (12.96431pt too wide) in paragraph at lines 378--378
- [] 
- []
-
 
 LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
 (Font)              using `LY1/phb/m/n' instead on input line 378.
-
-
-Overfull \hbox (12.96431pt too wide) in paragraph at lines 378--378
- [] 
- []
 
 <pca_with_clusters.pdf, id=49, 614.295pt x 794.97pt>
 File: pca_with_clusters.pdf Graphic file (type pdf)
 
 <use pca_with_clusters.pdf>
-Overfull \hbox (5.20546pt too wide) in paragraph at lines 386--386
- [][] 
- []
-
 File: pca_with_clusters.pdf Graphic file (type pdf)
-<use pca_with_clusters.pdf>
-Overfull \hbox (5.20546pt too wide) in paragraph at lines 386--386
- [][] 
- []
-
-
+ <use pca_with_clusters.pdf>
 Underfull \hbox (badness 1867) in paragraph at lines 398--399
 \LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
@@ -644,19 +618,17 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
 (Font)              using `LY1/phb/m/n' instead on input line 464.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (234.0pt too wide) has occurred while \output is active
-[] []|[] []
- []
-
-[6 <./pca_with_clusters.pdf>]
 Underfull \hbox (badness 1127) in paragraph at lines 511--514
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
@@ -669,6 +641,11 @@ Underfull \hbox (badness 1024) in paragraph at lines 511--514
  []
 
 
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6 <./pca_with_clusters.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 599--603
 
  []
@@ -697,55 +674,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 456.25949pt
+Extra height:20.519pt when 407.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Extra height:0.0pt when 408.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 457.25949pt
+(2)Left:408.519pt Right:410.038pt Output:408.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 458.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 459.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 460.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 461.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:461.25949pt Right:462.519pt Output:461.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:462.519pt Right:462.519pt Output:462.519pt
+(2)Left:410.038pt Right:410.038pt Output:410.038pt
 - LAST -
 Extra skip:0.0pt
-Left:462.519pt
-Right:462.519pt
-Output:462.519pt
+Left:410.038pt
+Right:410.038pt
+Output:410.038pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -762,15 +708,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 4771 strings out of 493878
- 60618 string characters out of 1153452
- 156026 words of memory out of 3000000
- 7941 multiletter control sequences out of 15000+50000
+ 4770 strings out of 493878
+ 60602 string characters out of 1153452
+ 151887 words of memory out of 3000000
+ 7940 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1192b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -794,7 +737,7 @@ ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-texliv
 e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 405306 bytes).
+Output written on paper.pdf (8 pages, 404965 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
