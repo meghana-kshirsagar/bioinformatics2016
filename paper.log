@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:27
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -513,8 +513,17 @@ LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
 (Font)              Font shape `LY1/phv/b/n' tried instead on input line 252.
 File: pca_original_feats.eps Graphic file (type eps)
 <pca_original_feats.eps>
+Overfull \hbox (6.572pt too wide) in paragraph at lines 263--263
+ [][] 
+ []
+
 File: pca_original_feats.eps Graphic file (type eps)
- <pca_original_feats.eps>
+<pca_original_feats.eps>
+Overfull \hbox (6.572pt too wide) in paragraph at lines 263--263
+ [][] 
+ []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -546,13 +555,13 @@ LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
 
 File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
 <pca_bslmtl_with_clusters.eps>
-Overfull \hbox (21.67967pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.28963pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
 File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
 <pca_bslmtl_with_clusters.eps>
-Overfull \hbox (21.67967pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.28963pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
@@ -676,4 +685,4 @@ Here is how much of TeX's memory you used:
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper.dvi (8 pages, 82936 bytes).
+Output written on paper.dvi (8 pages, 82932 bytes).
