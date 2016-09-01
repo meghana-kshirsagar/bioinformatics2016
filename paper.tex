@@ -178,15 +178,16 @@ in all prior work on PPI prediction do not explicitly model the features of the 
 
 A majority of the prior work in the relevant areas of collaborative filtering and link prediction includes single relation models that use neighbourhood based prediction \citep{sarwar01}, matrix factorization based approaches \citep{koren09,menon_ecml11} and bayesian approaches using graphical models \citep{jin02,phung09}. 
 %The matrix factorization based methods have been more popular than the other methods. 
-There have also been multitask approaches on link prediction \citep{zhang12,cao_icml2010,li09,cmf}. 
+There have also been multitask approaches on link prediction \citep{zhang12,cao_icml2010,li09,cmf} however many of those models do not incorporate features of the nodes in the graph. 
 %\cite{li11} presents a survey on multitask/transfer methods in collaborative filtering. 
 %The multi-relational learning literature \cite{xu09} and the work on link prediction in heterogenous networks is not relevant as their setting involves \textit{different types of relationships} between the \textit{same} set of nodes.
 %The prior work on incorporating side information in the form of features of the nodes (users/movies) and edges
 %has been proposed for single-graph link prediction problems. 
-\cite{menon_ecml11} propose a single-graph model that combines linear 
-and bilinear features, latent parameters on the nodes and several other parameters into a function that minimizes a ranking loss. 
+\cite{menon_ecml11} combine linear 
+and bilinear features, latent parameters on the nodes and several other parameters into a function that minimizes a ranking loss for link prediction in a single graph. 
 %Probabilistic models to combine network structure with node features have also been proposed. 
 \cite{abernethy} cast the problem of matrix completion in terms of the abstract problem of learning linear operators. Their framework allows the incorporation of features and kernels. We extend their bilinear model for the multitask setting. There has been a lot of work on other low-rank models for multitask learning \citep{ando2005,ji2009,chen2012,chen2013}. % that try to capture the task relationship via a shared low-rank structure over the model parameters. Chen et al \cite{chen2012} have developed efficient algorithms for sparse and low-rank multitask learning models for classification. 
+Another related line of work is co-embedding, where the goal is to embed different types of objects in the same shared lower-dimensional space \citep{mirzazadeh:2015}.
 
 %\subsection{Background: Host-pathogen protein interactions}
 %The biochemical and biophysical methods that study protein-protein interactions (PPI) are very time-consuming and expensive, making it hard to investigate the 
@@ -355,7 +356,7 @@ All three are single-strand RNA viruses, with \textit{Hepatitis} being a positiv
 \label{sec:phisto}
 The interactions data reported in PHISTO database is aggregated from several host-pathogen interactions data sources such as Virus-Mint, PHI-base etc. We found that many of the interactions (within a task) involve homologous PPI - virus protein homologs from two strains interacting with either the same human protein or with homologous human proteins. Such PPI usually come from different publications/ studies, but they introduce a lot of redundancy in the dataset. Removing such PPI is challenging as there are several criteria to consider, the most important being: \textit{what threshold of sequence similarity constitutes a homolog}? The very existence of sequence similarity between proteins is what makes it possible for biologists to predict unknown interactions and most computational methods rely on it for PPI prediction. 
 
-In row-2 of Table \ref{datasets}, we give a conservative estimate of the number of non-homologous PPI. For this, we identify homologous PPI and retain only one of them in the dataset. Homologs were obtained using BLAST sequence alignment (blastp) using an e-value cut-off threshold of $1e^{-10}$. This is a relaxed cut-off since there are cases where two functionally different proteins (either virus-virus or human-human) with low query coverage and low identity end up as `homologs'. For example, human proteins Q8WV28 (gene BLNK, B-cell linker protein) and O00459 (gene PIK3R2, Phosphatidylinositol 3-kinase) are considered homologs by this cut-off. The number of non-homologous PPI should therefore be considered a lower limit.
+In row-2 of Table \ref{datasets}, we give a conservative estimate of the number of non-homologous PPI. For this, we identify homologous PPI and retain only one of them in the dataset. Homologs were obtained using BLAST sequence alignment (blastp) using an e-value cut-off threshold of $1e^{-5}$. This is a relaxed cut-off since there are cases where two functionally different proteins (either virus-virus or human-human) with low query coverage and low identity end up as `homologs'. For example, human proteins Q8WV28 (gene BLNK, B-cell linker protein) and O00459 (gene PIK3R2, Phosphatidylinositol 3-kinase) are considered homologs by this cut-off. The number of non-homologous PPI should therefore be considered a lower limit.
 
 In our experiments section, we thus evaluate our models in two settings - (1) on the original dataset (2) by removing homologous PPI.
 
@@ -385,7 +386,13 @@ Our baselines include recent low-rank and sparse models, conventional multitask 
 
 
 \subsection{Comparison with a homolog baseline}
-In addition to the machine learning methods presented in Section \ref{mlmethods}, we also tried a simple homology based approach that is based on protein sequence identity. We use the entire human-virus interactome from PHISTO as input to this method. Given a human protein $h$, we rank all virus proteins $v$ based on the following simple scheme. let $V(h)$ be a set of all virus proteins interacting with the human protein $h$ and let $H(v)$ be all human proteins interacting with the virus protein $v$. We score each pair $(h, v)$ from the bipartite graph as follows: $\max \{ \max $ sequence identity between $h$ and all host proteins in $H(v)$; $\max $ sequence identity between $ v $ and all virus proteins in $V(h) \}$. This baseline is shown in the first row as \textit{Homolog} in Table \ref{resultsTable}.
+In addition to the machine learning methods presented in Section \ref{mlmethods}, we also tried a simple homology based approach.
+As per this method, a virus protein $v$ will interact with a human protein $h$ if it interacts with any other human protein $h'$ similar to $h$. The converse holds too. Such homology-motivated heuristic approaches have been traditionally popular in the inter-organism PPI prediction literature \citep{vidal:2001,matthews:2001}. \cite{mika:2006} offers a commentary on the the success of such approaches in prediction PPI within an organism and the transferability across organisms. Modifications of such approaches have been published recently \citep{chen:2009,lin:2013,murakami:2014}.
+
+The virus-virus and human-human protein similarity graphs used in this baseline were computed using protein sequence similarity.
+We ran BLAST sequence alignment (\texttt{blastp}) with an e-value cut-off of 0.1 and the negative logarithm of the e-value was used as a measure of similarity (we use a somewhat relaxed cut-off as we are comparing across organisms).
+We use the entire human-virus interactome from PHISTO as input to this method. Given a human protein $h$, we rank all virus proteins $v$ based on the following simple scheme. Let $V(h)$ be a set of all virus proteins interacting with the human protein $h$ and let $H(v)$ be all human proteins interacting with the virus protein $v$. We score each pair $(h, v)$ from the bipartite graph as follows: $\max \{ \max $ similarity between $h$ and all human proteins in $H(v)$; $\max $ similarity between $v$ and all virus proteins in $V(h) \}$. 
+This baseline is shown in the first row as \textit{Homolog} in Table \ref{resultsTable}.
 
 
 \subsection{Evaluation setup}
@@ -396,7 +403,7 @@ We report the area under the precision recall curve (AUC-PR) along with the stan
 AUC-PR has been shown to give a more informative picture of an algorithm's performance than ROC curves in high class imbalance datasets \citep{davis2006} such as ours. 
 
 
-\begin{table*}[t]\caption{Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
+\begin{table*}[h]\caption{Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
 \label{resultsTable}
 \begin{small}
 \begin{center}
@@ -431,8 +438,43 @@ The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$,
 %For the task-specific regularization parameters, setting them all to a constant i.e $\forall t, \{\sigma_t\} = \sigma$ did not work well owing to the different sizes of the 3 tasks. For each task $t$, $\sigma_t$ was varied over the values $10^{-3}, 10^{-4}, 10^{-5}, 10^{-6}$. The optimal setting of parameters was found to be $k=10$, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
 
 
-\begin{table}\caption{Area Under the Precision-Recall curve for each task on the \textbf{non-homologous PPI within each task}, in the 10\% setting. Only the most representative baselines are retained for this experiment. Our model does significantly better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
-\label{homresultsTable}
+\section{Results}
+The PPI data we obtain from PHISTO has homologous PPI within a task. Note that the presence of sequence similarity across virus proteins is a strong criterion for computational methods to work, however orthologs or paralogs of proteins within a task lead to redundancy in the data and some readers may find it harder to judge the contribution of the methods. We therefore present results on three sets: 
+\begin{enumerate}[a]
+\item the original PPIs from PHISTO. AUC-PR is shown in Table \ref{resultsTable}
+\item \textbf{Non-homologous partition}: after removal of all homologous PPI from the test data. Here we ensure that the test data does not contain homologs of PPI observed in the training data (this ensures there are no redundant examples). Further, every set of homologous PPIs in the test data is replaced with a single PPI. A BLAST sequence similarity cut-off of $1e^{-5}$ was used to find homologs. The results are in Table \ref{nohomresultsTable}.
+\item \textbf{Homologous PPI partition} : only homologous PPI part of the test data. This is essentially the set of PPI removed in the set-(b) above. Table \ref{homresultsTable} shows these results. 
+\end{enumerate}
+Note that the partitions in (b) and (c) together comprise our test data. Also, the negatives in the test data are randomly split into the `no-homolog' and 'homolog' partitions while maintaining the number of negatives in each partition to be 100 times the number of positives. 
+
+\noindent\textit{Overall performance}
+For reference, the AUC-PR of a random classifier model is $\approx 0.01$ due to the class imbalanced nature of the data (class skew = 1:100).
+The first row is the Homolog heuristic based approach, STL is the single-task baseline and all others are multitask models. In general, we notice that multitask learning benefits
+all tasks. The first three columns show the results in the 10\% setting. 
+%The number of training positive examples from each task are 8 for Ebola, 85 for Influenza and 98 for Hepatitis-C. 
+Our model (last row) has large gains for Influenza (1.4 times better than the next best) and modest improvements for the other tasks.
+The variance in the AUC is high for the Ebola task (column 1) owing to the small number of positives 
+in the training splits (8 positives).
+The most benefits for our model are seen in the 30\% setting for all tasks.
+Notably, Homolog performs comparably to our model. In addition to the training data seen by all other methods, this baseline also uses additional data in the form of the virus-virus, human-human sequence similarities and a virus-human interactome from several other viruses (besides the three tasks). 
+Results on the homolog part of our dataset sheds further light on this.
+
+\noindent\textit{Performance on the non-homologous PPI partition}:
+In Table \ref{nohomresultsTable} we show AUC for all the representative baselines in the 10\% setting. 
+Overall, our method performs best on this partition over all tasks.
+Comparison with the AUC in Table \ref{resultsTable} shows that AUC for the \textit{Ebola} task is higher on all baselines except Homolog, indicating that
+a bigger fraction of the overall performance comes from the non-homologous partition (this is also marginally the case for \textit{Influenza}). 
+This effect is the most pronounced for our method (BSL-MTL)
+and demonstrates that we are able to predict such PPI by intelligently sharing information with other tasks. 
+There are thus two components to the prediction performance - (1) the presence of sequence-similar proteins within a task (2) non-linear similarities between the interactions within a task and across tasks. We are able to capture the latter well via the shared subspace structure of our model.
+
+
+%Homolog & 0.010 $\pm$.03 & 0.079 $\pm$.01 & 0.135 $\pm$.02 \\  
+%STL (Ridge Reg.)  & 0.054 $\pm$.03 &  0.400 $\pm$.06 & 0.192 $\pm$.03 \\
+%BSL-MTL (this work) & 0.071 $\pm$.03 & \textbf{0.501} $\pm$.05 & \textbf{0.331} $\pm$.03  \\ \bottomrule 
+
+\begin{table}\caption{Area Under the Precision-Recall curve for each task on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
+\label{nohomresultsTable}
 \begin{small}
 \begin{center}
 \def\arraystretch{1.2}
@@ -443,38 +485,15 @@ The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$,
 Homolog & 0.207 $\pm$.07 & 0.113 $\pm$.01 & 0.109 $\pm$ .01 \\
 STL  & 0.210 $\pm$.14 & 0.474 $\pm$ .06 & 0.302 $\pm$.03 \\
 Sparse+LR & 0.216 $\pm$.13 & 0.482 $\pm$.05 & 0.312 $\pm$.04 \\ 
-BSL-MTL & 0.295 $\pm$.10 & 0.544 $\pm$.06 & 0.505 $\pm$.05 \\ \bottomrule
+BSL-MTL & \textbf{0.295} $\pm$.10 & \textbf{0.544} $\pm$.06 & \textbf{0.505} $\pm$.05 \\ \bottomrule
 \end{tabular}
 \end{center}
 \end{small}
 \end{table}
 
 
-\section{Results}
-The PPI data we obtain from PHISTO has homologous PPI within a task. Note that the presence of sequence similarity across virus proteins is a strong criterion for computational methods to work, however orthologs or paralogs of proteins within a task lead to redundancy in the data and some readers may find it harder to judge the contribution of the methods. We therefore present results on two sets of data: 
-\begin{enumerate}[a]
-\item with the original PPIs from PHISTO shown in Table \ref{resultsTable}
-\item after removal of all homologous PPI. Here we ensure that the test data does not contain any homologs of PPI observed in the training data. A BLAST sequence similarity cut-off of $1e^{-10}$ was used to find homologs (see Section \ref{sec:phisto} for details). Note that the number of negatives in the test data is still 100 times the number of positives. Table \ref{homresultsTable} shows these results. 
-\end{enumerate}
-
-Table \ref{resultsTable} has the AUC-PR for all methods. 
-Note that the AUC-PR of a random classifier model is $\approx 0.01$.
-The first row is the Homolog heuristic based approach, STL is the single-task baseline and all others are multitask models. In general, we notice that multitask learning benefits
-all tasks. The first three columns show the results in the 10\% setting. 
-%The number of training positive examples from each task are 8 for Ebola, 85 for Influenza and 98 for Hepatitis-C. 
-Our model (last row) has significant gains for Influenza (1.4 times better than the next best) and modest improvements for the other tasks.
-The variance in the AUC is high for the Ebola task (column 1) owing to the small number of positives 
-in the training splits (8 positives).
-The most benefits for our model are seen in the 30\% setting for all tasks.
-Notably, Homolog performs comparably to our model. In addition to the training data seen by all other methods, this baseline also uses additional data in the form of the virus-host interactome from several other viruses. Results on the no-homolog part of our dataset sheds further light on this.
-
-In Table \ref{homresultsTable} we show AUC for all the representative baselines in the 10\% setting. Our method outperforms all others by large margins on the non-homologous portion of the test data, by intelligently sharing information with other tasks. There are thus two components to the prediction performance - (1) the presence of sequence-similar proteins within a task (2) non-linear similarities between the interactions within a task and across tasks. We are able to capture the latter well via the shared subspace structure of our model.
-
-
-%Homolog & 0.010 $\pm$.03 & 0.079 $\pm$.01 & 0.135 $\pm$.02 \\  
-%STL (Ridge Reg.)  & 0.054 $\pm$.03 &  0.400 $\pm$.06 & 0.192 $\pm$.03 \\
-%BSL-MTL (this work) & 0.071 $\pm$.03 & \textbf{0.501} $\pm$.05 & \textbf{0.331} $\pm$.03  \\ \bottomrule 
-
+\noindent\textit{Performance on the homologous PPI partition}:
+Except the \textit{Ebola} task, BSL-MTL has the highest AUC. The Homolog baseline best captures the homologous PPI in \textit{Ebola} (with an AUC twice the next best). However, since there are far fewer homologous PPI in Ebola than in the other tasks (row-2 of Table \ref{datasets}), this contributes less to the overall performance of the Homolog baseline. \textit{Hepatitis-C} has the highest fraction of homologous PPI and BSL-MTL does significantly better on these than the other baselines which also leads to a higher overall AUC. The same can be said of the \textit{Influenza} task.
 
 \subsection{Disadvantages of the Homolog method}
 In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
@@ -486,7 +505,7 @@ In Figure \ref{fig:network} we show for each task, the protein interactions in t
 \def\arraystretch{1.2}
 \begin{tabular}{c|ccc}
 \toprule
-\multicolumn{4}{c}{\textbf{10 \% training, test on Homologous PPI }} \\
+\multicolumn{4}{c}{\textbf{10 \% training, test only Homologous PPI }} \\
 & \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
 Homolog & 0.399 $\pm$.07 & 0.161 $\pm$.01 & 0.180 $\pm$ .01 \\
 STL   & 0.192 $\pm$.15 & 0.504 $\pm$.10 & 0.305 $\pm$.03 \\
@@ -507,7 +526,7 @@ opportunities to interpret the parameters.
 \subsubsection{Clustering proteins based on interaction propensities}
 We analyze the proteins by projecting them using the model parameters $U$ and $V$ into a lower dimensional subspace 
 (i.e computing $X U^\intercal$ and $Y V^\intercal$ to get projections of the virus and human proteins respectively).  
-The principal component analysis (PCA) of this lower dimensional representation is compared with PCA in the original feature space (protein sequence features) in Fig \ref{fig:pca}. 
+The principal component analysis (PCA) of this lower dimensional representation is compared with PCA in the original feature space (protein sequence features) in Figures \ref{fig:pca1} and \ref{fig:pca2}. 
 Firstly, the projected data has a much better separation than the original data.
 Secondly, Fig \ref{fig:pca2} tells us that Hepatitis-C and Influenza have many proteins with similar binding tendencies, and that these behave differently than most Ebola virus proteins. This observation is not obvious in the PCA of the original feature space (Fig \ref{fig:pca1}), where proteins with similar sequences group together.
 We analyze the projected data further by looking at the clusters of proteins for enrichment of Gene Ontology (GO) annotations (proteins were first clustered in this lower dimensional space using k-means and setting the number of clusters to 6). Of particular interest are the highlighted three clusters which contain either proteins projected far from others (such as cluster-1) and proteins from different viruses projected close together (cluster-2 and cluster-3).
@@ -651,7 +670,7 @@ related to the amino acids being frequent targets of phosphorylation.
 Phosphorylated sites often serve as PPI sites, and databases such as Phosphosite \citep{phosphosite} are
  repositories for known sites in human proteins. Since these are sites in human proteins, we searched for the patterns from the 4-mer motif of human proteins (supplementary) and found several to be flanking known phosphorylation sites in human proteins:
 \texttt{LLLs}, \texttt{LLLt}, \texttt{ILLs}, \texttt{PPPs}, \texttt{PIPs}, \texttt{PIPt}, \texttt{LIPs}, \texttt{PLLt} (lower-case indicates the putative phosphorylation site). This observation also supports the notion that the motifs predictive
-of interaction are biologically significant.
+of interaction are biologically interesting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -720,7 +739,7 @@ BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\p
 %Multitask link prediction is an important area with many applications ranging from recommendation systems to biomedical host-pathogen interactions.  
 This work developed and tested a new method based on low-rank matrix completion for sharing information across tasks
 %and showed significant increases in prediction performance. 
-The method was evaluated in the host-pathogen protein interaction domain for three pathogens (three tasks) and exhibited significant increases in prediction accuracy. The model parameters provide several avenues for
+The method was evaluated in the host-pathogen protein interaction domain for three pathogens (three tasks) and exhibited large increases in prediction accuracy. The model parameters provide several avenues for
 studying host-pathogen interactions for biologists that can lead to interesting observations and insights. Finally, the model we present is general enough to be applicable on other problems such as: gene-disease relevance prediction across organisms or disease conditions. 
 
 

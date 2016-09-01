@@ -43,6 +43,12 @@ Chatraryamontri, A., Ceol, A., Peluso, D., {\em et~al.} (2009).
 \newblock Virusmint: a viral protein interaction database.
 \newblock {\em Nucleic Acids Research\/}, {\bf 37}.
 
+\bibitem[Chen {\em et~al.}(2009)Chen, Lin, Lo, and Yang]{chen:2009}
+Chen, C.-C., Lin, C.-Y., Lo, Y.-S., and Yang, J.-M. (2009).
+\newblock Ppisearch: a web server for searching homologous protein--protein
+  interactions across multiple species.
+\newblock {\em Nucleic acids research\/}, {\bf 37}(suppl 2), W369--W375.
+
 \bibitem[Chen {\em et~al.}(2012)Chen, Liu, and Ye]{chen2012}
 Chen, J., Liu, J., and Ye, J. (2012).
 \newblock Learning incoherent sparse and low-rank patterns from multiple tasks.
@@ -137,10 +143,43 @@ Li, B., Yang, Q., and Xue, X. (2009).
 \newblock In {\em International Conference on Machine Learning\/}, pages
   617--624. ACM.
 
+\bibitem[Lin {\em et~al.}(2013)Lin, Chen, Lo, and Yang]{lin:2013}
+Lin, C.-Y., Chen, Y.-C., Lo, Y.-S., and Yang, J.-M. (2013).
+\newblock Inferring homologous protein-protein interactions through pair
+  position specific scoring matrix.
+\newblock {\em BMC bioinformatics\/}, {\bf 14}(2), 1.
+
+\bibitem[Matthews {\em et~al.}(2001)Matthews, Vaglio, Reboul, Ge, Davis,
+  Garrels, Vincent, and Vidal]{matthews:2001}
+Matthews, L.~R., Vaglio, P., Reboul, J., Ge, H., Davis, B.~P., Garrels, J.,
+  Vincent, S., and Vidal, M. (2001).
+\newblock Identification of potential interaction networks using sequence-based
+  searches for conserved protein-protein interactions or “interologs”.
+\newblock {\em Genome research\/}, {\bf 11}(12), 2120--2126.
+
 \bibitem[Menon and Elkan(2011)Menon and Elkan]{menon_ecml11}
 Menon, A.~K. and Elkan, C. (2011).
 \newblock Link prediction via matrix factorization.
 \newblock {\em ECML\/}.
+
+\bibitem[Mika and Rost(2006)Mika and Rost]{mika:2006}
+Mika, S. and Rost, B. (2006).
+\newblock Protein--protein interactions more conserved within species than
+  across species.
+\newblock {\em PLoS Comput Biol\/}, {\bf 2}(7), e79.
+
+\bibitem[Mirzazadeh {\em et~al.}(2015)Mirzazadeh, White, Gy{\"o}rgy, and
+  Schuurmans]{mirzazadeh:2015}
+Mirzazadeh, F., White, M., Gy{\"o}rgy, A., and Schuurmans, D. (2015).
+\newblock Scalable metric learning for co-embedding.
+\newblock In {\em Joint European Conference on Machine Learning and Knowledge
+  Discovery in Databases (ECML-KDD)\/}, pages 625--642. Springer.
+
+\bibitem[Murakami and Mizuguchi(2014)Murakami and Mizuguchi]{murakami:2014}
+Murakami, Y. and Mizuguchi, K. (2014).
+\newblock Homology-based prediction of interactions between proteins using
+  averaged one-dependence estimators.
+\newblock {\em BMC bioinformatics\/}, {\bf 15}(1), 1.
 
 \bibitem[Nanbo {\em et~al.}(2010)Nanbo, Imai, Watanabe, {\em
   et~al.}]{nanbo2010}
@@ -231,6 +270,11 @@ Vita, R., Overton, J.~A., Greenbaum, J.~A., {\em et~al.} (2015).
 \newblock The immune epitope database (iedb) 3.0.
 \newblock {\em Nucleic acids research\/}, {\bf 43}(D1), D405--D412.
 
+\bibitem[Walhout and Vidal(2001)Walhout and Vidal]{vidal:2001}
+Walhout, A.~J. and Vidal, M. (2001).
+\newblock Protein interaction maps for model organisms.
+\newblock {\em Nature Reviews Molecular Cell Biology\/}, {\bf 2}(1), 55--63.
+
 \bibitem[Wu {\em et~al.}(2006)Wu, Zhu, Guo, {\em et~al.}]{yeast}
 Wu, X., Zhu, L., Guo, J., {\em et~al.} (2006).
 \newblock Prediction of yeast protein-protein interaction network: insights
@@ -247,5 +291,10 @@ Xu, Q., Xiang, E.~W., and Yang, Q. (2010).
 Zhang, Y., Cao, B., and Yeung, D.-Y. (2012).
 \newblock Multi-domain collaborative filtering.
 \newblock {\em arXiv preprint arXiv:1203.3535\/}.
+
+\bibitem[Zhou {\em et~al.}(2011)Zhou, Chen, and Ye]{malsar}
+Zhou, J., Chen, J., and Ye, J. (2011).
+\newblock Malsar: Multi-task learning via structural regularization.
+\newblock {\em Arizona State University\/}.
 
 \end{thebibliography}

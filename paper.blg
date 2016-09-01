@@ -1,51 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: paper.aux
 The style file: natbib.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "malsar"
 Warning--empty journal in prateek
 Warning--there's a number but no volume in koren09
 Warning--there's a number but no volume in tastan09
-You've used 42 entries,
+You've used 50 entries,
             2378 wiz_defined-function locations,
-            759 strings with 10285 characters,
-and the built_in function-call counts, 20983 in all, are:
-= -- 2077
-> -- 1142
-< -- 24
-+ -- 339
-- -- 327
-* -- 1898
-:= -- 3539
-add.period$ -- 225
-call.type$ -- 42
-change.case$ -- 264
-chr.to.int$ -- 42
-cite$ -- 45
-duplicate$ -- 913
-empty$ -- 1332
-format.name$ -- 398
-if$ -- 4199
+            801 strings with 11882 characters,
+and the built_in function-call counts, 25117 in all, are:
+= -- 2472
+> -- 1396
+< -- 28
++ -- 413
+- -- 401
+* -- 2291
+:= -- 4252
+add.period$ -- 263
+call.type$ -- 50
+change.case$ -- 315
+chr.to.int$ -- 50
+cite$ -- 53
+duplicate$ -- 1078
+empty$ -- 1588
+format.name$ -- 486
+if$ -- 5021
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 42
-newline$ -- 214
-num.names$ -- 168
-pop$ -- 309
+missing$ -- 50
+newline$ -- 254
+num.names$ -- 200
+pop$ -- 362
 preamble$ -- 1
-purify$ -- 264
+purify$ -- 315
 quote$ -- 0
-skip$ -- 603
+skip$ -- 716
 stack$ -- 0
-substring$ -- 1267
-swap$ -- 208
-text.length$ -- 6
+substring$ -- 1504
+swap$ -- 244
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 378
+type$ -- 450
 warning$ -- 3
-while$ -- 175
+while$ -- 211
 width$ -- 0
-write$ -- 538
-(There were 4 warnings)
+write$ -- 642
+(There were 3 warnings)

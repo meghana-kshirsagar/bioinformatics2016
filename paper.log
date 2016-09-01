@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 00:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 21:41
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -339,11 +339,7 @@ Package subfigure Warning: Your document class has a bad definition
 Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
  names
 )
-(./paper.aux
-
-LaTeX Warning: Label `homresultsTable' multiply defined.
-
-)
+(./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -505,16 +501,16 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 1502) in paragraph at lines 179--190
+Underfull \hbox (badness 1502) in paragraph at lines 179--191
 []\LY1/ptm/m/n/9 A majority of the prior work in the relevant areas of
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 205.
+(Font)              size <6> substituted on input line 206.
 
 
-Overfull \hbox (9.26553pt too wide) detected at line 219
+Overfull \hbox (9.26553pt too wide) detected at line 220
 []
  []
 
@@ -522,57 +518,57 @@ Overfull \hbox (9.26553pt too wide) detected at line 219
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig1-eps-converted-to.pdf>
-Overfull \hbox (76.96466pt too wide) in paragraph at lines 236--236
+Overfull \hbox (76.96466pt too wide) in paragraph at lines 237--237
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 236.
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 237.
 
-LaTeX Font Info:    No file LY1phb.fd. on input line 236.
+LaTeX Font Info:    No file LY1phb.fd. on input line 237.
 
 LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 236.
+(Font)              using `LY1/ptm/m/n' instead on input line 237.
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 236.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 237.
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use fig1-eps-converted-to.pdf>
-Overfull \hbox (76.96466pt too wide) in paragraph at lines 236--236
+Overfull \hbox (76.96466pt too wide) in paragraph at lines 237--237
  [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 261.
+LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 262.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.54997> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.25> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 261.
+(Font)              size <5> substituted on input line 262.
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -581,17 +577,12 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 
 [3]
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 294.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 295.
 
-Underfull \hbox (badness 2393) in paragraph at lines 316--320
+Underfull \hbox (badness 2393) in paragraph at lines 317--321
 \LY1/ptm/b/n/9 Optimization\LY1/ptm/m/n/9 : The function $\OMS/cmsy/m/n/9 L\OT1
 /cmr/m/n/9 (\OML/cmm/m/it/9 U; V; \OMS/cmsy/m/n/9 f\OML/cmm/m/it/9 S[]\OMS/cmsy
 /m/n/9 g\OT1/cmr/m/n/9 )$ \LY1/ptm/m/n/9 is non-convex.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--353
-
  []
 
 
@@ -603,17 +594,17 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [4 <./fig1-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 350--354
 
-Package natbib Warning: Citation `malsar' on page 5 undefined on input line 377
-.
+ []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 377--378
+Underfull \hbox (badness 1867) in paragraph at lines 378--379
 \LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 379--384
+Underfull \hbox (badness 2205) in paragraph at lines 380--385
 \LY1/ptm/b/n/9 MTPL \LY1/ptm/m/n/9 (Kshirsagar \LY1/ptm/m/it/9 et al.\LY1/ptm/m
 /n/9 , 2013): A biologically inspired
  []
@@ -626,39 +617,39 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [5]
 
 LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 399.
+(Font)              using `LY1/phb/m/n' instead on input line 406.
 
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 434.
+(Font)              using `LY1/phb/m/n' instead on input line 476.
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 503--506
-\LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
-mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
- of rich
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 503--506
-\LY1/ptm/m/n/9 information which can be used to further understand host-
- []
-
-
-LaTeX Warning: Reference `fig:pca' on page 6 undefined on input line 510.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[6] <flavinet.pdf, id=59, 505.89pt x 505.89pt>
+[6]
+Underfull \hbox (badness 1127) in paragraph at lines 522--525
+\LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
+mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
+ of rich
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 522--525
+\LY1/ptm/m/n/9 information which can be used to further understand host-
+ []
+
+<flavinet.pdf, id=59, 505.89pt x 505.89pt>
 File: flavinet.pdf Graphic file (type pdf)
  <use flavinet.pdf>
 <flunet.pdf, id=60, 505.89pt x 505.89pt>
 File: flunet.pdf Graphic file (type pdf)
  <use flunet.pdf>
-Overfull \hbox (7.00647pt too wide) in paragraph at lines 518--537
+Overfull \hbox (7.00647pt too wide) in paragraph at lines 537--556
  [][] 
  []
 
@@ -677,12 +668,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[7 <./flavinet.pdf> <./flunet.pdf>]
-Underfull \hbox (badness 1584) in paragraph at lines 721--725
+[7 <./flavinet.pdf> <./flunet.pdf> <./fig2-eps-converted-to.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 740--744
 \LY1/ptm/m/n/9 several avenues for studying host-pathogen interactions for
  []
 
@@ -691,7 +689,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[8 <./fig2-eps-converted-to.pdf> <./pca_with_clusters.pdf>]
+[8 <./pca_with_clusters.pdf>]
 <fig4-eps-converted-to.pdf, id=122, 642.4pt x 481.8pt>
 File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -699,14 +697,55 @@ File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 <fig8-eps-converted-to.pdf, id=123, 642.4pt x 481.8pt>
 File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig8-eps-converted-to.pdf> (./paper.bbl)
-Extra height:0.0pt when 601.49615pt
-(2)Left:601.49615pt Right:598.954pt Output:601.49615pt
+<use fig8-eps-converted-to.pdf> (./paper.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 96.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 97.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 98.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 99.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 100.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 101.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 102.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 103.25949pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:103.25949pt Right:102.519pt Output:103.25949pt
 - LAST -
 Extra skip:0.0pt
-Left:601.49615pt
-Right:598.954pt
-Output:601.49615pt
+Left:103.25949pt
+Right:102.519pt
+Output:103.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -715,11 +754,17 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[9 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>]
+[10
 
-Package natbib Warning: There were undefined citations.
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(./paper.aux)
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -727,18 +772,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 4822 strings out of 493878
- 61433 string characters out of 1153452
- 159855 words of memory out of 3000000
- 7987 multiletter control sequences out of 15000+50000
+ 4829 strings out of 493878
+ 61534 string characters out of 1153452
+ 147555 words of memory out of 3000000
+ 7994 multiletter control sequences out of 15000+50000
  52554 words of font info for 103 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1192b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -768,9 +807,9 @@ vr8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (9 pages, 1027614 bytes).
+Output written on paper.pdf (11 pages, 1034603 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 248 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
