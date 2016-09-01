@@ -594,7 +594,7 @@ The top four Ebola-human PPI are all predictions for the Ebola envelope glycopro
 We analyze sequence motifs derived from the top $k$-mers that contribute to interactions. The significant entries of the model parameters $U$, $V$ and $\{S_t\}$ were used to 
 compute these motifs. The top positive-valued entries from the product $U V^T$ indicate which pairs of features: ($(f_v, f_h)$: virus protein feature, human protein feature) are important for interactions across all the virus-human PPI tasks.
 Analogously, the entries from $S_t$ give us pairs of features important to a particular virus-human task `$t$'.
-These results are in the supplementary.
+These results are in the supplementary.\\
 
 
 \noindent\textbf{Results on HIV data}: 
@@ -607,14 +607,6 @@ This work developed and tested a new multitask learning method for host-pathogen
 %The method was evaluated on host-pathogen protein interaction domain for three pathogens (three tasks) and exhibited large increases in prediction accurac
 The model parameters provide several avenues for further studying host-pathogen PPI that can lead to interesting observations and insights. Finally, the model we present is general enough to be applicable on other problems such as: gene-disease relevance prediction across organisms or disease conditions. 
 
-
-\begin{figure}
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.165, trim = 0 0.8cm 0 0]{fig4-eps-converted-to.pdf}
-\includegraphics[scale=0.165, trim = 0 0 0 0]{fig8-eps-converted-to.pdf}
-\caption{(\textit{Left}) Top tri-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions and is derived from our model parameter $H = U V^{T}$. (\textit{Right}) Motif corresponding to enriched 4-mer patterns found by our model (parameter: $S_{hepc}$) for the Hepatitis-C virus task.}%
-\label{fig:virus_motifs}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

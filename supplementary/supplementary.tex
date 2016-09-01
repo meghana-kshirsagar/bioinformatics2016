@@ -128,10 +128,18 @@ features in our model will give motifs from which complete epitopes can be deriv
 Our model thus has applications in epitope prediction as well, where conventional methods consist of scanning all possible $k$-mers from protein sequences to identify likely epitopes.
 
 
+\begin{figure}
+%trim option's parameter order: left bottom right top
+\includegraphics[scale=0.165, trim = 0 0.8cm 0 0]{fig4-eps-converted-to.pdf}
+\includegraphics[scale=0.165, trim = 0 0 0 0]{fig8-eps-converted-to.pdf}
+\caption{(\textit{Left}) Top tri-mer sequence motifs from virus proteins across all three viruses. These correspond to features important for interactions and is derived from our model parameter $H = U V^{T}$. (\textit{Right}) Motif corresponding to enriched 4-mer patterns found by our model (parameter: $S_{hepc}$) for the Hepatitis-C virus task.}%
+\label{fig:virus_motifs}
+\end{figure}
+
 
 \begin{figure}[h]
 \begin{floatrow}
-\ffigbox[0.4\columnwidth]{%
+\ffigbox[0.3\columnwidth]{%
 %trim option's parameter order: left bottom right top
 \includegraphics[scale=0.25, trim = 0.2cm 0 0 0]{fig7-eps-converted-to.pdf}
 }{%
@@ -139,7 +147,7 @@ Our model thus has applications in epitope prediction as well, where conventiona
 \label{fig:ebola_motifs}
 }
 
-\ffigbox[0.4\columnwidth]{%
+\ffigbox[0.3\columnwidth]{%
 %trim option's parameter order: left bottom right top
 \includegraphics[scale=0.25, trim = 0 0 0 0]{fig8-eps-converted-to.pdf}
 }{%
@@ -147,23 +155,18 @@ Our model thus has applications in epitope prediction as well, where conventiona
 \label{fig:hepc_motifs}
 }
 
-
-\end{floatrow}
-\end{figure}
-
-\begin{figure}[h]
-\begin{floatrow}
-\ffigbox[0.4\columnwidth]{%
+\ffigbox[0.3\columnwidth]{%
 %trim option's parameter order: left bottom right top
 \includegraphics[scale=0.25, trim = 0 0 0 0]{fig9-eps-converted-to.pdf}
 }{%
 \caption{Sequence motifs specific to \textit{Influenza} proteins that are also important to interactions.}%
 \label{fig:flu_motifs}
 }
+
+
 \end{floatrow}
 \end{figure}
 
-\newpage
 
 \section{Tri-mers}
 

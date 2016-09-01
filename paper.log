@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:17
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -661,6 +661,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 594--598
+
+ []
+
+
 Underfull \hbox (badness 1038) in paragraph at lines 605--609
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
@@ -675,47 +680,70 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[7 <./fig2-eps-converted-to.pdf> <./pca_with_clusters.pdf>]
-<fig4-eps-converted-to.pdf, id=96, 642.4pt x 481.8pt>
-File: fig4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig4-eps-converted-to.pdf>
-<fig8-eps-converted-to.pdf, id=97, 642.4pt x 481.8pt>
-File: fig8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig8-eps-converted-to.pdf> (./paper.bbl)
+[7 <./fig2-eps-converted-to.pdf> <./pca_with_clusters.pdf>] (./paper.bbl)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 665.53816pt
+Extra height:20.519pt when 598.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 666.53816pt
+Extra height:20.519pt when 599.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 667.53816pt
+Extra height:20.519pt when 600.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 668.53816pt
+Extra height:20.519pt when 601.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 669.53816pt
-(2)Left:669.53816pt Right:671.038pt Output:669.53816pt
-(2)Left:671.038pt Right:671.038pt Output:671.038pt
+Extra height:20.519pt when 602.519pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 603.519pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 604.519pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 605.519pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 606.519pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:606.519pt Right:608.038pt Output:606.519pt
+(2)Left:608.038pt Right:590.038pt Output:608.038pt
 - LAST -
 Extra skip:0.0pt
-Left:671.038pt
-Right:671.038pt
-Output:671.038pt
+Left:608.038pt
+Right:590.038pt
+Output:608.038pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[8 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>] (./paper.aux)
+[8] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -725,10 +753,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4789 strings out of 493878
- 61108 string characters out of 1153452
- 166470 words of memory out of 3000000
- 7956 multiletter control sequences out of 15000+50000
+ 4778 strings out of 493878
+ 60802 string characters out of 1153452
+ 164462 words of memory out of 3000000
+ 7947 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1192b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -752,9 +780,9 @@ ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-texliv
 e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 931036 bytes).
+Output written on paper.pdf (8 pages, 911007 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
