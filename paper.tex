@@ -573,12 +573,9 @@ These results are in the supplementary.\\
 
 
 \section{Results on HIV data}
-We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data has $\approx$4000 human-HIV PPI across several strains of which 1320 are non-homologous PPI. Please refer to the supplementary for the results.
+We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). The interactions data (obtained from PHISTO and NIAID databases) has $\approx$4000 human-HIV PPI across several strains, of which 1320 PPI are non-homologous. This experiment particularly tests the robustness of the multitask learning approaches by the addition of a relatively unrelated task. Table \ref{hivresults} shows the results.
 
-This experiment particularly tests the robustness of all the multitask learning approaches by the addition of an unrelated task.
-Table \ref{hivresults} shows the results. 
-
-\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
+\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of a somewhat dissimilar task such as HIV.}
 \label{hivresults}
 \begin{small}
 \begin{center}

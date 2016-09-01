@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:38
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -615,12 +615,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 569--573
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 603--607
+Underfull \hbox (badness 1038) in paragraph at lines 600--604
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 603--607
+Underfull \hbox (badness 1755) in paragraph at lines 600--604
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
 
@@ -638,62 +638,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 493.019pt
+Extra height:20.519pt when 478.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 494.019pt
+Extra height:0.0pt when 479.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+(2)Left:479.75949pt Right:480.519pt Output:479.75949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 495.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 496.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 497.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 498.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 499.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:499.019pt Right:500.038pt Output:499.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:500.038pt Right:500.038pt Output:500.038pt
+(2)Left:480.519pt Right:480.519pt Output:480.519pt
 - LAST -
 Extra skip:0.0pt
-Left:500.038pt
-Right:500.038pt
-Output:500.038pt
+Left:480.519pt
+Right:480.519pt
+Output:480.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -714,10 +679,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4287 strings out of 493879
  54609 string characters out of 1153475
- 148118 words of memory out of 3000000
+ 147118 words of memory out of 3000000
  7473 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper.dvi (8 pages, 84364 bytes).
+Output written on paper.dvi (8 pages, 84248 bytes).
