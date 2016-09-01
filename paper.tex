@@ -371,19 +371,6 @@ To account for protein size, they normalized the counts by linearly transforming
 Thus the value of each feature in the feature vector is the normalized count for each of the possible amino acid three-mers. We use di-, tri- and four-mers thus leading to a total of 2793 features ($7^2 + 7^3 + 7^4$).
 Such features have been successfully applied in prior work \citep{dyer07,me_ismb_2013}.
 
-\section{Experimental setup}
-
-\subsection{Comparison with other machine learning approaches}
-\label{mlmethods}
-Our baselines include recent low-rank and sparse models, conventional multitask methods and prior work on HP PPI prediction. For a uniform comparison we used least squared loss in all the methods. The MALSAR \cite{malsar} package was used to implement some of the models. For the baselines wherever appropriate, we concatenated the features of the two node types into a single feature vector. Let $W \in \mathbb{R}^{T \times d_t}$ be the matrix with the task-specific weight vectors $\mathbf{w}_t$.
- 
-\noindent\textbf{Single task (STL)}: We used ridge regression with $\ell_2$ regularization (which performed better than $\ell_1$). \\
-\noindent\textbf{MMTL}: The mean regularized multitask learning model from \cite{pontil04}. \\
-\noindent\textbf{Sparse + low-rank} \citep{chen2012}: $W$ is assumed to have the decomposition: $W = P + Q$, where $P$ is sparse and $Q$ has a low-rank structure. \\
-\noindent\textbf{IMC} \citep{prateek,nagarajan}: This is the link-prediction model from Section \ref{MCintro}, where data from all tasks is combined without incorporating any task relationships. $U$ and $V$ are shared by all tasks. We use the same initialization for this method as we do for our model. A comparison to this model tells us how much we gain from the task-specific sparsity component $S_t$. \\
-\noindent\textbf{MTPL} \citep{me_ismb_2013}: A biologically inspired regularizer is used to capture task similarity.\\ \noindent\textbf{BSL-MTL}: Bilinear sparse low-rank multitask learning, the method developed in this paper.
-
-
 \begin{table*}[!h]\caption{Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
 \label{resultsTable}
 \begin{small}
@@ -406,6 +393,22 @@ BSL-MTL (this work) & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{
 \end{center}
 \end{small}
 \end{table*}
+
+
+
+
+\section{Experimental setup}
+
+\subsection{Comparison with other machine learning approaches}
+\label{mlmethods}
+Our baselines include recent low-rank and sparse models, conventional multitask methods and prior work on HP PPI prediction. For a uniform comparison we used least squared loss in all the methods. The MALSAR \cite{malsar} package was used to implement some of the models. For the baselines wherever appropriate, we concatenated the features of the two node types into a single feature vector. Let $W \in \mathbb{R}^{T \times d_t}$ be the matrix with the task-specific weight vectors $\mathbf{w}_t$.
+ 
+\noindent\textbf{Single task (STL)}: We used ridge regression with $\ell_2$ regularization (which performed better than $\ell_1$). \\
+\noindent\textbf{MMTL}: The mean regularized multitask learning model from \cite{pontil04}. \\
+\noindent\textbf{Sparse + low-rank} \citep{chen2012}: $W$ is assumed to have the decomposition: $W = P + Q$, where $P$ is sparse and $Q$ has a low-rank structure. \\
+\noindent\textbf{IMC} \citep{prateek,nagarajan}: This is the link-prediction model from Section \ref{MCintro}, where data from all tasks is combined without incorporating any task relationships. $U$ and $V$ are shared by all tasks. We use the same initialization for this method as we do for our model. A comparison to this model tells us how much we gain from the task-specific sparsity component $S_t$. \\
+\noindent\textbf{MTPL} \citep{me_ismb_2013}: A biologically inspired regularizer is used to capture task similarity.\\ \noindent\textbf{BSL-MTL}: Bilinear sparse low-rank multitask learning, the method developed in this paper.
+
 
 
 \subsection{Comparison with a homolog baseline}
