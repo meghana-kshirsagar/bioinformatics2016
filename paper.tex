@@ -481,9 +481,6 @@ BSL-MTL & \textbf{0.295} $\pm$.10 & \textbf{0.544} $\pm$.06 & \textbf{0.505} $\p
 \noindent\textit{Performance on the homologous PPI partition} (Table \ref{homresultsTable}):
 Except the \textit{Ebola} task, BSL-MTL has the highest AUC. The Homolog baseline best captures the homologous PPI in \textit{Ebola} (with an AUC twice the next best). However, since there are far fewer homologous PPI in Ebola than in the other tasks (row-2 of Table \ref{datasets}), this contributes less to the overall performance of the Homolog baseline. \textit{Hepatitis-C} has the highest fraction of homologous PPI and BSL-MTL does significantly better on these than the other baselines which also leads to a higher overall AUC. The same can be said of the \textit{Influenza} task.
 
-%\subsection{Disadvantages of the Homolog method}
-%In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
-
 \begin{table}[!h]
 \caption{AUC-PR on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
 \label{homresultsTable}
@@ -518,31 +515,6 @@ Firstly, the projected data has a much better separation than the original data.
 Secondly, Fig \ref{fig:pca2} tells us that Hepatitis-C and Influenza have many proteins with similar binding tendencies, and that these behave differently than most Ebola virus proteins. This observation is not obvious in the PCA of the original feature space (Fig \ref{fig:pca1}), where proteins with similar sequences group together.
 We analyze the projected data further by looking at the clusters of proteins for enrichment of Gene Ontology (GO) annotations (proteins were first clustered in this lower dimensional space using k-means and setting the number of clusters to 6). Of particular interest are the highlighted three clusters which contain either proteins projected far from others (such as cluster-1) and proteins from different viruses projected close together (cluster-2 and cluster-3).
 For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and GO annotations for the three viruses from UniProtKB.
-
-
-%\begin{figure}
-%\begin{tabular}{c}
-%%\begin{minipage}{0.3\textwidth}
-%%\begin{center}
-%%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
-%%\end{center}
-%%\end{minipage}
-%%&
-%\begin{minipage}{\textwidth}
-%\begin{center}
-%\includegraphics[scale=0.25, trim = 0.7cm 0.7cm 0.7cm 0.7cm]{flavinet.pdf}
-%\end{center}
-%\end{minipage}
-%\\
-%\begin{minipage}{\textwidth}
-%\begin{center}
-%\includegraphics[scale=0.25, trim = 0.5cm 0.5cm 0.5cm 0.5cm]{flunet.pdf}
-%\end{center}
-%\end{minipage}
-%\end{tabular}
-%\caption{PPI from each task that are found by our method but are missed by the homolog method. To obtain these, we chose a random train/test split and picked examples from the test data on which the homolog method fails - these are ones for which sequence-similar proteins are not found. (a) shows \textit{Ebola}-human PPI, (b) \textit{Hepatitis-C} human PPI and (c) \textit{Influenza}-human PPI.}
-%\label{fig:network}
-%\end{figure}
 
 
 \begin{table}[bht]
@@ -600,8 +572,31 @@ Analogously, the entries from $S_t$ give us pairs of features important to a par
 These results are in the supplementary.\\
 
 
-\noindent\textbf{Results on HIV data}: 
+\section{Results on HIV data}
 We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data has $\approx$4000 human-HIV PPI across several strains of which 1320 are non-homologous PPI. Please refer to the supplementary for the results.
+
+This experiment particularly tests the robustness of all the multitask learning approaches by the addition of an unrelated task.
+Table \ref{hivresults} shows the results. 
+
+\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
+\label{hivresults}
+\begin{small}
+\begin{center}
+%\def\arraystretch{1.2}
+\begin{tabular}{c|cccc}
+\toprule
+& \multicolumn{4}{c}{10 \% training } \\
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} & \textit{HIV} \\ \midrule
+Homolog & 0.230$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 & 0.170 $\pm$.01 \\
+STL  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02  & 0.208 $\pm$.01 \\ 
+Sparse+LR & 0.135 $\pm$.06 & 0.724 $\pm$.05 & 0.280 $\pm$.01 & 0.205 $\pm$.03  \\ 
+BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\pm$.01 & \textbf{0.354} $\pm$.01  \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{small}
+\end{table}
+
+
 
 \section{Conclusions and future extensions}
 %Multitask link prediction is an important area with many applications ranging from recommendation systems to biomedical host-pathogen interactions.  

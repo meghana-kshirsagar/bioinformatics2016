@@ -48,39 +48,42 @@ $\Omega_t$: the observed entries of the matrix $M_t$\\
 \end{algorithm}
 
 
-\section{Results on HIV data}
-We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data has $\approx$4000 human-HIV PPI across several strains of which 1320 are non-homologous PPI. Please refer to the supplementary for the results.
-
-This experiment particularly tests the robustness of all the multitask learning approaches by the addition of an unrelated task.
-Table \ref{hivresults} shows the results. 
-
-\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
-\label{hivresults}
-\begin{small}
-\begin{center}
-%\def\arraystretch{1.2}
-\begin{tabular}{c|cccc}
-\toprule
-& \multicolumn{4}{c}{10 \% training } \\
-& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} & \textit{HIV} \\ \midrule
-Homolog & 0.230$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 & 0.170 $\pm$.01 \\
-STL  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02  & 0.208 $\pm$.01 \\ 
-Sparse+LR & 0.135 $\pm$.06 & 0.724 $\pm$.05 & 0.280 $\pm$.01 & 0.205 $\pm$.03  \\ 
-BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\pm$.01 & \textbf{0.354} $\pm$.01  \\ \bottomrule
-\end{tabular}
-\end{center}
-\end{small}
-\end{table}
-
-
-
-
 \section{Parameter tuning}
 We tune the hyper parameters using a 3 fold cross-validation (CV) on the training split. For all baseline regularization parameters %(or a grid search based on the method): 
 we tried the range: [$100, 50, 10, 1, 0.1, 0.01, 0.05, 10^{-3}$]. To address the class-skew we 
 assign a higher weight to the positives. For BSL-MTL, to tune the rank parameter '$k$' we tried: [1, 5, 10, 25, 40, 60, 100] and the regularization parameter controlling the norm of $U$ and $V$ was tuned over the range $\lambda$=$\{1 ... 10^{-3}\}$. For each task $t$, $\sigma_t$ was varied over the values $[10^{-3}, 10^{-4}, 10^{-5}, 10^{-6}]$ and
 $\mu_t$ was varied over $\{0, 0.25, 0.5, 0.75, 1\}$.
 The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
+
+\subsection{Disadvantages of the Homolog method}
+In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
+
+
+
+\begin{figure}
+\begin{tabular}{c}
+%\begin{minipage}{0.3\textwidth}
+%\begin{center}
+%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
+%\end{center}
+%\end{minipage}
+%&
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\includegraphics[scale=0.25, trim = 0.7cm 0.7cm 0.7cm 0.7cm]{flavinet.pdf}
+\end{center}
+\end{minipage}
+\\
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\includegraphics[scale=0.25, trim = 0.5cm 0.5cm 0.5cm 0.5cm]{flunet.pdf}
+\end{center}
+\end{minipage}
+\end{tabular}
+\caption{PPI from each task that are found by our method but are missed by the homolog method. To obtain these, we chose a random train/test split and picked examples from the test data on which the homolog method fails - these are ones for which sequence-similar proteins are not found. (a) shows \textit{Ebola}-human PPI, (b) \textit{Hepatitis-C} human PPI and (c) \textit{Influenza}-human PPI.}
+\label{fig:network}
+\end{figure}
+
 
 
 \section{Biological significance of interactions} 
