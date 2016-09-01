@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:31
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:17
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -33,17 +33,16 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
-\Gread@gobject=\count80
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-\CROP@offset=\count81
+\CROP@offset=\count80
 Package crop Info: Local config file crop.cfg used on input line 344.
 
 (/usr/share/texmf-texlive/tex/xelatex/xetexconfig/crop.cfg))
-Package crop Info: using pdf(la)tex graphics driver on input line 31.
+Package crop Info: using dvips graphics driver on input line 31.
  (./graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -74,13 +73,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count82
+\inf@bad=\count81
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count83
-\leftroot@=\count84
+\uproot@=\count82
+\leftroot@=\count83
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count85
-\DOTSCASE@=\count86
+\classnum@=\count84
+\DOTSCASE@=\count85
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -89,15 +88,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count87
-\c@MaxMatrixCols=\count88
+\macc@depth=\count86
+\c@MaxMatrixCols=\count87
 \dotsspace@=\muskip10
-\c@parentequation=\count89
-\dspbrk@lvl=\count90
+\c@parentequation=\count88
+\dspbrk@lvl=\count89
 \tag@help=\toks18
-\row@=\count91
-\column@=\count92
-\maxfields@=\count93
+\row@=\count90
+\column@=\count91
+\maxfields@=\count92
 \andhelp@=\toks19
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -124,8 +123,11 @@ Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
  (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 125.
-)
+Package color Info: Driver file: dvips.def on input line 125.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
 (/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
@@ -147,8 +149,8 @@ Package: flushend 1997/10/01
 )
 (./stfloats.sty
 Package: stfloats 1999/10/22
-\@dblbotnum=\count94
-\c@dblbotnumber=\count95
+\@dblbotnum=\count93
+\c@dblbotnumber=\count94
 ) (/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks24
@@ -163,8 +165,8 @@ Package: amsthm 2004/08/06 v2.20
 )
 (./chngpage.sty
 Package: chngpage 2001/01/31 v1.1b change page layout
-\c@cp@cnt=\count96
-\c@cp@tempcnt=\count97
+\c@cp@cnt=\count95
+\c@cp@tempcnt=\count96
 ) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
@@ -180,13 +182,13 @@ LaTeX Font Info:    Try loading font information for LY1+ptm on input line 100.
 (/usr/share/texmf-texlive/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 ))
-\c@section=\count98
-\c@subsection=\count99
-\c@subsubsection=\count100
-\c@paragraph=\count101
-\c@subparagraph=\count102
-\c@figure=\count103
-\c@table=\count104
+\c@section=\count97
+\c@subsection=\count98
+\c@subsubsection=\count99
+\c@paragraph=\count100
+\c@subparagraph=\count101
+\c@figure=\count102
+\c@table=\count103
 \dropfromtop=\skip49
 \extraspace=\skip50
 \aboveskipchk=\skip51
@@ -200,7 +202,7 @@ Package: natbib 2000/07/24 7.0a (PWD)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 508.
-\c@NAT@ctr=\count105
+\c@NAT@ctr=\count104
 ))
 (/usr/share/texmf-texlive/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
@@ -216,7 +218,7 @@ Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used on input line 1068.
 )
-\c@float@type=\count106
+\c@float@type=\count105
 \float@exts=\toks30
 \float@box=\box33
 \@floatcapt=\box34
@@ -234,18 +236,18 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \FBo@max=\skip59
 \FBc@max=\skip60
 \FBf@max=\skip61
-\c@FBl@b=\count107
-\floatbox@depth=\count108
-\c@FRobj=\count109
-\c@FRsobj=\count110
+\c@FBl@b=\count106
+\floatbox@depth=\count107
+\c@FRobj=\count108
+\c@FRsobj=\count109
 \Xhsize=\skip62
 \sXhsize=\skip63
 \Zhsize=\skip64
 \sZhsize=\skip65
 \flrow@rowbox=\box35
 \FR@Zunitlength=\dimen130
-\c@FBcnt=\count111
-\FPOScnt=\count112
+\c@FBcnt=\count110
+\FPOScnt=\count111
 \LTleft=\skip66
 \LTright=\skip67
 \LTleft=\skip68
@@ -264,12 +266,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen138
 \cmidrulekern=\dimen139
 \defaultaddspace=\dimen140
-\@cmidla=\count113
-\@cmidlb=\count114
+\@cmidla=\count112
+\@cmidlb=\count113
 \@aboverulesep=\dimen141
 \@belowrulesep=\dimen142
-\@thisruleclass=\count115
-\@lastruleclass=\count116
+\@thisruleclass=\count114
+\@lastruleclass=\count115
 \@thisrulewidth=\dimen143
 )
 (/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
@@ -292,10 +294,10 @@ Package subfigure Warning: Your document class has a bad definition
 \subfigbottomskip=\skip72
 \subfigcapmargin=\dimen145
 \subfiglabelskip=\skip73
-\c@subfigure=\count117
-\c@lofdepth=\count118
-\c@subtable=\count119
-\c@lotdepth=\count120
+\c@subfigure=\count116
+\c@lofdepth=\count117
+\c@subtable=\count118
+\c@lotdepth=\count119
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
@@ -326,19 +328,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
- (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen147
-\scratchbox=\box36
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen148
-\MPnumerator=\count125
-\everyMPtoPDFconversion=\toks34
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for LY1+phv on input line 65.
@@ -346,13 +335,9 @@ LaTeX Font Info:    Try loading font information for LY1+phv on input line 65.
 File: ly1phv.fd 2001/02/01 scalable font definitions for LY1/phv using Berry na
 mes.
 )
+File: OUP_First_SBk_Bot_8401.eps Graphic file (type eps)
 
-pdfTeX warning: pdflatex (file ./OUP_First_SBk_Bot_8401-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<OUP_First_SBk_Bot_8401-eps-converted-to.pdf, id=1, 54.2025pt x 54.2025pt>
-File: OUP_First_SBk_Bot_8401-eps-converted-to.pdf Graphic file (type pdf)
-
-<use OUP_First_SBk_Bot_8401-eps-converted-to.pdf>
+<OUP_First_SBk_Bot_8401.eps>
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <9> not available
 (Font)              Font shape `LY1/phv/b/n' tried instead on input line 65.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <18> not available
@@ -431,11 +416,11 @@ Overfull \hbox (1.26001pt too wide) has occurred while \output is active
  []
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1
 
 
 
- <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -526,12 +511,10 @@ LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
 (Font)              Font shape `LY1/phv/b/n' tried instead on input line 252.
-<fig2-eps-converted-to.pdf, id=31, 419.5675pt x 305.14pt>
-File: fig2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig2-eps-converted-to.pdf>
-File: fig2-eps-converted-to.pdf Graphic file (type pdf)
- <use fig2-eps-converted-to.pdf>
+File: pca_original_feats.eps Graphic file (type eps)
+<pca_original_feats.eps>
+File: pca_original_feats.eps Graphic file (type eps)
+ <pca_original_feats.eps>
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -553,7 +536,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[4 <./fig2-eps-converted-to.pdf>]
+[4]
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `LY1/ptm/b/n' tried instead on input line 375.
 
@@ -561,12 +544,10 @@ LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
 LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
 (Font)              using `LY1/phb/m/n' instead on input line 375.
 
-<pca_with_clusters.pdf, id=49, 614.295pt x 794.97pt>
-File: pca_with_clusters.pdf Graphic file (type pdf)
-
-<use pca_with_clusters.pdf>
-File: pca_with_clusters.pdf Graphic file (type pdf)
- <use pca_with_clusters.pdf>
+File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
+<pca_bslmtl_with_clusters.eps>
+File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
+ <pca_bslmtl_with_clusters.eps>
 Underfull \hbox (badness 1867) in paragraph at lines 395--396
 \LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
@@ -610,7 +591,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[6 <./pca_with_clusters.pdf>]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 596--600
 
  []
@@ -693,38 +674,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4522 strings out of 493878
- 57550 string characters out of 1153452
- 146181 words of memory out of 3000000
- 7705 multiletter control sequences out of 15000+50000
+ 4286 strings out of 493879
+ 54597 string characters out of 1153475
+ 138110 words of memory out of 3000000
+ 7472 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/texnansi.enc}</usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmm
-i9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lcir
-cle1.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam7.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
-r/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texl
-ive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/u
-rw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8
-ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/sha
-re/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-texliv
-e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
-mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 404471 bytes).
-PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Output written on paper.dvi (8 pages, 82932 bytes).
