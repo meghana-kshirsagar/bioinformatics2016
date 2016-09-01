@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:18
 entering extended mode
  %&-line parsing enabled.
 **supplementary.tex
@@ -29,57 +29,78 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-texlive/tex/latex/floatrow/floatrow.sty
-Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
 
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@dimlist=\toks15
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+
 (/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
 Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
-\captionmargin=\dimen103
-\captionmargin@=\dimen104
-\captionwidth=\dimen105
-\caption@indent=\dimen106
-\caption@parindent=\dimen107
-\caption@hangindent=\dimen108
+\captionmargin=\dimen107
+\captionmargin@=\dimen108
+\captionwidth=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
 )
-\c@float@type=\count87
-\float@exts=\toks15
+\c@float@type=\count90
+\float@exts=\toks16
 \float@box=\box26
 \@floatcapt=\box27
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks16
+\FR@everyfloat=\toks17
 \flrow@foot=\insert233
-\FB@wd=\dimen109
-\FBo@wd=\dimen110
-\FBc@wd=\dimen111
+\FB@wd=\dimen113
+\FBo@wd=\dimen114
+\FBc@wd=\dimen115
 \FBo@ht=\skip43
 \FBc@ht=\skip44
 \FBf@ht=\skip45
 \FBo@max=\skip46
 \FBc@max=\skip47
 \FBf@max=\skip48
-\c@FBl@b=\count88
-\floatbox@depth=\count89
-\c@FRobj=\count90
-\c@FRsobj=\count91
+\c@FBl@b=\count91
+\floatbox@depth=\count92
+\c@FRobj=\count93
+\c@FRsobj=\count94
 \Xhsize=\skip49
 \sXhsize=\skip50
 \Zhsize=\skip51
 \sZhsize=\skip52
 \flrow@rowbox=\box28
-\FR@Zunitlength=\dimen112
-\c@FBcnt=\count92
-\FPOScnt=\count93
+\FR@Zunitlength=\dimen116
+\c@FBcnt=\count95
+\FPOScnt=\count96
 \LTleft=\skip53
 \LTright=\skip54
 \LTleft=\skip55
 \LTright=\skip56
-\flrow@types=\toks17
+\flrow@types=\toks18
 )
 (/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -88,14 +109,14 @@ nment
 (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@algorithm=\count94
+\c@algorithm=\count97
 )
 (/usr/share/texmf-texlive/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count95
-\c@ALC@line=\count96
-\c@ALC@rem=\count97
-\c@ALC@depth=\count98
+\c@ALC@unique=\count98
+\c@ALC@line=\count99
+\c@ALC@rem=\count100
+\c@ALC@depth=\count101
 \ALC@tlm=\skip57
 \algorithmicindent=\skip58
 )
@@ -103,14 +124,14 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip59
 \subfigcapskip=\skip60
-\subfigcaptopadj=\dimen113
+\subfigcaptopadj=\dimen117
 \subfigbottomskip=\skip61
-\subfigcapmargin=\dimen114
+\subfigcapmargin=\dimen118
 \subfiglabelskip=\skip62
-\c@subfigure=\count99
-\c@lofdepth=\count100
-\c@subtable=\count101
-\c@lotdepth=\count102
+\c@subfigure=\count102
+\c@lofdepth=\count103
+\c@subtable=\count104
+\c@lotdepth=\count105
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -124,7 +145,7 @@ Package: amssymb 2009/06/22 v3.00
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
-\@emptytoks=\toks18
+\@emptytoks=\toks19
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -140,73 +161,73 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks19
-\ex@=\dimen115
+\@emptytoks=\toks20
+\ex@=\dimen119
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen116
+\pmbraise@=\dimen120
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count103
+\inf@bad=\count106
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count104
-\leftroot@=\count105
+\uproot@=\count107
+\leftroot@=\count108
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count106
-\DOTSCASE@=\count107
+\classnum@=\count109
+\DOTSCASE@=\count110
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
-\big@size=\dimen117
+\big@size=\dimen121
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count108
-\c@MaxMatrixCols=\count109
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
 \dotsspace@=\muskip10
-\c@parentequation=\count110
-\dspbrk@lvl=\count111
-\tag@help=\toks20
-\row@=\count112
-\column@=\count113
-\maxfields@=\count114
-\andhelp@=\toks21
-\eqnshift@=\dimen118
-\alignsep@=\dimen119
-\tagshift@=\dimen120
-\tagwidth@=\dimen121
-\totwidth@=\dimen122
-\lineht@=\dimen123
-\@envbody=\toks22
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks21
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks22
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks23
 \multlinegap=\skip66
 \multlinetaggap=\skip67
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
 (/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen124
-\lightrulewidth=\dimen125
-\cmidrulewidth=\dimen126
-\belowrulesep=\dimen127
-\belowbottomsep=\dimen128
-\aboverulesep=\dimen129
-\abovetopsep=\dimen130
-\cmidrulesep=\dimen131
-\cmidrulekern=\dimen132
-\defaultaddspace=\dimen133
-\@cmidla=\count115
-\@cmidlb=\count116
-\@aboverulesep=\dimen134
-\@belowrulesep=\dimen135
-\@thisruleclass=\count117
-\@lastruleclass=\count118
-\@thisrulewidth=\dimen136
+\heavyrulewidth=\dimen128
+\lightrulewidth=\dimen129
+\cmidrulewidth=\dimen130
+\belowrulesep=\dimen131
+\belowbottomsep=\dimen132
+\aboverulesep=\dimen133
+\abovetopsep=\dimen134
+\cmidrulesep=\dimen135
+\cmidrulekern=\dimen136
+\defaultaddspace=\dimen137
+\@cmidla=\count118
+\@cmidlb=\count119
+\@aboverulesep=\dimen138
+\@belowrulesep=\dimen139
+\@thisruleclass=\count120
+\@lastruleclass=\count121
+\@thisrulewidth=\dimen140
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -224,10 +245,10 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
-\Gread@gobject=\count119
+\Gread@gobject=\count122
 ))
-\Gin@req@height=\dimen137
-\Gin@req@width=\dimen138
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
 )
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
@@ -245,21 +266,63 @@ LaTeX Warning: Label `fig:flu_motifs' multiply defined.
 )
 \openout1 = `supplementary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 72.26999pt, 452.9679pt, 72.26999pt
+v-parts: 72.26999pt, 700.50687pt, 72.26999pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  452.9679pt
+\textheight 700.50687pt
+\oddsidemargin  0.0pt
+\evensidemargin 0.0pt
+\topmargin  -37.0pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 50.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/etc/texmf/tex/latex/config/color.cfg
@@ -269,242 +332,226 @@ Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen139
+\scratchcounter=\count123
+\scratchdimen=\dimen143
 \scratchbox=\box31
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen140
-\MPnumerator=\count124
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen144
+\MPnumerator=\count127
+\everyMPtoPDFconversion=\toks26
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
+Overfull \hbox (6.15814pt too wide) in paragraph at lines 52--53
+\OT1/cmr/m/n/24.88 dis-sim-i-lar to our orig-i-nal set-ting in-volv-ing three
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[1
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-] [2]
-<fig4-eps-converted-to.pdf, id=24, 642.4pt x 481.8pt>
-File: fig4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig4-eps-converted-to.pdf>
-<fig8-eps-converted-to.pdf, id=25, 642.4pt x 481.8pt>
-File: fig8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig8-eps-converted-to.pdf>
-<fig7-eps-converted-to.pdf, id=26, 642.4pt x 481.8pt>
-File: fig7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig7-eps-converted-to.pdf>
-Overfull \hbox (51.1759pt too wide) in paragraph at lines 154--154
- [][] 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (17.10478pt too wide) in paragraph at lines 54--56
+\OT1/cmr/m/n/24.88 bust-ness of all the mul-ti-task learn-ing ap-proaches
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 154--154
-[]\OT1/cmr/m/n/10.95 Figure 2: Se-quence
- []
-
-File: fig7-eps-converted-to.pdf Graphic file (type pdf)
-<use fig7-eps-converted-to.pdf>
-Overfull \hbox (51.1759pt too wide) in paragraph at lines 154--154
- [][] 
+Overfull \hbox (2.27557pt too wide) in paragraph at lines 79--84
+\OT1/cmr/m/n/24.88 cross-validation (CV) on the train-ing split. For
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 154--154
-[]\OT1/cmr/m/n/10.95 Figure 2: Se-quence
+Overfull \hbox (68.3903pt too wide) in paragraph at lines 79--84
+\OML/cmm/m/it/24.88 ^^[[]$ \OT1/cmr/m/n/24.88 was var-ied over the val-ues $[10
+[]\OML/cmm/m/it/24.88 ; \OT1/cmr/m/n/24.88 10[]\OML/cmm/m/it/24.88 ; \OT1/cmr/m
+/n/24.88 10[]\OML/cmm/m/it/24.88 ; \OT1/cmr/m/n/24.88 10[]]$
  []
 
-File: fig8-eps-converted-to.pdf Graphic file (type pdf)
-<use fig8-eps-converted-to.pdf>
-Overfull \hbox (52.59851pt too wide) in paragraph at lines 162--162
- [][] 
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 162--162
-[]\OT1/cmr/m/n/10.95 Figure 3: Se-quence
+[2]
+Overfull \hbox (6.82068pt too wide) in paragraph at lines 88--93
+\OT1/cmr/m/n/24.88 top $\OML/cmm/m/it/24.88 k$\OT1/cmr/m/n/24.88 -mers that con
+-tribute to in-ter-ac-tions. The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-\OT1/cmr/m/n/10.95 mo-tifs spe-cific to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-\OT1/cmr/m/it/10.95 Hepatitic-C \OT1/cmr/m/n/10.95 pro-teins
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 162--162
-\OT1/cmr/m/n/10.95 that are also im-por-
- []
-
-File: fig8-eps-converted-to.pdf Graphic file (type pdf)
-<use fig8-eps-converted-to.pdf>
-Overfull \hbox (52.59851pt too wide) in paragraph at lines 162--162
- [][] 
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 162--162
-[]\OT1/cmr/m/n/10.95 Figure 3: Se-quence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-\OT1/cmr/m/n/10.95 mo-tifs spe-cific to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-\OT1/cmr/m/it/10.95 Hepatitic-C \OT1/cmr/m/n/10.95 pro-teins
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 162--162
-\OT1/cmr/m/n/10.95 that are also im-por-
- []
-
-<fig9-eps-converted-to.pdf, id=27, 642.4pt x 481.8pt>
-File: fig9-eps-converted-to.pdf Graphic file (type pdf)
-
-<use fig9-eps-converted-to.pdf>
-Overfull \hbox (52.59851pt too wide) in paragraph at lines 170--170
- [][] 
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 170--170
-[]\OT1/cmr/m/n/10.95 Figure 4: Se-quence
- []
-
-File: fig9-eps-converted-to.pdf Graphic file (type pdf)
-<use fig9-eps-converted-to.pdf>
-Overfull \hbox (52.59851pt too wide) in paragraph at lines 170--170
- [][] 
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 170--170
-[]\OT1/cmr/m/n/10.95 Figure 4: Se-quence
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<top10ebola_3mers_seq2logo.pdf, id=28, 642.4pt x 481.8pt>
-File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
-
-<use top10ebola_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 189--189
- [][] 
- []
-
-File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
-<use top10ebola_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 189--189
- [][] 
- []
-
-<top10flavi_3mers_seq2logo.pdf, id=29, 642.4pt x 481.8pt>
-File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
-
-<use top10flavi_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 197--197
- [][] 
- []
-
-File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
-<use top10flavi_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 197--197
- [][] 
+Overfull \hbox (24.71756pt too wide) in paragraph at lines 88--93
+\OT1/cmr/m/n/24.88 tein fea-ture) are im-por-tant for in-ter-ac-tions across
  []
 
 [3]
+Overfull \hbox (5.80641pt too wide) in paragraph at lines 96--108
+\OT1/cmr/m/n/24.88 weight-on-prior=1 (pseudo-counts do not make
+ []
+
+[4]
+Overfull \hbox (14.52512pt too wide) in paragraph at lines 109--115
+\OT1/cmr/m/n/24.88 fea-tures, ob-tained from the ma-trix $\OML/cmm/m/it/24.88 U
+V[]$\OT1/cmr/m/n/24.88 . These
+ []
+
+
+Overfull \hbox (6.56342pt too wide) in paragraph at lines 109--115
+\OT1/cmr/m/n/24.88 task-specific fea-tures i.e sig-nif-i-cant $\OML/cmm/m/it/24
+.88 k$\OT1/cmr/m/n/24.88 -mers from
+ []
+
+
+Overfull \hbox (20.66597pt too wide) in paragraph at lines 109--115
+\OT1/cmr/m/n/24.88 virus-proteins of \OT1/cmr/m/it/24.88 Ebola\OT1/cmr/m/n/24.8
+8 , \OT1/cmr/m/it/24.88 Hep-ati-tis \OT1/cmr/m/n/24.88 and \OT1/cmr/m/it/24.88 
+In-fluenza
+ []
+
+
+Overfull \hbox (4.26736pt too wide) in paragraph at lines 120--128
+\OT1/cmr/m/it/24.88 Phosphorylation sites\OT1/cmr/m/n/24.88 : We found the fre-
+quent
+ []
+
+[5]
+Overfull \hbox (7.86212pt too wide) in paragraph at lines 129--138
+\OT1/cmr/m/n/24.88 Find-ing that the virus k-mer pat-terns pre-dicted
+ []
+
+
+Overfull \hbox (10.73564pt too wide) in paragraph at lines 129--138
+\OT1/cmr/m/n/24.88 ap-pli-ca-tions in epi-tope pre-dic-tion as well, where
+ []
+
+
+Overfull \hbox (4.82779pt too wide) in paragraph at lines 129--138
+\OT1/cmr/m/n/24.88 pos-si-ble $\OML/cmm/m/it/24.88 k$\OT1/cmr/m/n/24.88 -mers f
+rom pro-tein se-quences to iden-
+ []
+
+[6] <fig4-eps-converted-to.pdf, id=39, 642.4pt x 481.8pt>
+File: fig4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig4-eps-converted-to.pdf>
+<fig8-eps-converted-to.pdf, id=40, 642.4pt x 481.8pt>
+File: fig8-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig8-eps-converted-to.pdf>
+<fig7-eps-converted-to.pdf, id=41, 642.4pt x 481.8pt>
+File: fig7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig7-eps-converted-to.pdf>
+Overfull \hbox (23.28526pt too wide) in paragraph at lines 157--157
+ [][] 
+ []
+
+File: fig7-eps-converted-to.pdf Graphic file (type pdf)
+<use fig7-eps-converted-to.pdf>
+Overfull \hbox (23.28526pt too wide) in paragraph at lines 157--157
+ [][] 
+ []
+
+File: fig8-eps-converted-to.pdf Graphic file (type pdf)
+<use fig8-eps-converted-to.pdf>
+Overfull \hbox (24.70787pt too wide) in paragraph at lines 165--165
+ [][] 
+ []
+
+File: fig8-eps-converted-to.pdf Graphic file (type pdf)
+<use fig8-eps-converted-to.pdf>
+Overfull \hbox (24.70787pt too wide) in paragraph at lines 165--165
+ [][] 
+ []
+
+<fig9-eps-converted-to.pdf, id=42, 642.4pt x 481.8pt>
+File: fig9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig9-eps-converted-to.pdf>
+Overfull \hbox (24.70787pt too wide) in paragraph at lines 173--173
+ [][] 
+ []
+
+File: fig9-eps-converted-to.pdf Graphic file (type pdf)
+<use fig9-eps-converted-to.pdf>
+Overfull \hbox (24.70787pt too wide) in paragraph at lines 173--173
+ [][] 
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<top10flu_3mers_seq2logo.pdf, id=36, 642.4pt x 481.8pt>
+[7 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>]
+<top10ebola_3mers_seq2logo.pdf, id=70, 642.4pt x 481.8pt>
+File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
+
+<use top10ebola_3mers_seq2logo.pdf>
+File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
+ <use top10ebola_3mers_seq2logo.pdf>
+<top10flavi_3mers_seq2logo.pdf, id=71, 642.4pt x 481.8pt>
+File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
+
+<use top10flavi_3mers_seq2logo.pdf>
+File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
+ <use top10flavi_3mers_seq2logo.pdf>
+<top10flu_3mers_seq2logo.pdf, id=72, 642.4pt x 481.8pt>
 File: top10flu_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10flu_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 209--209
- [][] 
- []
-
 File: top10flu_3mers_seq2logo.pdf Graphic file (type pdf)
-<use top10flu_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 209--209
- [][] 
- []
-
-<top10human_3mers_seq2logo.pdf, id=37, 642.4pt x 481.8pt>
+ <use top10flu_3mers_seq2logo.pdf>
+<top10human_3mers_seq2logo.pdf, id=73, 642.4pt x 481.8pt>
 File: top10human_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10human_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 216--216
- [][] 
- []
-
 File: top10human_3mers_seq2logo.pdf Graphic file (type pdf)
-<use top10human_3mers_seq2logo.pdf>
-Overfull \hbox (16.6018pt too wide) in paragraph at lines 216--216
- [][] 
- []
-
+ <use top10human_3mers_seq2logo.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./supplementary.bbl) [4 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to
-.pdf> <./fig7-eps-converted-to.pdf> <./fig9-eps-converted-to.pdf>] [5 <./top10e
-bola_3mers_seq2logo.pdf> <./top10flavi_3mers_seq2logo.pdf> <./top10flu_3mers_se
-q2logo.pdf> <./top10human_3mers_seq2logo.pdf>] (./supplementary.aux)
+(./supplementary.bbl
+Underfull \hbox (badness 2591) in paragraph at lines 4--8
+\OT1/cmr/m/it/24.88 Nu-cleic acids re-search\OT1/cmr/m/n/24.88 , 43(D1):D512--
+ []
+
+[8 <./fig7-eps-converted-to.pdf> <./fig9-eps-converted-to.pdf> <./top10ebola_3m
+ers_seq2logo.pdf> <./top10flavi_3mers_seq2logo.pdf>]) [9 <./top10flu_3mers_seq2
+logo.pdf> <./top10human_3mers_seq2logo.pdf>] (./supplementary.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3492 strings out of 493878
- 47217 string characters out of 1153452
- 109781 words of memory out of 3000000
- 6721 multiletter control sequences out of 15000+50000
- 15328 words of font info for 59 fonts, out of 3000000 for 9000
+ 3907 strings out of 493878
+ 53518 string characters out of 1153452
+ 114524 words of memory out of 3000000
+ 7119 multiletter control sequences out of 15000+50000
+ 21235 words of font info for 81 fonts, out of 3000000 for 9000
  694 hyphenation exceptions out of 8191
- 37i,12n,38p,641b,578s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,12n,38p,641b,582s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/symbols/msam7.pfb>
-Output written on supplementary.pdf (5 pages, 291845 bytes).
+ic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr
+9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
+msam7.pfb>
+Output written on supplementary.pdf (9 pages, 314241 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
