@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:26
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -546,23 +546,23 @@ LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
 
 File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
 <pca_bslmtl_with_clusters.eps>
-Overfull \hbox (28.05307pt too wide) in paragraph at lines 383--383
+Overfull \hbox (21.67967pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
 File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
 <pca_bslmtl_with_clusters.eps>
-Overfull \hbox (28.05307pt too wide) in paragraph at lines 383--383
+Overfull \hbox (21.67967pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 395--396
+Underfull \hbox (badness 1867) in paragraph at lines 396--397
 \LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 397--402
+Underfull \hbox (badness 2205) in paragraph at lines 398--403
 \LY1/ptm/b/n/9 MTPL \LY1/ptm/m/n/9 (Kshirsagar \LY1/ptm/m/it/9 et al.\LY1/ptm/m
 /n/9 , 2013): A biologically inspired
  []
@@ -578,25 +578,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 461.
+(Font)              using `LY1/phb/m/n' instead on input line 462.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 508--511
+Underfull \hbox (badness 1127) in paragraph at lines 509--512
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
  of rich
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 508--511
+Underfull \hbox (badness 1024) in paragraph at lines 509--512
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -604,17 +601,17 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 596--600
+Underfull \hbox (badness 10000) in paragraph at lines 597--601
 
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 607--611
+Underfull \hbox (badness 1038) in paragraph at lines 608--612
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 607--611
+Underfull \hbox (badness 1755) in paragraph at lines 608--612
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
 
@@ -632,62 +629,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 402.97699pt
+Extra height:20.519pt when 380.47699pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 403.97699pt
+Extra height:0.0pt when 381.47699pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+(2)Left:381.47699pt Right:382.954pt Output:381.47699pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 404.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 405.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 406.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 407.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 408.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:408.97699pt Right:409.954pt Output:408.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:409.954pt Right:409.954pt Output:409.954pt
+(2)Left:382.954pt Right:382.954pt Output:382.954pt
 - LAST -
 Extra skip:0.0pt
-Left:409.954pt
-Right:409.954pt
-Output:409.954pt
+Left:382.954pt
+Right:382.954pt
+Output:382.954pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -708,10 +670,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4286 strings out of 493879
  54597 string characters out of 1153475
- 141110 words of memory out of 3000000
+ 139110 words of memory out of 3000000
  7472 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper.dvi (8 pages, 82920 bytes).
+Output written on paper.dvi (8 pages, 82936 bytes).
