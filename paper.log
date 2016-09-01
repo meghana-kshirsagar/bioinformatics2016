@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:31
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -639,24 +639,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 407.519pt
+Extra height:20.519pt when 366.88249pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 408.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:408.519pt Right:410.038pt Output:408.519pt
+Extra height:20.519pt when 367.88249pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:410.038pt Right:410.038pt Output:410.038pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 368.88249pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:20.519pt when 369.88249pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 370.88249pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:370.88249pt Right:364.765pt Output:370.88249pt
 - LAST -
 Extra skip:0.0pt
-Left:410.038pt
-Right:410.038pt
-Output:410.038pt
+Left:370.88249pt
+Right:364.765pt
+Output:370.88249pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -675,13 +695,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4525 strings out of 493878
- 57579 string characters out of 1153452
- 148403 words of memory out of 3000000
- 7708 multiletter control sequences out of 15000+50000
+ 4522 strings out of 493878
+ 57550 string characters out of 1153452
+ 146181 words of memory out of 3000000
+ 7705 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
- 37i,16n,38p,1192b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/texnansi.enc}</usr/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type
@@ -702,7 +722,7 @@ ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-texliv
 e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 405020 bytes).
+Output written on paper.pdf (8 pages, 404471 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

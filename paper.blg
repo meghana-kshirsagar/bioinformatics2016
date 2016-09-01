@@ -5,45 +5,45 @@ Database file #1: references.bib
 Warning--empty journal in prateek
 Warning--there's a number but no volume in koren09
 Warning--there's a number but no volume in tastan09
-You've used 50 entries,
+You've used 47 entries,
             2378 wiz_defined-function locations,
-            801 strings with 11882 characters,
-and the built_in function-call counts, 25117 in all, are:
-= -- 2472
-> -- 1396
-< -- 28
-+ -- 413
-- -- 401
-* -- 2291
-:= -- 4252
-add.period$ -- 263
-call.type$ -- 50
-change.case$ -- 315
-chr.to.int$ -- 50
-cite$ -- 53
-duplicate$ -- 1078
-empty$ -- 1588
-format.name$ -- 486
-if$ -- 5021
+            785 strings with 11275 characters,
+and the built_in function-call counts, 23403 in all, are:
+= -- 2308
+> -- 1294
+< -- 27
++ -- 381
+- -- 371
+* -- 2113
+:= -- 3965
+add.period$ -- 247
+call.type$ -- 47
+change.case$ -- 296
+chr.to.int$ -- 47
+cite$ -- 50
+duplicate$ -- 1016
+empty$ -- 1479
+format.name$ -- 451
+if$ -- 4687
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 50
-newline$ -- 254
-num.names$ -- 200
-pop$ -- 362
+missing$ -- 47
+newline$ -- 239
+num.names$ -- 188
+pop$ -- 345
 preamble$ -- 1
-purify$ -- 315
+purify$ -- 296
 quote$ -- 0
-skip$ -- 716
+skip$ -- 678
 stack$ -- 0
-substring$ -- 1504
-swap$ -- 244
+substring$ -- 1366
+swap$ -- 231
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 423
 warning$ -- 3
-while$ -- 211
+while$ -- 196
 width$ -- 0
-write$ -- 642
+write$ -- 603
 (There were 3 warnings)

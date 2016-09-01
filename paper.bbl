@@ -91,13 +91,6 @@ Evgeniou, T. and Pontil, M. (2004).
 \newblock Regularized multi-task learning.
 \newblock {\em ACM SIGKDD\/}.
 
-\bibitem[Hornbeck {\em et~al.}(2015)Hornbeck, Zhang, Murray, Kornhauser,
-  Latham, and Skrzypek]{phosphosite}
-Hornbeck, P.~V., Zhang, B., Murray, B., Kornhauser, J.~M., Latham, V., and
-  Skrzypek, E. (2015).
-\newblock Phosphositeplus, 2014: mutations, ptms and recalibrations.
-\newblock {\em Nucleic acids research\/}, {\bf 43}(D1), D512--D520.
-
 \bibitem[Jain and Dhillon(2013)Jain and Dhillon]{prateek}
 Jain, P. and Dhillon, I.~S. (2013).
 \newblock Provable inductive matrix completion.
@@ -253,22 +246,10 @@ Tekir, S.~D., S., A., C., T., and U., K.~O. (2012).
   pathogen-host protein protein interactions.
 \newblock {\em Frontiers in Microbial Immunology\/}.
 
-\bibitem[Thomsen and Nielsen(2012)Thomsen and Nielsen]{seq2logo}
-Thomsen, M. C.~F. and Nielsen, M. (2012).
-\newblock Seq2logo: a method for construction and visualization of amino acid
-  binding motifs and sequence profiles including sequence weighting, pseudo
-  counts and two-sided representation of amino acid enrichment and depletion.
-\newblock {\em Nucleic acids research\/}, {\bf 40}(W1), W281--W287.
-
 \bibitem[{UniProt Consortium}(2011){UniProt Consortium}]{UniProt}
 {UniProt Consortium} (2011).
 \newblock Ongoing and future developments at the universal protein resource.
 \newblock {\em Nucl. Acids Res.}, {\bf 39}, D214--D219.
-
-\bibitem[Vita {\em et~al.}(2015)Vita, Overton, Greenbaum, {\em et~al.}]{iedb}
-Vita, R., Overton, J.~A., Greenbaum, J.~A., {\em et~al.} (2015).
-\newblock The immune epitope database (iedb) 3.0.
-\newblock {\em Nucleic acids research\/}, {\bf 43}(D1), D405--D412.
 
 \bibitem[Walhout and Vidal(2001)Walhout and Vidal]{vidal:2001}
 Walhout, A.~J. and Vidal, M. (2001).
