@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:46
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -624,7 +624,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [5]
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 476.
+(Font)              using `LY1/phb/m/n' instead on input line 477.
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -632,14 +632,14 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [6]
-Underfull \hbox (badness 1127) in paragraph at lines 522--525
+Underfull \hbox (badness 1127) in paragraph at lines 524--527
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
  of rich
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 522--525
+Underfull \hbox (badness 1024) in paragraph at lines 524--527
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
 
@@ -649,7 +649,7 @@ File: flavinet.pdf Graphic file (type pdf)
 <flunet.pdf, id=60, 505.89pt x 505.89pt>
 File: flunet.pdf Graphic file (type pdf)
  <use flunet.pdf>
-Overfull \hbox (7.00647pt too wide) in paragraph at lines 537--556
+Overfull \hbox (7.00647pt too wide) in paragraph at lines 539--558
  [][] 
  []
 
@@ -665,6 +665,9 @@ File: pca_with_clusters.pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -674,17 +677,14 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 740--744
+Underfull \hbox (badness 1038) in paragraph at lines 742--746
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 740--744
+Underfull \hbox (badness 1755) in paragraph at lines 742--746
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -789,7 +789,7 @@ vr8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (11 pages, 1034527 bytes).
+Output written on paper.pdf (11 pages, 1034561 bytes).
 PDF statistics:
  248 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

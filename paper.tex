@@ -473,7 +473,8 @@ There are thus two components to the prediction performance - (1) the presence o
 %STL (Ridge Reg.)  & 0.054 $\pm$.03 &  0.400 $\pm$.06 & 0.192 $\pm$.03 \\
 %BSL-MTL (this work) & 0.071 $\pm$.03 & \textbf{0.501} $\pm$.05 & \textbf{0.331} $\pm$.03  \\ \bottomrule 
 
-\begin{table}\caption{Area Under the Precision-Recall curve for each task on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
+\begin{table}[!h]
+\caption{Area Under the Precision-Recall curve for each task on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
 \label{nohomresultsTable}
 \begin{small}
 \begin{center}
@@ -498,7 +499,8 @@ Except the \textit{Ebola} task, BSL-MTL has the highest AUC. The Homolog baselin
 \subsection{Disadvantages of the Homolog method}
 In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
 
-\begin{table}\caption{Area Under the Precision-Recall curve for each task on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
+\begin{table}[!h]
+\caption{Area Under the Precision-Recall curve for each task on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
 \label{homresultsTable}
 \begin{small}
 \begin{center}
