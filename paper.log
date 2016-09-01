@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:14
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -621,20 +621,20 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [5]
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 447.
+(Font)              using `LY1/phb/m/n' instead on input line 444.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 494--497
+Underfull \hbox (badness 1127) in paragraph at lines 491--494
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
  of rich
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 494--497
+Underfull \hbox (badness 1024) in paragraph at lines 491--494
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
 
@@ -661,17 +661,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 609--613
+Underfull \hbox (badness 1038) in paragraph at lines 605--609
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 609--613
+Underfull \hbox (badness 1755) in paragraph at lines 605--609
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -686,77 +683,39 @@ File: fig4-eps-converted-to.pdf Graphic file (type pdf)
 <fig8-eps-converted-to.pdf, id=97, 642.4pt x 481.8pt>
 File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig8-eps-converted-to.pdf> (./paper.bbl
+<use fig8-eps-converted-to.pdf> (./paper.bbl)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-[8 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Extra height:20.519pt when 665.53816pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 37.75949pt
+Extra height:20.519pt when 666.53816pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 38.75949pt
+Extra height:20.519pt when 667.53816pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 39.75949pt
+Extra height:20.519pt when 668.53816pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 40.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 41.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 42.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 43.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 44.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 45.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 46.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:46.75949pt Right:30.519pt Output:46.75949pt
+Extra height:0.0pt when 669.53816pt
+(2)Left:669.53816pt Right:671.038pt Output:669.53816pt
+(2)Left:671.038pt Right:671.038pt Output:671.038pt
 - LAST -
 Extra skip:0.0pt
-Left:46.75949pt
-Right:30.519pt
-Output:46.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:671.038pt
+Right:671.038pt
+Output:671.038pt
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[9
-
-] (./paper.aux)
+[8 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf>] (./paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.75pt have occurred.
@@ -768,7 +727,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4789 strings out of 493878
  61108 string characters out of 1153452
- 141470 words of memory out of 3000000
+ 166470 words of memory out of 3000000
  7956 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
@@ -793,9 +752,9 @@ ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-texliv
 e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (9 pages, 932051 bytes).
+Output written on paper.pdf (8 pages, 931036 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
