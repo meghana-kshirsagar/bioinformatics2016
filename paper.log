@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 22:58
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -628,8 +628,8 @@ LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
 (Font)              using `LY1/phb/m/n' instead on input line 480.
 
 
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
+Overfull \hbox (234.0pt too wide) has occurred while \output is active
+[] []|[] []
  []
 
 [6]
@@ -691,44 +691,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 537.97699pt
+Extra height:20.519pt when 488.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Extra height:0.0pt when 489.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:20.519pt when 538.97699pt
+(2)Left:489.519pt Right:491.038pt Output:489.519pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 539.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 540.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 541.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:541.97699pt Right:535.954pt Output:541.97699pt
+(2)Left:491.038pt Right:491.038pt Output:491.038pt
 - LAST -
 Extra skip:0.0pt
-Left:541.97699pt
-Right:535.954pt
-Output:541.97699pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:491.038pt
+Right:491.038pt
+Output:491.038pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -757,7 +737,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4818 strings out of 493878
  61373 string characters out of 1153452
- 167487 words of memory out of 3000000
+ 163487 words of memory out of 3000000
  7985 multiletter control sequences out of 15000+50000
  52554 words of font info for 103 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
@@ -788,7 +768,7 @@ vr8ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-tex
 live/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (10 pages, 1006704 bytes).
+Output written on paper.pdf (10 pages, 1006638 bytes).
 PDF statistics:
  229 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

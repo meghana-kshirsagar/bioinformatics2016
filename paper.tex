@@ -371,11 +371,11 @@ To account for protein size, they normalized the counts by linearly transforming
 Thus the value of each feature in the feature vector is the normalized count for each of the possible amino acid three-mers. We use di-, tri- and four-mers thus leading to a total of 2793 features ($7^2 + 7^3 + 7^4$).
 Such features have been successfully applied in prior work \citep{dyer07,me_ismb_2013}.
 
-\begin{table*}[!h]\caption{Area Under the Precision-Recall curve for each task on the PHISTO dataset without removing the homologs. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
+\begin{table*}[!h]\caption{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
 \label{resultsTable}
 \begin{small}
 \begin{center}
-\def\arraystretch{1.2}
+%\def\arraystretch{1.2}
 \begin{tabular}{c|ccccccc}
 \toprule
 & \multicolumn{3}{c}{\textbf{10\% training, 90\% test}} && \multicolumn{3}{c}{\textbf{30\% training, 70\% test}} \\ \cline{2-4}\cline{6-8}
@@ -435,9 +435,9 @@ AUC-PR has been shown to give a more informative picture of an algorithm's perfo
 \subsection{Parameter tuning}
 We tune the hyper parameters using a 3 fold cross-validation (CV) on the training split. For all baseline regularization parameters %(or a grid search based on the method): 
 we tried the range: [$100, ...10^{-3}$]. To address the class-skew we 
-assign a higher weight to the positives. For BSL-MTL, to tune the rank parameter '$k$' we tried: 5, ... 100 and the regularization parameter controlling the norm of $U$ and $V$ was tuned over the range $\lambda$=$\{1 ... 10^{-3}\}$. For each task $t$, $\sigma_t$ was varied over the values $10^{-3}, ... 10^{-6}$ and
+assign a higher weight to the positives. For BSL-MTL, we tried $k$ = 5, ... 100 and the regularization parameter controlling the norm of $U$ and $V$ was tuned over the range $\lambda$=$\{1 ... 10^{-3}\}$. For each task $t$, $\sigma_t$ was varied over the values $10^{-3}, ... 10^{-6}$ and
 $\mu_t$ was varied over $\{0, 0.25, 0.5, 0.75, 1\}$.
-The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
+%The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
 
 %For the task-specific regularization parameters, setting them all to a constant i.e $\forall t, \{\sigma_t\} = \sigma$ did not work well owing to the different sizes of the 3 tasks. For each task $t$, $\sigma_t$ was varied over the values $10^{-3}, 10^{-4}, 10^{-5}, 10^{-6}$. The optimal setting of parameters was found to be $k=10$, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
 
@@ -477,11 +477,11 @@ There are thus two components to the prediction performance - (1) the presence o
 %BSL-MTL (this work) & 0.071 $\pm$.03 & \textbf{0.501} $\pm$.05 & \textbf{0.331} $\pm$.03  \\ \bottomrule 
 
 \begin{table}[!h]
-\caption{Area Under the Precision-Recall curve for each task on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
+\caption{AUC-PR on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
 \label{nohomresultsTable}
 \begin{small}
 \begin{center}
-\def\arraystretch{1.2}
+%\def\arraystretch{1.2}
 \begin{tabular}{c|ccc}
 \toprule
 \multicolumn{4}{c}{\textbf{10 \% training, 90\% test on Non-homologous PPI}} \\
@@ -503,11 +503,11 @@ Except the \textit{Ebola} task, BSL-MTL has the highest AUC. The Homolog baselin
 %In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
 
 \begin{table}[!h]
-\caption{Area Under the Precision-Recall curve for each task on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
+\caption{AUC-PR on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
 \label{homresultsTable}
 \begin{small}
 \begin{center}
-\def\arraystretch{1.2}
+%\def\arraystretch{1.2}
 \begin{tabular}{c|ccc}
 \toprule
 \multicolumn{4}{c}{\textbf{10 \% training, test only Homologous PPI }} \\
@@ -565,7 +565,7 @@ For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.4, trim = 0 0.2cm 0 0.5cm]{fig2-eps-converted-to.pdf}
+\includegraphics[scale=0.35, trim = 0 0.2cm 0 0.5cm]{fig2-eps-converted-to.pdf}
 \caption{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}%
 \label{fig:pca1}
 \end{figure}
@@ -573,7 +573,7 @@ For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and 
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.27, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
+\includegraphics[scale=0.23, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
 \caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref{goterms}.}%
 \label{fig:pca2}
 \end{figure}
@@ -582,7 +582,7 @@ For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and 
 \label{goterms}
 \begin{scriptsize}
 \begin{center}
-\def\arraystretch{1.1}
+%\def\arraystretch{1.1}
 \begin{tabular}{|c|c|}
 \multicolumn{2}{c}{Gene Ontology terms for clusters from Figure \ref{fig:pca2}} \\ \hline
 cluster 1 & mRNA (guanine-N7-)-methyltransferase activity; RNA-directed \\
@@ -721,11 +721,11 @@ We incorporate an additional task: HIV (human immunodeficiency virus), which is 
 This experiment particularly tests the robustness of all the multitask learning approaches by the addition of an unrelated task.
 Table \ref{hivresults} shows the results. 
 
-\begin{table}[h]\caption{Area Under the Precision-Recall curve for each task upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table \ref{resultsTable}. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
+\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table \ref{resultsTable}. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
 \label{hivresults}
 \begin{small}
 \begin{center}
-\def\arraystretch{1.2}
+%\def\arraystretch{1.2}
 \begin{tabular}{c|cccc}
 \toprule
 & \multicolumn{4}{c}{10 \% training } \\
