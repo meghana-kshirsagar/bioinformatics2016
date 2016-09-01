@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  1 SEP 2016 00:25
 entering extended mode
  %&-line parsing enabled.
 **supplementary.tex
@@ -253,17 +253,7 @@ File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./supplementary.aux
-
-LaTeX Warning: Label `fig:hepc_motifs' multiply defined.
-
-
-LaTeX Warning: Label `fig:hepc_motifs' multiply defined.
-
-
-LaTeX Warning: Label `fig:flu_motifs' multiply defined.
-
-)
+) (./supplementary.aux)
 \openout1 = `supplementary.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -366,64 +356,29 @@ File: fig8-eps-converted-to.pdf Graphic file (type pdf)
 File: fig7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig7-eps-converted-to.pdf>
-Overfull \hbox (23.28526pt too wide) in paragraph at lines 157--157
- [][] 
- []
-
 File: fig7-eps-converted-to.pdf Graphic file (type pdf)
-<use fig7-eps-converted-to.pdf>
-Overfull \hbox (23.28526pt too wide) in paragraph at lines 157--157
- [][] 
- []
-
-File: fig8-eps-converted-to.pdf Graphic file (type pdf)
-<use fig8-eps-converted-to.pdf>
-Overfull \hbox (24.70787pt too wide) in paragraph at lines 165--165
- [][] 
- []
-
-File: fig8-eps-converted-to.pdf Graphic file (type pdf)
-<use fig8-eps-converted-to.pdf>
-Overfull \hbox (24.70787pt too wide) in paragraph at lines 165--165
- [][] 
- []
-
+ <use fig7-eps-converted-to.pdf>
 <fig9-eps-converted-to.pdf, id=29, 642.4pt x 481.8pt>
 File: fig9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig9-eps-converted-to.pdf>
-Overfull \hbox (24.70787pt too wide) in paragraph at lines 173--173
- [][] 
- []
-
 File: fig9-eps-converted-to.pdf Graphic file (type pdf)
-<use fig9-eps-converted-to.pdf>
-Overfull \hbox (24.70787pt too wide) in paragraph at lines 173--173
- [][] 
- []
-
-<top10ebola_3mers_seq2logo.pdf, id=30, 642.4pt x 481.8pt>
-File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
-
-<use top10ebola_3mers_seq2logo.pdf>
-File: top10ebola_3mers_seq2logo.pdf Graphic file (type pdf)
- <use top10ebola_3mers_seq2logo.pdf>
-<top10flavi_3mers_seq2logo.pdf, id=31, 642.4pt x 481.8pt>
+ <use fig9-eps-converted-to.pdf>
+<top10flavi_3mers_seq2logo.pdf, id=30, 642.4pt x 481.8pt>
 File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10flavi_3mers_seq2logo.pdf>
+Underfull \hbox (badness 1616) in paragraph at lines 184--184
+[]\OT1/cmr/m/n/10.95 Figure 4: Se-quence mo-tifs spe-cific to
+ []
+
 File: top10flavi_3mers_seq2logo.pdf Graphic file (type pdf)
- <use top10flavi_3mers_seq2logo.pdf>
+<use top10flavi_3mers_seq2logo.pdf>
+Underfull \hbox (badness 1616) in paragraph at lines 184--184
+[]\OT1/cmr/m/n/10.95 Figure 4: Se-quence mo-tifs spe-cific to
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<top10flu_3mers_seq2logo.pdf, id=32, 642.4pt x 481.8pt>
-File: top10flu_3mers_seq2logo.pdf Graphic file (type pdf)
-
-<use top10flu_3mers_seq2logo.pdf>
-File: top10flu_3mers_seq2logo.pdf Graphic file (type pdf)
- <use top10flu_3mers_seq2logo.pdf>
-<top10human_3mers_seq2logo.pdf, id=33, 642.4pt x 481.8pt>
+<top10human_3mers_seq2logo.pdf, id=31, 642.4pt x 481.8pt>
 File: top10human_3mers_seq2logo.pdf Graphic file (type pdf)
 
 <use top10human_3mers_seq2logo.pdf>
@@ -432,43 +387,38 @@ File: top10human_3mers_seq2logo.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./supplementary.bbl [3 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.
-pdf> <./fig7-eps-converted-to.pdf> <./fig9-eps-converted-to.pdf>]) [4 <./top10e
-bola_3mers_seq2logo.pdf> <./top10flavi_3mers_seq2logo.pdf> <./top10flu_3mers_se
-q2logo.pdf> <./top10human_3mers_seq2logo.pdf>] (./supplementary.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[3 <./fig4-eps-converted-to.pdf> <./fig8-eps-converted-to.pdf> <./fig7-eps-conv
+erted-to.pdf> <./fig9-eps-converted-to.pdf>] [4 <./top10flavi_3mers_seq2logo.pd
+f> <./top10human_3mers_seq2logo.pdf>] (./supplementary.aux) ) 
 Here is how much of TeX's memory you used:
- 3884 strings out of 493878
- 53148 string characters out of 1153452
- 118524 words of memory out of 3000000
- 7098 multiletter control sequences out of 15000+50000
+ 3869 strings out of 493878
+ 52771 string characters out of 1153452
+ 118479 words of memory out of 3000000
+ 7088 multiletter control sequences out of 15000+50000
  15627 words of font info for 60 fonts, out of 3000000 for 9000
  694 hyphenation exceptions out of 8191
  37i,12n,38p,641b,578s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msa
-m7.pfb>
-Output written on supplementary.pdf (4 pages, 301459 bytes).
+</usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on supplementary.pdf (4 pages, 282323 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
