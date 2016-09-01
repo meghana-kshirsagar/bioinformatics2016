@@ -59,7 +59,7 @@ We obtain between 7 to 39 percentage points improvement in predictive performanc
 We show how our model's parameters can be interpreted to reveal both general and specific
 interaction-relevant characteristics of the viruses. \\
 \textbf{Availability:}
-Our code and data is available at: \url{http://www.cs.cmu.edu/~mkshirsa/bsl\_mtl.tgz}\\
+Code and data is available at: \url{http://www.cs.cmu.edu/~mkshirsa/bsl_mtl.tgz}\\
 \textbf{Contact:}
 \href{mkshirsa@cs.cmu.edu}{mkshirsa@cs.cmu.edu}
 }
@@ -349,16 +349,16 @@ $\approx$ 1/100 to 1/500. That is, the probability that our negatives contain tr
 \label{sec:datasets}
 We use three human-virus PPI datasets from the PHISTO \citep{phisto} database (version from 2014), the characteristics of which are summarized in Table \ref{datasets}. 
 The \textit{Influenza A} task includes various strains of flu such as: H1N1 (Puerto Rico, Texas strains etc), H3N2 (England strain etc), H5N1, H7N3.
-Similarly, the \textit{Hepatitis} task includes strains such as of the virus. 
-All three are single-strand RNA viruses, with \textit{Hepatitis} being a positive-strand ssRNA whereas \textit{Influenza} and \textit{Ebola} are negative-strand viruses. The density of the known interactions is quite small when considering the entire proteome (i.e all known proteins) of the host and pathogen species (row-4 in Table \ref{datasets}). \\
+The \textit{Hepatitis} task has several subtypes (1a, 1b), isolates such as H77, HC-J6 etc and \textit{Ebola} has the Zaire ebolavirus strain Mayinga and strain 1995.
+All three are single-strand RNA viruses, with \textit{Hepatitis} being a positive-strand ssRNA whereas \textit{Influenza} and \textit{Ebola} are negative-strand viruses. The density of the known interactions is quite small when considering the entire proteome (i.e all known proteins) of the host and pathogen species (last row in Table \ref{datasets}). \\
 
 \subsection{Addressing the homologs in PHISTO}
 \label{sec:phisto}
-The interactions data reported in PHISTO database is aggregated from several host-pathogen interactions data sources such as Virus-Mint, PHI-base etc. We found that many of the interactions (within a task) involve homologous PPI - virus protein homologs from two strains interacting with either the same human protein or with homologous human proteins. Such PPI usually come from different publications/ studies, but they introduce a lot of redundancy in the dataset. Removing such PPI is challenging as there are several criteria to consider, the most important being: \textit{what threshold of sequence similarity constitutes a homolog}? The very existence of sequence similarity between proteins is what makes it possible for biologists to predict unknown interactions and most computational methods rely on it for PPI prediction. 
+The interactions data reported in PHISTO database is aggregated from several host-pathogen interactions data sources such as MINT, IntAct, DIP etc. We found that many of the interactions (within a task) involve homologous PPI - virus protein homologs from two strains interacting with either the same human protein or with homologous human proteins. Such PPI usually come from different publications/ studies, but they introduce a lot of redundancy in the dataset. Removing such PPI is challenging as there are several criteria to consider, the most important being: \textit{what threshold of sequence similarity constitutes a homolog}? The very existence of sequence similarity between proteins is what makes it possible for biologists to predict unknown interactions and most computational methods rely on it for PPI prediction. 
 
 In row-2 of Table \ref{datasets}, we give a conservative estimate of the number of non-homologous PPI. For this, we identify homologous PPI and retain only one of them in the dataset. Homologs were obtained using BLAST sequence alignment (blastp) using an e-value cut-off threshold of $1e^{-5}$. This is a relaxed cut-off since there are cases where two functionally different proteins (either virus-virus or human-human) with low query coverage and low identity end up as `homologs'. For example, human proteins Q8WV28 (gene BLNK, B-cell linker protein) and O00459 (gene PIK3R2, Phosphatidylinositol 3-kinase) are considered homologs by this cut-off. The number of non-homologous PPI should therefore be considered a lower limit.
 
-In our experiments section, we thus evaluate our models in two settings - (1) on the original dataset (2) by removing homologous PPI.
+In our experiments section, we thus evaluate our models in two settings - (1) on the original dataset (2) by creating partitions: the first without any homologous PPI and the other with only the homologous PPI.
 
 %and thus interologs (within a task), the presence of which may not give a clear picture of a computational model. However these are reported by different publications/studies and were found using different experimental methods, so we do not exclude them and instead report performance on 
 
