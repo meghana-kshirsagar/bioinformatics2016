@@ -11,6 +11,61 @@
 
 \title{Supplementary Information}
 
+\section{Optimization algorithm}
+
+\begin{algorithm}[!t]   \caption{Alternating Least Squares}
+   \label{alg}
+   %\begin{minipage}{0.9\textwidth}
+   \begin{small}
+\begin{algorithmic}[1]
+\STATE \textbf{Input}: \\
+$k$ : number of latent factors\\
+$\Gamma$: pairs of entities for initialization\\
+For every task $t$,\\
+${\{\mathbf{x}_{ti}\}, \{\mathbf{y}_{tj}\}}$: feature vectors for pathogen and host proteins resp.\\
+$\Omega_t$: the observed entries of the matrix $M_t$\\
+\STATE \textbf{Initialization}: \\
+\STATE An iteration $r$, let $\mathbf{S}^r$ represent $\{S^r_t\}_{t=1}^T$
+\STATE $\mathbf{S}^0 \leftarrow 0$
+\STATE $U^0 \leftarrow$ top-$k$ left singular vectors and $V^0 \leftarrow$ top-$k$ right singular vectors from the SVD of $\displaystyle{\sum_{(i,j) \in \Gamma}} \mathbf{x}_i \mathbf{y}_j^\intercal$\\
+\STATE $\mathcal{L}^0$ : initial loss
+\REPEAT
+  \STATE $U^{r+1} \leftarrow \displaystyle{\argmin_{U}} \; \mathcal{L}(U, V^r, \mathbf{S}^r)$  \STATE $V^{r+1} \leftarrow \displaystyle{\argmin_{V}} \; \mathcal{L}(U^{r+1}, V, \mathbf{S}^r) $  \STATE For each task $t$\\
+  \hspace{0.5cm} $S^{r+1}_t \leftarrow \displaystyle{\argmin_{S_t}} \; \mathcal{L}(U^{r+1}, V^{r+1}, \mathbf{S}^r_{-t}) $
+  \STATE Compute $\mathcal{L}^{r+1}$ and let $\delta \leftarrow (\mathcal{L}^r - \mathcal{L}^{r+1})/\mathcal{L}^r$
+\UNTIL {$\delta < \tau$}%\While
+\end{algorithmic}\end{small}
+%\end{minipage}
+\end{algorithm}
+
+
+\section{Results on HIV data}
+We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). This experiment tests how our multitask model behaves in the presence of a relatively outlier task. The interactions data has $\approx$4000 human-HIV PPI across several strains of which 1320 are non-homologous PPI. Please refer to the supplementary for the results.
+
+This experiment particularly tests the robustness of all the multitask learning approaches by the addition of an unrelated task.
+Table \ref{hivresults} shows the results. 
+
+\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table \ref{resultsTable}. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of an unrelated task such as HIV.}
+\label{hivresults}
+\begin{small}
+\begin{center}
+%\def\arraystretch{1.2}
+\begin{tabular}{c|cccc}
+\toprule
+& \multicolumn{4}{c}{10 \% training } \\
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} & \textit{HIV} \\ \midrule
+Homolog & 0.230$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 & 0.170 $\pm$.01 \\
+STL  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02  & 0.208 $\pm$.01 \\ 
+Sparse+LR & 0.135 $\pm$.06 & 0.724 $\pm$.05 & 0.280 $\pm$.01 & 0.205 $\pm$.03  \\ 
+BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\pm$.01 & \textbf{0.354} $\pm$.01  \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{small}
+\end{table}
+
+
+
+
 \section{Parameter tuning}
 We tune the hyper parameters using a 3 fold cross-validation (CV) on the training split. For all baseline regularization parameters %(or a grid search based on the method): 
 we tried the range: [$100, 50, 10, 1, 0.1, 0.01, 0.05, 10^{-3}$]. To address the class-skew we 
@@ -18,39 +73,41 @@ assign a higher weight to the positives. For BSL-MTL, to tune the rank parameter
 $\mu_t$ was varied over $\{0, 0.25, 0.5, 0.75, 1\}$.
 The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
 
-\section{10 fold cross validation}
-In the 10 fold cross-validation (CV) experiments, a much larger training set is available. So the single task baseline becomes much harder to beat as it can independently tune parameters for each task. All methods have a higher variance in their performance (we think this is due to the smaller and hence more variable test data in a 10 fold CV setting). Our method improves on only the \textit{Hep-C} task.
-
-\begin{table*}[h]\caption{Area Under the Precision-Recall curve for 10 fold CV. The first row is the only single-task method and all others are multitask models.}
-\label{resultsTable}
-\begin{center}
-\def\arraystretch{1.2}
-\begin{tabular}{c|ccc}
-\toprule
-& \multicolumn{3}{c}{\textbf{10 fold CV}} \\
-& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
- STL     & 0.28$\pm$.11 & 0.74$\pm$.05 & 0.66$\pm$.08  \\ 
- MMTL    & 0.28$\pm$.11 & 0.68$\pm$.04 & 0.40$\pm$.03  \\ 
- Norm    & 0.20$\pm$.09 & 0.70$\pm$.06 & 0.44$\pm$.05  \\ 
- Rank    & 0.18$\pm$.08 & 0.70$\pm$.06 & 0.45$\pm$.04  \\ 
- MTPL    & 0.27$\pm$.08 & 0.67$\pm$.05 & 0.48$\pm$.06  \\ 
- IMC     & 0.16$\pm$.08 & 0.72$\pm$.06 & 0.45$\pm$.06  \\ 
- BSL-MTL & 0.28$\pm$.11 & 0.82$\pm$.05 & 0.62$\pm$.02  \\ 
-\bottomrule
-\end{tabular}
-\end{center}
-\end{table*}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Homologous interactions}
-Since we use data from several strains for each task, the PPI data contains some interactions that are interologs.
-We observed this for two of the tasks: \textit{Hepatitis-C} and \textit{Influenza A}. Note that we did not find any interologs \textit{across} tasks. These homologous interactions in the various strains are reported by different experimental studies and we believe their presence suggests the confidence of such interactions. Since we use only PPI derived from experimental methods (and not electronically inferred), we do not exclude any homologous interactions from our training. \\
-\textbf{Removing homologs from the evaluation}:\\
-\noindent The number of distinct PPI for which interologs or homologs exist is very small ($\approx$20), but there are several homologs for each such PPI. Note that any benefits achieved from the presence of homologous interactions will be available to all the methods (since the models were built using identical train/test data). Here we present results on the 10\% setting by removing all homologs from the test data (note: the \textit{Ebola} task did not have any homologs). For lack of space we only mention the trend for our method (BSL-MTL) - \textit{Hep-C}: 0.85 and \textit{Influenza:} 0.45. The other methods show a similar trend; our method continues to outperform by significant margins.
-
 
 \section{Biological significance of interactions} 
+
+We analyze sequence motifs derived from the top $k$-mers that contribute to interactions. The significant entries of the model parameters $U$, $V$ and $\{S_t\}$ were used to
+compute these motifs. The top positive-valued entries from the product $U V^T$ indicate which pairs of features: ($(f_v, f_h)$: virus protein feature, human protein feature) are important for interactions across all the virus-human PPI tasks.
+Analogously, the entries from $S_t$ give us pairs of features important to a particular virus-human task `$t$'.
+We find that most of the top entries from $U V^T$ correspond to linear virus features, whereas those from the various $S_t$
+involve bilinear features. 
+
+We analyze the $k$-mers corresponding to the top 20 features from each of the matrices.
+
+Note that our features do not directly correspond to a unique amino-acid $k$-mer (see Section \ref{sec:datasets}):
+the virus feature $f_v$ will map to several amino-acid sequences (for instance KKCC, KRCC, RRCC etc all map to a single feature due to the molecular similarity between the amino acids K and R being both positively charged). Given the set of top virus features we can obtain the corresponding set of
+amino-acid $k$-mers, say $AA_v$, by reversing the feature-generation step. However most of the possible $k$-mers do not appear in the
+training data (ex: out of the 160,000 (=$20^4$) possible 4-mers $\approx$24,000 appear). Let $AA_{tr}$
+be the set of amino-acid k-mers that appear in the training data. Then, the intersection $I_v = AA_v \cap AA_{tr}$ gives us the important amino-acid $k$-mers from virus proteins w.r.t interaction prediction.
+To summarize $I_v$, we use a popular tool Seq2Logo \citep{seq2logo} to generate a sequence motif.
+The logos for the two-, three-, four-mers from $I_v$ are generated independently. Since we only
+want to summarize, we use the Shannon logo type (which does not consider any background amino-acid distribution)
+with the following settings: clustering-method=None, weight-on-prior=1 (pseudo-counts do not make sense in our
+analysis). Figure \ref{fig:virus_motifs} shows the motif that is common across viruses. %, while the other figures highlight those motifs important in a specific species.
+We observe that the shared tri-mer motif for virus proteins in Figure \ref{fig:virus_motifs} is dominated by
+hydrophilic amino acids (T, K, R, D, E).
+
+This procedure described above is used to analyze the most significant human protein features, obtained from
+the matrix $U V^T$. These motifs are shown in the supplementary. The task-specific features i.e significant $k$-mers from virus-proteins of \textit{Ebola}, \textit{Hepatitis} and \textit{Influenza} are obtained from the matrices $S_{ebola}$, $S_{hepc}$ and $S_{flu}$ respectively. The motif for Hepatitis is shown in Figure \ref{fig:virus_motifs}(right); the rest can be found in the supplementary. %Knowledge of these pathogen-specific $k$-mers can help in design of drugs to target specific pathogens. These are shown in Figures \ref{fig:ebola_motifs}, \ref{fig:hepc_motifs} and \ref{fig:flu_motifs}.
+The virus-specific motifs seem to be dominated by hydrophobic residues (I, P, L, V, A, G) though S and T do appear in some motifs as well.
+%The human protein motifs are shown in \ref{fig:human_motifs}; the 3-mer motif show less of a pattern, in particular the first residue does not seem to have any dominant amino-acids.
+%However the 4-mer seems to be dominated by hydrophobic amino-acids L, P, I, F in the first three positions and hydrophilic residues S, T, Y in the fourth.
+%The human protein motifs are shown in Fig \ref{fig:human_motifs}. In most cases, the first position of the tri-mer was less significant than the second and third, while for the tetramer all four positions show clear preferences.
+
+%The motifs for tri-mers are shown in the supplementary.
+
+
+
  \noindent\emph{Phosphorylation sites}: 
  We found the frequent occurrence of S and T and sometimes Y in the motifs striking and suspected this may be
  related to the amino acids being frequent targets of phosphorylation.
