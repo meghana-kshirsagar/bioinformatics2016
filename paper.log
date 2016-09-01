@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:29
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.2.25)  31 AUG 2016 23:30
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -565,14 +565,14 @@ LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
 File: fig2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig2-eps-converted-to.pdf>
-Overfull \hbox (10.77141pt too wide) in paragraph at lines 265--265
- [][] 
+Underfull \hbox (badness 1577) in paragraph at lines 265--265
+\LY1/phb/m/n/6.5 in the original feature space. The first two principal
  []
 
 File: fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use fig2-eps-converted-to.pdf>
-Overfull \hbox (10.77141pt too wide) in paragraph at lines 265--265
- [][] 
+Underfull \hbox (badness 1577) in paragraph at lines 265--265
+\LY1/phb/m/n/6.5 in the original feature space. The first two principal
  []
 
 
@@ -588,15 +588,16 @@ Underfull \hbox (badness 2393) in paragraph at lines 295--300
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
+
+ []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [4 <./fig2-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--333
-
- []
-
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `LY1/ptm/b/n' tried instead on input line 378.
 
@@ -644,6 +645,12 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -669,7 +676,9 @@ Underfull \hbox (badness 1024) in paragraph at lines 512--515
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 600--604
+
+ []
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -677,11 +686,6 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 600--604
-
- []
-
-
 Underfull \hbox (badness 1038) in paragraph at lines 611--615
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
@@ -702,55 +706,32 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [8])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Extra height:10.0pt when 78.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 109.75949pt
+Extra height:10.0pt when 79.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 110.75949pt
+Extra height:10.0pt when 80.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 111.75949pt
+Extra height:10.0pt when 81.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 112.75949pt
+Extra height:0.0pt when 82.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 113.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 114.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 115.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 116.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 117.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 118.75949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:118.75949pt Right:102.519pt Output:118.75949pt
+(2)Left:82.25949pt Right:75.519pt Output:82.25949pt
 - LAST -
 Extra skip:0.0pt
-Left:118.75949pt
-Right:102.519pt
-Output:118.75949pt
+Left:82.25949pt
+Right:75.519pt
+Output:82.25949pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -801,7 +782,7 @@ ac.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/texmf-texliv
 e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (9 pages, 406664 bytes).
+Output written on paper.pdf (9 pages, 406632 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
