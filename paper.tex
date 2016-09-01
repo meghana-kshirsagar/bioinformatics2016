@@ -226,15 +226,6 @@ The constant $c_{ij}$ is the weight/cost associated with the edge $(i,j)$ which 
 %\noindent\textbf{Biological intuition}: The projection allows each feature to take on several different weights and hence allows for more flexibility as compared to a linear model. In the context of the host-pathogen PPI prediction, one can interpret this new subspace to represent latent biological characteristics of the features or binding propensities. In the Results section, we will analyze these parameters $U$ and $V$ and show how they can be used to understand the PPIs data better.
 
 \begin{figure*}
-\begin{floatrow}
-\ffigbox[0.28\textwidth]{%
-%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.35, trim = 0.2 9.2cm 4cm 0]{fig1-eps-converted-to.pdf}
-}
-{
-\caption{Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.}
-\label{fig:hpppigraph}
-}
 \capbtabbox[0.68\textwidth]{%
 \begin{footnotesize}
 \begin{tabular}{c|r|r|r} 
@@ -260,6 +251,20 @@ density of observed graph$^\ddagger$ (as \%) & .15 & .60 & .20 \\\hline
 \caption{Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref{sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.} 
 \label{datasets}
 }
+
+\begin{floatrow}
+\ffigbox[0.28\textwidth]{%
+%trim option's parameter order: left bottom right top
+%\includegraphics[scale=0.35, trim = 0.2 9.2cm 4cm 0]{fig1-eps-converted-to.pdf}
+\includegraphics[scale=0.35, trim = 0 0.2cm 0 0.5cm]{fig2-eps-converted-to.pdf}}
+{
+\caption{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}%
+\label{fig:pca1}
+%\caption{Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.}
+%\label{fig:hpppigraph}
+}
+
+
 \end{floatrow}
 \end{figure*}
 
@@ -345,8 +350,8 @@ To account for protein size, they normalized the counts by linearly transforming
 Thus the value of each feature in the feature vector is the normalized count for each of the possible amino acid three-mers. We use di-, tri- and four-mers thus leading to a total of 2793 features ($7^2 + 7^3 + 7^4$).
 Such features have been successfully applied in prior work \citep{dyer07,me_ismb_2013}.
 
-\begin{table*}[!b]\caption{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
-\label{resultsTable}
+\begin{figure*}
+\capbtabbox[0.68\textwidth]{%
 \begin{small}
 \begin{center}
 %\def\arraystretch{1.2}
@@ -366,7 +371,23 @@ BSL-MTL (this work) & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{
 \end{tabular}
 \end{center}
 \end{small}
-\end{table*}
+}
+{
+\caption{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
+\label{resultsTable}
+}
+
+\begin{floatrow}
+\ffigbox[0.28\textwidth]{%
+\includegraphics[scale=0.23, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
+}
+{
+\caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref{goterms}.}%
+\label{fig:pca2}
+}
+\end{floatrow}
+\end{figure*}
+
 
 
 
@@ -526,21 +547,6 @@ For enrichment analysis, we use the FuncAssociate 3.0 \citep{funcAsso} tool and 
 %\label{fig:network}
 %\end{figure}
 
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.35, trim = 0 0.2cm 0 0.5cm]{fig2-eps-converted-to.pdf}
-\caption{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}%
-\label{fig:pca1}
-\end{figure}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.23, trim = 0 5.6cm 0 6cm]{pca_with_clusters.pdf}
-\caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref{goterms}.}%
-\label{fig:pca2}
-\end{figure}
 
 \begin{table}[bht]
 \label{goterms}
