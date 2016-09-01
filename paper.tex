@@ -226,7 +226,7 @@ The constant $c_{ij}$ is the weight/cost associated with the edge $(i,j)$ which 
 %\noindent\textbf{Biological intuition}: The projection allows each feature to take on several different weights and hence allows for more flexibility as compared to a linear model. In the context of the host-pathogen PPI prediction, one can interpret this new subspace to represent latent biological characteristics of the features or binding propensities. In the Results section, we will analyze these parameters $U$ and $V$ and show how they can be used to understand the PPIs data better.
 
 \begin{figure*}
-\capbtabbox[0.65\textwidth]{%
+\capbtabbox[0.68\textwidth]{%
 \begin{footnotesize}
 \begin{tabular}{c|r|r|r} 
 \hline
@@ -252,11 +252,10 @@ density of observed graph$^\ddagger$ (as \%) & .15 & .60 & .20 \\\hline
 \label{datasets}
 }
 
-\begin{floatrow}
-\ffigbox[0.32\textwidth]{%
+\ffigbox[0.3\textwidth]{%
 %trim option's parameter order: left bottom right top
 %\includegraphics[scale=0.35, trim = 0.2 9.2cm 4cm 0]{fig1-eps-converted-to.pdf}
-\includegraphics[scale=0.28, trim = 0 0.2cm 0 0.5cm]{fig2-eps-converted-to.pdf}}
+\includegraphics[scale=0.32, trim = 0 0.2cm 0 0.5cm]{fig2-eps-converted-to.pdf}}
 {
 \caption{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}%
 \label{fig:pca1}
@@ -264,8 +263,6 @@ density of observed graph$^\ddagger$ (as \%) & .15 & .60 & .20 \\\hline
 %\label{fig:hpppigraph}
 }
 
-
-\end{floatrow}
 \end{figure*}
 
 
