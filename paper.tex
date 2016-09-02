@@ -501,6 +501,35 @@ BSL-MTL & 0.130 $\pm$.10 & \textbf{0.815} $\pm$.02 & \textbf{0.475} $\pm$.02 \\ 
 \end{table}
 
 
+\noindent\textit{Disadvantages of the Homolog method}:
+In Figure \ref{fig:network} we show for two tasks, the protein interactions in the test data (for one train-test split) that were not found by the Homolog model which relies purely on homology-based sequence similarity. 
+%The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
+
+\begin{figure}
+\begin{tabular}{c}
+%\begin{minipage}{0.3\textwidth}
+%\begin{center}
+%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
+%\end{center}
+%\end{minipage}
+%&
+\begin{minipage}{\textwidth}
+\begin{center}
+\includegraphics[scale=0.25, trim = 0.7cm 0.7cm 0.7cm 0.7cm]{flavinet.eps}
+\end{center}
+\end{minipage}
+\\
+\begin{minipage}{\textwidth}
+\begin{center}
+\includegraphics[scale=0.25, trim = 0.5cm 0.5cm 0.5cm 0.5cm]{flunet.eps}
+\end{center}
+\end{minipage}
+\end{tabular}
+\caption{PPI from each task that are found by our method but are missed by the homolog method. These are ones for which sequence-similar proteins were not found. (a) \textit{Hepatitis-C} human PPI and (b) \textit{Influenza}-human PPI.}
+\label{fig:network}
+\end{figure}
+
+
 \subsection{Biological significance of the model}
 \label{bioanalysis}
 The model parameters $U$, $V$ and $S$ are a source of rich information which can be used to further understand host-pathogen

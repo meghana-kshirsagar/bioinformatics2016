@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 12:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:24
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -592,17 +592,28 @@ LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+File: flavinet.eps Graphic file (type eps)
+<flavinet.eps>
+File: flunet.eps Graphic file (type eps)
+ <flunet.eps>
+Overfull \hbox (7.00647pt too wide) in paragraph at lines 509--528
+ [][] 
+ []
 
-Underfull \hbox (badness 1127) in paragraph at lines 506--509
+
+Underfull \hbox (badness 1127) in paragraph at lines 535--538
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
  of rich
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 506--509
+Underfull \hbox (badness 1024) in paragraph at lines 535--538
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
@@ -610,51 +621,39 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 569--573
+Underfull \hbox (badness 10000) in paragraph at lines 598--602
 
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 600--604
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 629--633
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 600--604
+Underfull \hbox (badness 1755) in paragraph at lines 629--633
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
 
-(./paper.bbl
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
-[7])
+[7] (./paper.bbl)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:20.519pt when 509.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 510.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:510.019pt Right:509.038pt Output:510.019pt
+Extra height:0.0pt when 652.5906pt
+(2)Left:652.5906pt Right:653.038pt Output:652.5906pt
+(2)Left:653.038pt Right:653.038pt Output:653.038pt
 - LAST -
 Extra skip:0.0pt
-Left:510.019pt
-Right:509.038pt
-Output:510.019pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:653.038pt
+Right:653.038pt
+Output:653.038pt
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
@@ -670,12 +669,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4287 strings out of 493879
- 54609 string characters out of 1153475
- 148118 words of memory out of 3000000
- 7473 multiletter control sequences out of 15000+50000
+ 4292 strings out of 493879
+ 54666 string characters out of 1153475
+ 157040 words of memory out of 3000000
+ 7476 multiletter control sequences out of 15000+50000
  52250 words of font info for 102 fonts, out of 3000000 for 9000
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper.dvi (8 pages, 84376 bytes).
+Output written on paper.dvi (8 pages, 85436 bytes).
