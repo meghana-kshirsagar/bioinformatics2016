@@ -12,7 +12,6 @@
 %\usepackage[footnotesize]{caption}
 \usepackage{multirow}
 \usepackage{url}
-\usepackage{array}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -507,22 +506,20 @@ In Figure \ref{fig:network} we show for two tasks, the protein interactions in t
 %The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
 
 \begin{figure}
-\begin{tabular}{>{\raggedright}m{0.5cm}l}
+\begin{tabular}{c}
 %\begin{minipage}{0.3\textwidth}
 %\begin{center}
 %\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
 %\end{center}
 %\end{minipage}
 %&
-(a) &
-\begin{minipage}{0.96\textwidth}
+\begin{minipage}{\textwidth}
 \begin{center}
 \includegraphics[scale=0.22, trim = 2cm 1.5cm 1cm 1.5cm]{flavinet.eps}
 \end{center}
 \end{minipage}
 \\
-(b) &
-\begin{minipage}{0.96\textwidth}
+\begin{minipage}{\textwidth}
 \begin{center}
 \includegraphics[scale=0.33, trim = 2cm 1.5cm 1cm 1.5cm]{flunet.eps}
 \end{center}
