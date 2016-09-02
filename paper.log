@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:36
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -596,19 +596,19 @@ File: flavinet.eps Graphic file (type eps)
 <flavinet.eps>
 File: flunet.eps Graphic file (type eps)
  <flunet.eps>
-Overfull \hbox (7.00647pt too wide) in paragraph at lines 509--528
+Overfull \hbox (19.75046pt too wide) in paragraph at lines 509--530
  [][] 
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 535--538
+Underfull \hbox (badness 1127) in paragraph at lines 537--540
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
  of rich
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 535--538
+Underfull \hbox (badness 1024) in paragraph at lines 537--540
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
 
@@ -621,7 +621,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 598--602
+Underfull \hbox (badness 10000) in paragraph at lines 600--604
 
  []
 
@@ -629,12 +629,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 598--602
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 629--633
+Underfull \hbox (badness 1038) in paragraph at lines 631--635
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 629--633
+Underfull \hbox (badness 1755) in paragraph at lines 631--635
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
 
@@ -677,4 +677,4 @@ Here is how much of TeX's memory you used:
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper.dvi (8 pages, 85436 bytes).
+Output written on paper.dvi (8 pages, 85452 bytes).
