@@ -55,34 +55,34 @@ assign a higher weight to the positives. For BSL-MTL, to tune the rank parameter
 $\mu_t$ was varied over $\{0, 0.25, 0.5, 0.75, 1\}$.
 The optimal setting was:  $k=10$. %, $\lambda = 0.01$, $\sigma_{ebola}=10^{-5}$, $\sigma_{flu}=\sigma_{hepc}=10^{-6}$.
 
-\subsection{Disadvantages of the Homolog method}
-In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
+%\subsection{Disadvantages of the Homolog method}
+%In Figure \ref{fig:network} we show for each task, the protein interactions in the test data (for one train-test split) that were not found by the homologs model which relies purely on homology-based sequence similarity. The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
 
 
 
-\begin{figure}
-\begin{tabular}{c}
-%\begin{minipage}{0.3\textwidth}
+%\begin{figure}
+%\begin{tabular}{c}
+%%\begin{minipage}{0.3\textwidth}
+%%\begin{center}
+%%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
+%%\end{center}
+%%\end{minipage}
+%%&
+%\begin{minipage}{0.4\textwidth}
 %\begin{center}
-%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
+%\includegraphics[scale=0.25, trim = 0.7cm 0.7cm 0.7cm 0.7cm]{flavinet.pdf}
 %\end{center}
 %\end{minipage}
-%&
-\begin{minipage}{0.4\textwidth}
-\begin{center}
-\includegraphics[scale=0.25, trim = 0.7cm 0.7cm 0.7cm 0.7cm]{flavinet.pdf}
-\end{center}
-\end{minipage}
-\\
-\begin{minipage}{0.4\textwidth}
-\begin{center}
-\includegraphics[scale=0.25, trim = 0.5cm 0.5cm 0.5cm 0.5cm]{flunet.pdf}
-\end{center}
-\end{minipage}
-\end{tabular}
-\caption{PPI from each task that are found by our method but are missed by the homolog method. To obtain these, we chose a random train/test split and picked examples from the test data on which the homolog method fails - these are ones for which sequence-similar proteins are not found. (a) shows \textit{Ebola}-human PPI, (b) \textit{Hepatitis-C} human PPI and (c) \textit{Influenza}-human PPI.}
-\label{fig:network}
-\end{figure}
+%\\
+%\begin{minipage}{0.4\textwidth}
+%\begin{center}
+%\includegraphics[scale=0.25, trim = 0.5cm 0.5cm 0.5cm 0.5cm]{flunet.pdf}
+%\end{center}
+%\end{minipage}
+%\end{tabular}
+%\caption{PPI from each task that are found by our method but are missed by the homolog method. To obtain these, we chose a random train/test split and picked examples from the test data on which the homolog method fails - these are ones for which sequence-similar proteins are not found. (a) shows \textit{Ebola}-human PPI, (b) \textit{Hepatitis-C} human PPI and (c) \textit{Influenza}-human PPI.}
+%\label{fig:network}
+%\end{figure}
 
 
 
