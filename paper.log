@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:42
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -314,23 +314,23 @@ Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
 (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for LY1+phv on input line 65.
+LaTeX Font Info:    Try loading font information for LY1+phv on input line 66.
  (/usr/share/texmf-texlive/tex/latex/ly1/ly1phv.fd
 File: ly1phv.fd 2001/02/01 scalable font definitions for LY1/phv using Berry na
 mes.
@@ -339,67 +339,67 @@ File: OUP_First_SBk_Bot_8401.eps Graphic file (type eps)
 
 <OUP_First_SBk_Bot_8401.eps>
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <9> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <18> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <12> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 65.
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 65.
+(Font)              size <6> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 65.
+(Font)              size <6> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 65.
+(Font)              size <6> substituted on input line 66.
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 65.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 66.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 65.
+(Font)              size <8> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.5> not available
-(Font)              size <8> substituted on input line 65.
+(Font)              size <8> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.25> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 65.
+(Font)              size <8> substituted on input line 66.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 66.
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <10> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <9> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 65.
-LaTeX Font Info:    Try loading font information for LY1+pcr on input line 65.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 66.
+LaTeX Font Info:    Try loading font information for LY1+pcr on input line 66.
 (/usr/share/texmf-texlive/tex/latex/ly1/ly1pcr.fd
 File: ly1pcr.fd 2001/02/01 font definitions for LY1/pcr using Berry names.
 )
-Underfull \hbox (badness 10000) detected at line 65
+Underfull \hbox (badness 10000) detected at line 66
 []
  []
 
@@ -410,7 +410,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <7> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 113.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 114.
 
 Overfull \hbox (1.26001pt too wide) has occurred while \output is active
  []
@@ -424,102 +424,102 @@ Overfull \hbox (1.26001pt too wide) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 156--157
+Underfull \hbox (badness 5431) in paragraph at lines 157--158
 \LY1/ptm/m/n/9 protein networks, for multiple related diseases. We
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 162--163
+Underfull \hbox (badness 1342) in paragraph at lines 163--164
 \LY1/ptm/m/n/9 involves biochemical and biophysical methods such as co-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 164.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 165.
 
-Underfull \hbox (badness 7595) in paragraph at lines 164--165
+Underfull \hbox (badness 7595) in paragraph at lines 165--166
 \LY1/ptm/b/n/9 Prediction of host-pathogen PPIs\LY1/ptm/m/n/9 : The most reliab
 le
  []
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <8> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 176.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 176.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 177.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
 
 [2]
-Underfull \hbox (badness 1502) in paragraph at lines 177--189
+Underfull \hbox (badness 1502) in paragraph at lines 178--190
 []\LY1/ptm/m/n/9 A majority of the prior work in the relevant areas of
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 204.
+(Font)              size <6> substituted on input line 205.
 
 
-Overfull \hbox (9.26553pt too wide) detected at line 218
+Overfull \hbox (9.26553pt too wide) detected at line 219
 []
  []
 
-LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 252.
+LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 253.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.54997> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.25> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 252.
+(Font)              size <5> substituted on input line 253.
 
-LaTeX Font Info:    Try loading font information for LY1+phb on input line 252.
+LaTeX Font Info:    Try loading font information for LY1+phb on input line 253.
 
-LaTeX Font Info:    No file LY1phb.fd. on input line 252.
+LaTeX Font Info:    No file LY1phb.fd. on input line 253.
 
 LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 252.
+(Font)              using `LY1/ptm/m/n' instead on input line 253.
 
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 252.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 253.
 File: pca_original_feats.eps Graphic file (type eps)
 <pca_original_feats.eps>
-Overfull \hbox (6.572pt too wide) in paragraph at lines 263--263
+Overfull \hbox (6.572pt too wide) in paragraph at lines 264--264
  [][] 
  []
 
 File: pca_original_feats.eps Graphic file (type eps)
 <pca_original_feats.eps>
-Overfull \hbox (6.572pt too wide) in paragraph at lines 263--263
+Overfull \hbox (6.572pt too wide) in paragraph at lines 264--264
  [][] 
  []
 
@@ -529,14 +529,14 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [3]
-Underfull \hbox (badness 2393) in paragraph at lines 291--296
+Underfull \hbox (badness 2393) in paragraph at lines 292--297
 \LY1/ptm/b/n/9 Optimization\LY1/ptm/m/n/9 : The function $\OMS/cmsy/m/n/9 L\OT1
 /cmr/m/n/9 (\OML/cmm/m/it/9 U; V; \OMS/cmsy/m/n/9 f\OML/cmm/m/it/9 S[]\OMS/cmsy
 /m/n/9 g\OT1/cmr/m/n/9 )$ \LY1/ptm/m/n/9 is non-convex.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
 
  []
 
@@ -547,31 +547,31 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 
 [4]
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 375.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 376.
 
 
 LaTeX Font Warning: Font shape `LY1/phb/m/it' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 375.
+(Font)              using `LY1/phb/m/n' instead on input line 376.
 
 File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
 <pca_bslmtl_with_clusters.eps>
-Overfull \hbox (19.28963pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.28963pt too wide) in paragraph at lines 385--385
  [][] 
  []
 
 File: pca_bslmtl_with_clusters.eps Graphic file (type eps)
 <pca_bslmtl_with_clusters.eps>
-Overfull \hbox (19.28963pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.28963pt too wide) in paragraph at lines 385--385
  [][] 
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 396--397
+Underfull \hbox (badness 1867) in paragraph at lines 397--398
 \LY1/ptm/m/n/9 Our baselines include recent low-rank and sparse models,
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 398--403
+Underfull \hbox (badness 2205) in paragraph at lines 399--404
 \LY1/ptm/b/n/9 MTPL \LY1/ptm/m/n/9 (Kshirsagar \LY1/ptm/m/it/9 et al.\LY1/ptm/m
 /n/9 , 2013): A biologically inspired
  []
@@ -587,7 +587,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
-(Font)              using `LY1/phb/m/n' instead on input line 462.
+(Font)              using `LY1/phb/m/n' instead on input line 463.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -596,19 +596,19 @@ File: flavinet.eps Graphic file (type eps)
 <flavinet.eps>
 File: flunet.eps Graphic file (type eps)
  <flunet.eps>
-Overfull \hbox (1.1055pt too wide) in paragraph at lines 509--530
+Overfull \hbox (4.83788pt too wide) in paragraph at lines 510--531
  [][] 
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 537--540
+Underfull \hbox (badness 1127) in paragraph at lines 538--541
 \LY1/ptm/m/n/9 The model parameters $\OML/cmm/m/it/9 U$\LY1/ptm/m/n/9 , $\OML/c
 mm/m/it/9 V$ \LY1/ptm/m/n/9 and $\OML/cmm/m/it/9 S$ \LY1/ptm/m/n/9 are a source
  of rich
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 537--540
+Underfull \hbox (badness 1024) in paragraph at lines 538--541
 \LY1/ptm/m/n/9 information which can be used to further understand host-
  []
 
@@ -621,7 +621,7 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 600--604
+Underfull \hbox (badness 10000) in paragraph at lines 601--605
 
  []
 
@@ -629,12 +629,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 600--604
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 631--635
+Underfull \hbox (badness 1038) in paragraph at lines 632--636
 \LY1/ptm/m/n/9 for host-pathogen PPI prediction based on low-rank matrix
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 631--635
+Underfull \hbox (badness 1755) in paragraph at lines 632--636
 \LY1/ptm/m/n/9 BSL-MTL exhibited large increases in prediction accuracy
  []
 
@@ -667,6 +667,9 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  4292 strings out of 493879
@@ -677,4 +680,4 @@ Here is how much of TeX's memory you used:
  698 hyphenation exceptions out of 8191
  37i,16n,38p,1194b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper.dvi (8 pages, 85456 bytes).
+Output written on paper.dvi (8 pages, 85468 bytes).
