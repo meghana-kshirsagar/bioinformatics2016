@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2015.2.25)  1 SEP 2016 22:37
 entering extended mode
  %&-line parsing enabled.
 **paper.tex
@@ -596,7 +596,7 @@ File: flavinet.eps Graphic file (type eps)
 <flavinet.eps>
 File: flunet.eps Graphic file (type eps)
  <flunet.eps>
-Overfull \hbox (19.75046pt too wide) in paragraph at lines 509--530
+Overfull \hbox (7.00647pt too wide) in paragraph at lines 509--530
  [][] 
  []
 
