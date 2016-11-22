@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: natbib.bst
 Database file #1: references.bib
@@ -7,7 +8,7 @@ Warning--there's a number but no volume in koren09
 Warning--there's a number but no volume in tastan09
 You've used 47 entries,
             2378 wiz_defined-function locations,
-            783 strings with 11196 characters,
+            780 strings with 11188 characters,
 and the built_in function-call counts, 23385 in all, are:
 = -- 2304
 > -- 1294

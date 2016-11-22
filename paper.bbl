@@ -17,12 +17,12 @@ Ando, R.~K. and Zhang, T. (2005).
 \bibitem[Ashburner {\em et~al.}(2000)Ashburner {\em et~al.}]{GO}
 Ashburner, M. {\em et~al.} (2000).
 \newblock Gene ontology: tool for the unification of biology.
-\newblock {\em Nat. Genet.}, {\bf 25}(1), 25--9.
+\newblock {\em Nature Genetics\/}, {\bf 25}(1), 25--9.
 
 \bibitem[Berriz {\em et~al.}(2003)Berriz, King, Bryant, {\em et~al.}]{funcAsso}
 Berriz, G., King, O., Bryant, B., {\em et~al.} (2003).
 \newblock Characterizing gene sets with funcassociate.
-\newblock {\em Bioinf.}, {\bf 19}(18), 2502--04.
+\newblock {\em Bioinformatics\/}, {\bf 19}(18), 2502--04.
 
 \bibitem[Candes and Recht(2008)Candes and Recht]{candes08}
 Candes, E. and Recht, B. (2008).
@@ -33,7 +33,7 @@ Candes, E. and Recht, B. (2008).
 Cao, B., Liu, N.~N., and Yang, Q. (2010).
 \newblock Transfer learning for collective link prediction in multiple
   heterogenous domains.
-\newblock {\em ICML\/}.
+\newblock {\em International Conference on Machine Learning\/}.
 
 \bibitem[Chatraryamontri {\em et~al.}(2009)Chatraryamontri, Ceol, Peluso, {\em
   et~al.}]{virusmint}
@@ -82,7 +82,7 @@ Dyer, M. {\em et~al.} (2011).
 Dyer, M., Murali, T., and Sobral, B. (2007).
 \newblock Computational prediction of host-pathogen protein-protein
   interactions.
-\newblock {\em Bioinf.}, {\bf 23}(13), i159--66.
+\newblock {\em Bioinformatics\/}, {\bf 23}(13), i159--66.
 
 \bibitem[Evgeniou and Pontil(2004)Evgeniou and Pontil]{pontil04}
 Evgeniou, T. and Pontil, M. (2004).
@@ -107,7 +107,7 @@ Jin, R., Si, L., and Zhai, C. (2002).
 \bibitem[Koren {\em et~al.}(2009)Koren, Bell, and Volinsky]{koren09}
 Koren, Y., Bell, R., and Volinsky, C. (2009).
 \newblock Matrix factorization techniques for recommender systems.
-\newblock {\em Computer\/}, (8), 30--37.
+\newblock {\em IEEE Computers\/}, (8), 30--37.
 
 \bibitem[Kshirsagar {\em et~al.}(2012)Kshirsagar, Carbonell, and
   Klein-Seetharaman]{me12}
@@ -125,7 +125,7 @@ Kshirsagar, M., Carbonell, J.~G., and Klein-Seetharaman, J. (2013).
 \bibitem[Kumar and Nanduri(2010)Kumar and Nanduri]{hpidb}
 Kumar, R. and Nanduri, B. (2010).
 \newblock Hpidb--a unified resource for host-pathogen interactions.
-\newblock {\em BMC Bioinf.}
+\newblock {\em BMC Bioinformatics\/}.
 
 \bibitem[Li {\em et~al.}(2009)Li, Yang, and Xue]{li09}
 Li, B., Yang, Q., and Xue, X. (2009).
@@ -247,7 +247,7 @@ Tekir, S.~D., S., A., C., T., and U., K.~O. (2012).
 \bibitem[{UniProt Consortium}(2011){UniProt Consortium}]{UniProt}
 {UniProt Consortium} (2011).
 \newblock Ongoing and future developments at the universal protein resource.
-\newblock {\em Nucl. Acids Res.}, {\bf 39}, D214--D219.
+\newblock {\em Nucl. Acids Research\/}, {\bf 39}, D214--D219.
 
 \bibitem[Walhout and Vidal(2001)Walhout and Vidal]{vidal:2001}
 Walhout, A.~J. and Vidal, M. (2001).
@@ -258,7 +258,7 @@ Walhout, A.~J. and Vidal, M. (2001).
 Wu, X., Zhu, L., Guo, J., {\em et~al.} (2006).
 \newblock Prediction of yeast protein-protein interaction network: insights
   from the gene ontology and annotations.
-\newblock {\em Nucleic Acids Res.}, {\bf 34}(7), 2137--50.
+\newblock {\em Nucleic Acids Research\/}, {\bf 34}(7), 2137--50.
 
 \bibitem[Xu {\em et~al.}(2010)Xu, Xiang, and Yang]{ppi_cmf}
 Xu, Q., Xiang, E.~W., and Yang, Q. (2010).

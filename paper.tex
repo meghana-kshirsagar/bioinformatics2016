@@ -1,5 +1,4 @@
-\documentclass{bioinfo}
-\copyrightyear{2015} \pubyear{2015}
+\documentclass[journal,12pt,onecolumn,draftclsnofoot,]{IEEEtran}
 
 %\usepackage[top=1.3in, bottom=1.3in, left=1in, right=1in]{geometry}
 \usepackage{floatrow}
@@ -9,9 +8,29 @@
 \usepackage{booktabs}
 \usepackage{subfigure} 
 \usepackage{natbib}
+\usepackage{hyperref}
 %\usepackage[footnotesize]{caption}
 \usepackage{multirow}
 \usepackage{url}
+
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@makecaption}
+  {\scshape}
+  {}
+  {}
+  {}
+\makeatletter
+\patchcmd{\@makecaption}
+  {\\}
+  {.\ }
+  {}
+  {}
+\makeatother
+\def\tablename{Table}
+\renewcommand{\thetable}{\arabic{table}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -24,29 +43,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\access{Advance Access Publication Date: Day Month Year}
-\appnotes{Manuscript Category}
-
 \begin{document}
-\firstpage{1}
 
-\subtitle{Subject Section}
 
-\title[Multitask matrix completion]{Multitask matrix completion for learning protein interactions across diseases}
+\title{Multitask matrix completion for learning protein interactions across diseases}
 
-\author[Kshirsagar \textit{et~al}.]{Meghana Kshirsagar$^{1}$, Keerthiram Murugesan$^{2}$, Jaime G. Carbonell$^{2}$ and Judith Klein-Seetharaman$^{3}$}
-\address{$^{1}$Memorial Sloan Kettering Cancer Center, 1275 York Ave., NY 10021\\
-$^{2}$Language Technologies Institute, Carnegie Mellon Univ., 5000 Forbes Ave., Pittsburgh PA 15213, USA\\
-$^{3}$Metabolic \& Vascular Health, Warwick Medical School, Univ. of Warwick, Coventry, UK
-}
+\author{Meghana Kshirsagar$^{1}$, Keerthiram Murugesan$^{2}$, Jaime G. Carbonell$^{2}$ and Judith Klein-Seetharaman$^{3}$}
+%\address{$^{1}$Memorial Sloan Kettering Cancer Center, 1275 York Ave., NY 10021\\
+%$^{2}$Language Technologies Institute, Carnegie Mellon Univ., 5000 Forbes Ave., Pittsburgh PA 15213, USA\\
+%$^{3}$Metabolic \& Vascular Health, Warwick Medical School, Univ. of Warwick, Coventry, UK
+%}
 
-\corresp{$^\ast$To whom correspondence should be addressed.}
-
-\history{Received on XXXXX; revised on XXXXX; accepted on XXXXX}
-
-\editor{Associate Editor: XXXXXXX}
-
-\abstract{\textbf{Motivation:}
+\begin{abstract}
+\textbf{Motivation:}
 Disease causing pathogens such as viruses, introduce their proteins into the host cells 
 where they interact with the host's proteins enabling the virus to replicate inside the host.
 These interactions between pathogen and host proteins are key to understanding infectious diseases.
@@ -59,8 +68,8 @@ interaction-relevant characteristics of the viruses. \\
 \textbf{Availability:}
 Code and data is available at: \url{http://www.cs.cmu.edu/~mkshirsa/bsl_mtl.tgz}\\
 \textbf{Contact:}
-\href{mkshirsa@cs.cmu.edu}{mkshirsa@cs.cmu.edu}
-}
+\href{mkshirsa@cs.cmu.edu}{meghana.ksagar@gmail.com}
+\end{abstract}
 
 \maketitle
 
@@ -223,46 +232,13 @@ The constant $c_{ij}$ is the weight/cost associated with the edge $(i,j)$ which 
 
 %\noindent\textbf{Biological intuition}: The projection allows each feature to take on several different weights and hence allows for more flexibility as compared to a linear model. In the context of the host-pathogen PPI prediction, one can interpret this new subspace to represent latent biological characteristics of the features or binding propensities. In the Results section, we will analyze these parameters $U$ and $V$ and show how they can be used to understand the PPIs data better.
 
-\begin{figure*}
-\begin{floatrow}
-\capbtabbox[0.68\textwidth]{%
-\begin{footnotesize}
-\begin{tabular}{c|r|r|r} 
-\hline
-Task $\rightarrow$ &{\textit{Influenza A} } &\textit{Hepatitis C} & {\textit{Ebola}}\\
-& (28 strains) & (5 strains, many isolates)  & (3 strains) \\
-number of HP PPIs (positives) & 848 & 981 & 90 \\\hline
-number of non-homologous PPIs & 274 & 270 & 75 \\ \hline
-\# of unique virus proteins in dataset & 54 & 151 & 2 \\\hline
-\# of unique human proteins in dataset & 362 & 385 & 88 \\\hline
-total \# of virus proteins in & 542 & 163 & 38 \\
-UniProtKB across strains $^\dagger$ & & & \\ \hline
-number of negatives & 84800 & 98100 & 9000 \\\hline
-density of observed graph$^\ddagger$ (as \%) & .15 & .60 & .20 \\\hline
-\multicolumn{4}{l}{\scriptsize{HP PPI: host-pathogen protein protein interactions}}\\
-\multicolumn{4}{l}{\scriptsize{$\ddagger$ Density = (no. of positives + no. of negatives)/ total number of possible edges. The denominator was computed }} \\
-\multicolumn{4}{l}{\scriptsize{\hspace{0.1cm} considering all proteins from all strains of the virus and $\approx$ 100,000 human proteins.}}\\
-\multicolumn{4}{l}{\scriptsize{$\dagger$ this is the number of `reviewed' proteins on UniProtKB from all strains in our data}} \\ \hline
-\end{tabular}
-\end{footnotesize}
-}
-{
-\caption{Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref{sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.} 
-\label{datasets}
-}
-\ffigbox[0.28\textwidth]{%
+\begin{figure}
 %trim option's parameter order: left bottom right top
 %\includegraphics[scale=0.35, trim = 0.2 9.2cm 4cm 0]{fig1-eps-converted-to.pdf}
-\includegraphics[scale=0.34, trim = 0 0 0 0]{pca_original_feats.eps}
-}
-{
+\includegraphics[scale=0.34, trim = 0 0 0 0]{Kshirsagar.Fig_1.eps}
 \caption{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}%
 \label{fig:pca1}
-%\caption{Multiple bipartite graphs: on the left are host proteins and on the right are proteins from different virus species. Edges represent protein interactions.}
-%\label{fig:hpppigraph}
-}
-\end{floatrow}
-\end{figure*}
+\end{figure}
 
 
 \section{The bilinear sparse low-rank multitask model (BSL-MTL)} 
@@ -346,44 +322,12 @@ To account for protein size, they normalized the counts by linearly transforming
 Thus the value of each feature in the feature vector is the normalized count for each of the possible amino acid three-mers. We use di-, tri- and four-mers thus leading to a total of 2793 features ($7^2 + 7^3 + 7^4$).
 Such features have been successfully applied in prior work \citep{dyer07,me_ismb_2013}.
 
-\begin{figure*}
-\begin{floatrow}
-\capbtabbox[0.68\textwidth]{%
-\begin{small}
-\begin{center}
-%\def\arraystretch{1.2}
-\begin{tabular}{c|ccccccc}
-\toprule
-& \multicolumn{3}{c}{\textbf{10\% training, 90\% test}} && \multicolumn{3}{c}{\textbf{30\% training, 70\% test}} \\ \cline{2-4}\cline{6-8}
-& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} && \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
-Homolog & \textbf{0.230}$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 && \textbf{0.311}$\pm$.03 & 0.180$\pm$.01 & 0.198$\pm$.01 \\
-STL (Ridge Reg.)  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02 && 0.130$\pm$.03 & 0.802$\pm$.03 & 0.428$\pm$.03 \\ 
-MMTL & 0.113$\pm$.04 & 0.767$\pm$.03 & 0.321$\pm$.02 && 0.129$\pm$.02 & 0.802$\pm$.04 & 0.430$\pm$.03  \\ 
-%Trace-norm  & 0.199$\pm$.11 & 0.767$\pm$.03 & 0.318$\pm$.02 && 0.207$\pm$.02 & 0.808$\pm$.02 & 0.409$\pm$.03 \\ 
-Sparse+low-rank & 0.144$\pm$.07 & 0.767$\pm$.02 & 0.318$\pm$.02 && 0.153$\pm$.02 & \textbf{0.814}$\pm$.01 & 0.414$\pm$.03  \\ 
-%Dirty model \citep{jalali2010} & 0.074$\pm$.03 & 0.767$\pm$.04 & 0.324$\pm$.02 && 0.165$\pm$.02 & 0.813$\pm$.03 & 0.412$\pm$.03  \\ 
-MTPL & 0.217$\pm$.08 & 0.695$\pm$.02 & 0.345$\pm$.02 && 0.260$\pm$.05 & 0.713$\pm$.01 & \textbf{0.496}$\pm$.03 \\ 
-IMC & 0.087$\pm$.04 & \textbf{0.779}$\pm$.02 & \textbf{0.362}$\pm$.01 && 0.122$\pm$.02 & 0.801$\pm$.01 & 0.410$\pm$.03  \\ \midrule
-BSL-MTL & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{0.486}$\pm$.02 && \textbf{0.361}$\pm$.03 & \textbf{0.842}$\pm$.01 & \textbf{0.560}$\pm$.02  \\ \bottomrule
-\end{tabular}
-\end{center}
-\end{small}
-}
-{
-\caption{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
-\label{resultsTable}
-}
 
-\ffigbox[0.28\textwidth]{%
-%%trim option's parameter order: left bottom right top
-\includegraphics[scale=0.28, trim = 1.1cm 0.9cm 0 0]{pca_bslmtl_with_clusters.eps}
-}
-{
+\begin{figure}
+\includegraphics[scale=0.25, trim = 1.1cm 0.9cm 0 0]{pca_bslmtl_with_clusters.eps}
 \caption{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref{goterms}.}%
 \label{fig:pca2}
-}
-\end{floatrow}
-\end{figure*}
+\end{figure}
 
 
 
@@ -426,7 +370,7 @@ AUC-PR has been shown to give a more informative picture of an algorithm's perfo
 
 \section{Results}
 The PPI data we obtain from PHISTO has homologous PPI within a task. Note that the presence of sequence similarity across virus proteins is a strong criterion for computational methods to work, however orthologs or paralogs of proteins within a task lead to redundancy in the data and some readers may find it harder to judge the contribution of the methods. We therefore present results on three sets: 
-\begin{enumerate}[a]
+\begin{enumerate}
 \item the original PPIs from PHISTO. AUC-PR is shown in Table \ref{resultsTable}
 \item \textbf{Non-homologous partition}: after removal of all homologous PPI from the test data. Here we ensure that the test data does not contain homologs of PPI observed in the training data (this ensures there are no redundant examples). Further, every set of homologous PPIs in the test data is replaced with a single PPI. A BLAST sequence similarity cut-off of $1e^{-5}$ was used to find homologs. The results are in Table \ref{nohomresultsTable}.
 \item \textbf{Homologous PPI partition} : only homologous PPI part of the test data. This is essentially the set of PPI removed in the set-(b) above. Table \ref{homresultsTable} shows these results. 
@@ -458,47 +402,11 @@ There are thus two components to the prediction performance - (1) the presence o
 %STL (Ridge Reg.)  & 0.054 $\pm$.03 &  0.400 $\pm$.06 & 0.192 $\pm$.03 \\
 %BSL-MTL (this work) & 0.071 $\pm$.03 & \textbf{0.501} $\pm$.05 & \textbf{0.331} $\pm$.03  \\ \bottomrule 
 
-\begin{table}[!h]
-\caption{AUC-PR on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
-\label{nohomresultsTable}
-\begin{small}
-\begin{center}
-%\def\arraystretch{1.2}
-\begin{tabular}{c|ccc}
-\toprule
-\multicolumn{4}{c}{\textbf{10 \% training, 90\% test on Non-homologous PPI}} \\
-& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
-Homolog & 0.207 $\pm$.07 & 0.113 $\pm$.01 & 0.109 $\pm$ .01 \\
-STL  & 0.210 $\pm$.14 & 0.474 $\pm$ .06 & 0.302 $\pm$.03 \\
-Sparse+LR & 0.216 $\pm$.13 & 0.482 $\pm$.05 & 0.312 $\pm$.04 \\ 
-BSL-MTL & \textbf{0.295} $\pm$.10 & \textbf{0.544} $\pm$.06 & \textbf{0.505} $\pm$.05 \\ \bottomrule
-\end{tabular}
-\end{center}
-\end{small}
-\end{table}
 
 
 \noindent\textit{Performance on the homologous PPI partition} (Table \ref{homresultsTable}):
 Except the \textit{Ebola} task, BSL-MTL has the highest AUC. The Homolog baseline best captures the homologous PPI in \textit{Ebola} (with an AUC twice the next best). However, since there are far fewer homologous PPI in Ebola than in the other tasks (row-2 of Table \ref{datasets}), this contributes less to the overall performance of the Homolog baseline. \textit{Hepatitis-C} has the highest fraction of homologous PPI and BSL-MTL does significantly better on these than the other baselines which also leads to a higher overall AUC. The same can be said of the \textit{Influenza} task.
 
-\begin{table}[!h]
-\caption{AUC-PR on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
-\label{homresultsTable}
-\begin{small}
-\begin{center}
-%\def\arraystretch{1.2}
-\begin{tabular}{c|ccc}
-\toprule
-\multicolumn{4}{c}{\textbf{10 \% training, test only Homologous PPI }} \\
-& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
-Homolog & \textbf{0.399} $\pm$.07 & 0.161 $\pm$.01 & 0.180 $\pm$ .01 \\
-STL   & 0.192 $\pm$.15 & 0.504 $\pm$.10 & 0.305 $\pm$.03 \\
-Sparse+LR & 0.184 $\pm$.13 & 0.512 $\pm$.10 & 0.315 $\pm$.04 \\ 
-BSL-MTL & 0.130 $\pm$.10 & \textbf{0.815} $\pm$.02 & \textbf{0.475} $\pm$.02 \\ \bottomrule
-\end{tabular}
-\end{center}
-\end{small}
-\end{table}
 
 
 \noindent\textit{Disadvantages of the Homolog method}:
@@ -506,22 +414,16 @@ In Figure \ref{fig:network} we show for two tasks, the protein interactions in t
 %The interactions mainly involve human proteins which do not have a homolog in the training data. This illustrates that our features capture more information than mere sequence similarity. Further, inclusion of interactions from other viruses in the na\"ive manner as done by the homologs in fact hurts the performance (results in too many false positives) - our model is able to learn what to borrow from the other tasks accurately.
 
 \begin{figure}
-\begin{tabular}{c}
-%\begin{minipage}{0.3\textwidth}
-%\begin{center}
-%\includegraphics[scale=0.23, trim = 0.3 0 0.2 0.2]{ebolanet.pdf}\vspace{0.6cm}
-%\end{center}
-%\end{minipage}
-%&
-\begin{minipage}{\textwidth}
+\begin{tabular}{cc}
+\begin{minipage}{0.4\textwidth}
 \begin{center}
-\includegraphics[scale=0.22, trim = 2cm 1.5cm 1cm 1.5cm]{flavinet.eps}
+\includegraphics[scale=0.25, trim = 2cm 1.5cm 1cm 1.5cm]{Kshirsagar.Fig_3a.eps}
 \end{center}
 \end{minipage}
-\\
-\begin{minipage}{\textwidth}
+&
+\begin{minipage}{0.55\textwidth}
 \begin{center}
-\includegraphics[scale=0.33, trim = 2cm 1.5cm 1cm 1.5cm]{flunet.eps}
+\includegraphics[scale=0.35, trim = 2cm 1.5cm 1cm 1.5cm]{Kshirsagar.Fig_3b.eps}
 \end{center}
 \end{minipage}
 \end{tabular}
@@ -544,27 +446,6 @@ Firstly, the projected data has a much better separation than the original data.
 Secondly, Fig \ref{fig:pca2} tells us that Hepatitis-C and Influenza have many proteins with similar binding tendencies, and that these behave differently than most Ebola virus proteins. This observation is not obvious in the PCA of the original feature space (Fig \ref{fig:pca1}), where proteins with similar sequences group together.
 We analyze the projected data further by looking at the clusters of proteins for enrichment of Gene Ontology (GO) \footnote{\url{http://www.geneontology.org/}} \citep{GO} annotations (proteins were first clustered in this lower dimensional space using k-means and setting the number of clusters to 6). Of particular interest are the highlighted three clusters which contain either proteins projected far from others (such as cluster-1) and proteins from different viruses projected close together (cluster-2 and cluster-3).
 For enrichment analysis, we use the FuncAssociate 3.0 \footnote{\url{http://llama.mshri.on.ca/funcassociate/}} \citep{funcAsso} tool and GO annotations for the three viruses from UniProtKB.
-
-
-\begin{table}[bht]
-\begin{scriptsize}
-\begin{center}
-%\def\arraystretch{1.1}
-\begin{tabular}{|c|c|}
-\multicolumn{2}{c}{Gene Ontology terms for clusters from Figure \ref{fig:pca2}} \\ \hline
-cluster 1 & mRNA (guanine-N7-)-methyltransferase activity; RNA-directed \\
-(ebola only)& RNA polymerase activity; ATP binding \\ \hline
-cluster 2 & host cell endoplasmic reticulum membrane; \\ 
-(hepatitis \& & host cell lipid particle; induction by virus \\
-influenza & of host autophagy; host cell mitochondrial membrane; \\
-proteins) & suppression by virus of host STAT1 activity \\ \hline
-cluster 3 (all) & fusion of virus membrane with host plasma membrane \\ \hline
-\end{tabular}
-\caption{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref{fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value < 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster).}
-\label{goterms}
-\end{center}
-\end{scriptsize}
-\end{table}
 
  
 
@@ -601,26 +482,9 @@ Analogously, the entries from $S_t$ give us pairs of features important to a par
 These results are in the supplementary.\\
 
 
-\section{Results on HIV data}
-We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). The interactions data (obtained from PHISTO and NIAID databases) has $\approx$4000 human-HIV PPI across several strains, of which 1320 PPI are non-homologous. This experiment particularly tests the robustness of the multitask learning approaches by the addition of a relatively unrelated task. Table \ref{hivresults} shows the results.
+%\section{Results on HIV data}
+%We incorporate an additional task: HIV (human immunodeficiency virus), which is quite dissimilar to our original setting involving three viruses (HIV is a retrovirus). The interactions data (obtained from PHISTO and NIAID databases) has $\approx$4000 human-HIV PPI across several strains, of which 1320 PPI are non-homologous. This experiment particularly tests the robustness of the multitask learning approaches by the addition of a relatively unrelated task. Table \ref{hivresults} shows the results.
 
-\begin{table}[h]\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of a somewhat dissimilar task such as HIV.}
-\label{hivresults}
-\begin{small}
-\begin{center}
-%\def\arraystretch{1.2}
-\begin{tabular}{c|cccc}
-\toprule
-& \multicolumn{4}{c}{10 \% training } \\
-& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} & \textit{HIV} \\ \midrule
-Homolog & 0.230$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 & 0.170 $\pm$.01 \\
-STL  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02  & 0.208 $\pm$.01 \\ 
-Sparse+LR & 0.135 $\pm$.06 & 0.724 $\pm$.05 & 0.280 $\pm$.01 & 0.205 $\pm$.03  \\ 
-BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\pm$.01 & \textbf{0.354} $\pm$.01  \\ \bottomrule
-\end{tabular}
-\end{center}
-\end{small}
-\end{table}
 
 
 
@@ -642,8 +506,134 @@ The model parameters provide several avenues for further studying host-pathogen 
 
 
 \bibliographystyle{natbib}
-\begin{scriptsize}
+\begin{normalsize}
 \bibliography{references}
+\end{normalsize}
+
+\newpage
+
+\begin{table}
+\begin{footnotesize}
+\caption{Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref{sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.} 
+\label{datasets}
+\begin{tabular}{c|r|r|r} 
+\hline
+Task $\rightarrow$ &{\textit{Influenza A} } &\textit{Hepatitis C} & {\textit{Ebola}}\\
+& (28 strains) & (5 strains, many isolates)  & (3 strains) \\
+number of HP PPIs$^a$ (positives) & 848 & 981 & 90 \\\hline
+number of non-homologous PPIs & 274 & 270 & 75 \\ \hline
+\# of unique virus proteins in dataset & 54 & 151 & 2 \\\hline
+\# of unique human proteins in dataset & 362 & 385 & 88 \\\hline
+total \# of virus proteins in & 542 & 163 & 38 \\
+UniProtKB across strains$^b$ & & & \\ \hline
+number of negatives & 84800 & 98100 & 9000 \\\hline
+density of observed graph$^c$ (as \%) & .15 & .60 & .20 \\\hline
+\multicolumn{4}{l}{\scriptsize{$^a$ HP PPI: host-pathogen protein protein interactions}}\\
+\multicolumn{4}{l}{\scriptsize{$^c$ Density = (no. of positives + no. of negatives)/ total number of possible edges. The denominator was computed considering all}} \\
+\multicolumn{4}{l}{\scriptsize{\hspace{0.1cm} proteins from all strains of the virus and $\approx$ 100,000 human proteins.}}\\
+\multicolumn{4}{l}{\scriptsize{$^b$ this is the number of `reviewed' proteins on UniProtKB from all strains in our data}} \\ \hline
+\end{tabular}
+\end{footnotesize}
+\end{table}
+
+\clearpage
+
+\begin{table}[!t]
+\caption{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit{Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}
+\label{resultsTable}
+\begin{tabular}{c|ccccccc}
+\toprule
+& \multicolumn{3}{c}{\textbf{10\% training, 90\% test}} && \multicolumn{3}{c}{\textbf{30\% training, 70\% test}} \\ \cline{2-4}\cline{6-8}
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} && \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
+Homolog & \textbf{0.230}$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 && \textbf{0.311}$\pm$.03 & 0.180$\pm$.01 & 0.198$\pm$.01 \\
+STL (Ridge Reg.)  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02 && 0.130$\pm$.03 & 0.802$\pm$.03 & 0.428$\pm$.03 \\ 
+MMTL & 0.113$\pm$.04 & 0.767$\pm$.03 & 0.321$\pm$.02 && 0.129$\pm$.02 & 0.802$\pm$.04 & 0.430$\pm$.03  \\ 
+%Trace-norm  & 0.199$\pm$.11 & 0.767$\pm$.03 & 0.318$\pm$.02 && 0.207$\pm$.02 & 0.808$\pm$.02 & 0.409$\pm$.03 \\ 
+Sparse+low-rank & 0.144$\pm$.07 & 0.767$\pm$.02 & 0.318$\pm$.02 && 0.153$\pm$.02 & \textbf{0.814}$\pm$.01 & 0.414$\pm$.03  \\ 
+%Dirty model \citep{jalali2010} & 0.074$\pm$.03 & 0.767$\pm$.04 & 0.324$\pm$.02 && 0.165$\pm$.02 & 0.813$\pm$.03 & 0.412$\pm$.03  \\ 
+MTPL & 0.217$\pm$.08 & 0.695$\pm$.02 & 0.345$\pm$.02 && 0.260$\pm$.05 & 0.713$\pm$.01 & \textbf{0.496}$\pm$.03 \\ 
+IMC & 0.087$\pm$.04 & \textbf{0.779}$\pm$.02 & \textbf{0.362}$\pm$.01 && 0.122$\pm$.02 & 0.801$\pm$.01 & 0.410$\pm$.03  \\ \midrule
+BSL-MTL & \textbf{0.233}$\pm$.10 & \textbf{0.807}$\pm$.02 & \textbf{0.486}$\pm$.02 && \textbf{0.361}$\pm$.03 & \textbf{0.842}$\pm$.01 & \textbf{0.560}$\pm$.02  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{table}[!t]
+\caption{AUC-PR on the \textbf{non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref{datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}
+\label{nohomresultsTable}
+\begin{small}
+%\def\arraystretch{1.2}
+\begin{tabular}{c|ccc}
+\toprule
+\multicolumn{4}{c}{\textbf{10 \% training, 90\% test on Non-homologous PPI}} \\
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
+Homolog & 0.207 $\pm$.07 & 0.113 $\pm$.01 & 0.109 $\pm$ .01 \\
+STL  & 0.210 $\pm$.14 & 0.474 $\pm$ .06 & 0.302 $\pm$.03 \\
+Sparse+LR & 0.216 $\pm$.13 & 0.482 $\pm$.05 & 0.312 $\pm$.04 \\ 
+BSL-MTL & \textbf{0.295} $\pm$.10 & \textbf{0.544} $\pm$.06 & \textbf{0.505} $\pm$.05 \\ \bottomrule
+\end{tabular}
+\end{small}
+\end{table}
+
+\clearpage
+
+\begin{table}[!t]
+\caption{AUC-PR on the \textbf{homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit{Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit{Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}
+\label{homresultsTable}
+\begin{small}
+%\def\arraystretch{1.2}
+\begin{tabular}{c|ccc}
+\toprule
+\multicolumn{4}{c}{\textbf{10 \% training, test only Homologous PPI }} \\
+& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} \\ \midrule
+Homolog & \textbf{0.399} $\pm$.07 & 0.161 $\pm$.01 & 0.180 $\pm$ .01 \\
+STL   & 0.192 $\pm$.15 & 0.504 $\pm$.10 & 0.305 $\pm$.03 \\
+Sparse+LR & 0.184 $\pm$.13 & 0.512 $\pm$.10 & 0.315 $\pm$.04 \\ 
+BSL-MTL & 0.130 $\pm$.10 & \textbf{0.815} $\pm$.02 & \textbf{0.475} $\pm$.02 \\ \bottomrule
+\end{tabular}
+\end{small}
+\end{table}
+
+\clearpage
+
+\begin{table}[!t]
+\begin{scriptsize}
+\begin{center}
+%\def\arraystretch{1.1}
+\caption{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref{fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value $<$ 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster).}
+\label{goterms}
+\begin{tabular}{|c|c|}
+\multicolumn{2}{c}{Gene Ontology terms for clusters from Figure \ref{fig:pca2}} \\ \hline
+cluster 1 (ebola only) & mRNA (guanine-N7-)-methyltransferase activity; RNA-directed RNA polymerase activity; ATP binding \\ \hline
+cluster 2 (hepatitis \& & host cell endoplasmic reticulum membrane; host cell lipid particle; induction by virus \\ 
+influenza proteins) &  of host autophagy; host cell mitochondrial membrane; suppression by virus of host STAT1 activity \\ \hline
+cluster 3 (all) & fusion of virus membrane with host plasma membrane \\ \hline
+\end{tabular}
+\end{center}
 \end{scriptsize}
+\end{table}
+
+%\clearpage
+
+%
+%\begin{table}[!t]
+%\caption{AUC-PR upon addition of a new task - HIV, in the 10\% setting. Note that STL and the homolog method build independent models so their AUC numbers are the same as in Table 2. Among the multitask learning methods, BSL-MTL's performance is not hurt by the addition of a somewhat dissimilar task such as HIV.}
+%\label{hivresults}
+%\begin{small}
+%%\def\arraystretch{1.2}
+%\begin{tabular}{c|cccc}
+%\toprule
+%& \multicolumn{4}{c}{10 \% training } \\
+%& \textit{Ebola} & \textit{Hep-C} & \textit{Influenza} & \textit{HIV} \\ \midrule
+%Homolog & 0.230$\pm$.06 & 0.178$\pm$.01 & 0.158$\pm$.01 & 0.170 $\pm$.01 \\
+%STL  & 0.189$\pm$.09 & 0.702$\pm$.08 & 0.286$\pm$.02  & 0.208 $\pm$.01 \\ 
+%Sparse+LR & 0.135 $\pm$.06 & 0.724 $\pm$.05 & 0.280 $\pm$.01 & 0.205 $\pm$.03  \\ 
+%BSL-MTL & \textbf{0.241} $\pm$.01 & \textbf{0.793} $\pm$.06 & \textbf{0.459} $\pm$.01 & \textbf{0.354} $\pm$.01  \\ \bottomrule
+%\end{tabular}
+%\end{small}
+%\end{table}
+
+
 
 \end{document}
