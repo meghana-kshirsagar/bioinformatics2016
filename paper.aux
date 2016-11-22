@@ -1,16 +1,19 @@
 \relax 
-\ifx\hyper@anchor\@undefined
-\global \let \oldcontentsline\contentsline
-\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
-\global \let \oldnewlabel\newlabel
-\gdef \newlabel#1#2{\newlabelxx{#1}#2}
-\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
-\AtEndDocument{\let \contentsline\oldcontentsline
-\let \newlabel\oldnewlabel}
-\else
-\global \let \hyper@last\relax 
-\fi
-
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand*\HyPL@Entry[1]{}
 \HyPL@Entry{0<</S/D>>}
 \citation{candes08}
@@ -19,7 +22,6 @@
 \citation{virusmint}
 \citation{hpidb}
 \citation{phisto}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-A}}Background: Host-pathogen protein interactions}{4}{subsection.1.1}}
 \citation{UniProt}
 \citation{GO}
 \citation{chen}
@@ -33,6 +35,7 @@
 \citation{qi2010}
 \citation{me_ismb_2013}
 \citation{ppi_cmf}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-A}}Background: Host-pathogen protein interactions}{5}{subsection.1.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-B}}Prior work}{5}{subsection.1.2}}
 \citation{sarwar01}
 \citation{koren09}
@@ -52,39 +55,39 @@
 \citation{mirzazadeh:2015}
 \citation{abernethy}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Bilinear low-rank matrix decomposition}{6}{section.2}}
-\newlabel{MCintro}{{II}{6}{Bilinear low-rank matrix decomposition\relax }{section.2}{}}
-\newlabel{objective}{{2}{7}{Bilinear low-rank matrix decomposition\relax }{equation.2.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {III}The bilinear sparse low-rank multitask model (BSL-MTL)}{7}{section.3}}
-\newlabel{ourmodel}{{III}{7}{The bilinear sparse low-rank multitask model (BSL-MTL)\relax }{section.3}{}}
+\newlabel{MCintro}{{II}{6}{Bilinear low-rank matrix decomposition}{section.2}{}}
+\newlabel{objective}{{2}{7}{Bilinear low-rank matrix decomposition}{equation.2.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from.}}{8}{figure.1}}
 \newlabel{fig:pca1}{{1}{8}{Principal component analysis (PCA) of virus proteins in the original feature space. The first two principal components are shown. Shape and color of the points indicates which virus that protein comes from}{figure.1}{}}
-\newlabel{mtl_objective}{{4}{8}{The bilinear sparse low-rank multitask model (BSL-MTL)\relax }{equation.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}The bilinear sparse low-rank multitask model (BSL-MTL)}{8}{section.3}}
+\newlabel{ourmodel}{{III}{8}{The bilinear sparse low-rank multitask model (BSL-MTL)}{section.3}{}}
+\newlabel{mtl_objective}{{4}{8}{The bilinear sparse low-rank multitask model (BSL-MTL)}{equation.3.4}{}}
 \citation{qi06}
 \citation{qi09}
 \citation{dyer11}
 \citation{me_ismb_2013}
 \citation{phisto}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Handling the `curse of missing negatives'}{9}{subsection.3.1}}
-\newlabel{negs}{{\unhbox \voidb@x \hbox {III-A}}{9}{Handling the `curse of missing negatives'\relax }{subsection.3.1}{}}
+\newlabel{negs}{{\unhbox \voidb@x \hbox {III-A}}{9}{Handling the `curse of missing negatives'}{subsection.3.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Dataset}{9}{section.4}}
-\newlabel{sec:datasets}{{IV}{9}{Dataset\relax }{section.4}{}}
+\newlabel{sec:datasets}{{IV}{9}{Dataset}{section.4}{}}
 \citation{shen:2007}
 \citation{dyer07}
 \citation{me_ismb_2013}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Addressing the homologs in PHISTO}{10}{subsection.4.1}}
-\newlabel{sec:phisto}{{\unhbox \voidb@x \hbox {IV-A}}{10}{Addressing the homologs in PHISTO\relax }{subsection.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Features}{10}{subsection.4.2}}
+\newlabel{sec:phisto}{{\unhbox \voidb@x \hbox {IV-A}}{10}{Addressing the homologs in PHISTO}{subsection.4.1}{}}
 \citation{malsar}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref  {goterms}.}}{11}{figure.2}}
+\newlabel{fig:pca2}{{2}{11}{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref {goterms}}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Features}{11}{subsection.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental setup}{11}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Comparison with other machine learning approaches}{11}{subsection.5.1}}
+\newlabel{mlmethods}{{\unhbox \voidb@x \hbox {V-A}}{11}{Comparison with other machine learning approaches}{subsection.5.1}{}}
 \citation{pontil04}
 \citation{chen2012}
 \citation{prateek}
 \citation{nagarajan}
 \citation{me_ismb_2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref  {goterms}.}}{11}{figure.2}}
-\newlabel{fig:pca2}{{2}{11}{Principal component analysis (PCA) of virus proteins in the projected subspace. The first two principal components are shown. Shape of the points indicates which virus that protein comes from. We have highlighted three clusters for which we show GO term enrichment analysis results in Table \ref {goterms}}{figure.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental setup}{11}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Comparison with other machine learning approaches}{11}{subsection.5.1}}
-\newlabel{mlmethods}{{\unhbox \voidb@x \hbox {V-A}}{11}{Comparison with other machine learning approaches\relax }{subsection.5.1}{}}
 \citation{vidal:2001}
 \citation{matthews:2001}
 \citation{mika:2006}
@@ -97,13 +100,12 @@
 \@writefile{toc}{\contentsline {section}{\numberline {VI}Results}{13}{section.6}}
 \citation{GO}
 \citation{funcAsso}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Biological significance of the model}{14}{subsection.6.1}}
-\newlabel{bioanalysis}{{\unhbox \voidb@x \hbox {VI-A}}{14}{Biological significance of the model\relax }{subsection.6.1}{}}
-\citation{nanbo2010}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces PPI from each task that are found by our method but are missed by the homolog method. These are ones for which sequence-similar proteins were not found. (a) \textit  {Hepatitis-C} human PPI and (b) \textit  {Influenza}-human PPI.}}{15}{figure.3}}
 \newlabel{fig:network}{{3}{15}{PPI from each task that are found by our method but are missed by the homolog method. These are ones for which sequence-similar proteins were not found. (a) \textit {Hepatitis-C} human PPI and (b) \textit {Influenza}-human PPI}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Biological significance of the model}{15}{subsection.6.1}}
+\newlabel{bioanalysis}{{\unhbox \voidb@x \hbox {VI-A}}{15}{Biological significance of the model}{subsection.6.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}1}Clustering proteins based on interaction propensities}{15}{subsubsection.6.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}2}Novel interactions with Ebola proteins}{15}{subsubsection.6.1.2}}
+\citation{nanbo2010}
 \bibstyle{natbib}
 \bibdata{references}
 \bibcite{abernethy}{{1}{2009}{{Abernethy {\em  et~al.}}}{{Abernethy, Bach, Evgeniou, and Vert}}}
@@ -114,14 +116,15 @@
 \bibcite{cao_icml2010}{{6}{2010}{{Cao {\em  et~al.}}}{{Cao, Liu, and Yang}}}
 \bibcite{virusmint}{{7}{2009}{{Chatraryamontri {\em  et~al.}}}{{Chatraryamontri, Ceol, Peluso, {\em  et~al.}}}}
 \bibcite{chen:2009}{{8}{2009}{{Chen {\em  et~al.}}}{{Chen, Lin, Lo, and Yang}}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}2}Novel interactions with Ebola proteins}{16}{subsubsection.6.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}3}Sequence motifs from virus proteins}{16}{subsubsection.6.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusions and future extensions}{16}{section.7}}
 \bibcite{chen2012}{{9}{2012}{{Chen {\em  et~al.}}}{{Chen, Liu, and Ye}}}
 \bibcite{chen2013}{{10}{2013}{{Chen {\em  et~al.}}}{{Chen, Tang, Liu, and Ye}}}
 \bibcite{chen}{{11}{2005}{{Chen and Liu}}{{Chen and Liu}}}
 \bibcite{davis2006}{{12}{2006}{{Davis and Goadrich}}{{Davis and Goadrich}}}
 \bibcite{dyer11}{{13}{2011}{{Dyer {\em  et~al.}}}{{Dyer {\em  et~al.}}}}
 \bibcite{dyer07}{{14}{2007}{{Dyer {\em  et~al.}}}{{Dyer, Murali, and Sobral}}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}3}Sequence motifs from virus proteins}{16}{subsubsection.6.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusions and future extensions}{16}{section.7}}
 \bibcite{pontil04}{{15}{2004}{{Evgeniou and Pontil}}{{Evgeniou and Pontil}}}
 \bibcite{prateek}{{16}{2013}{{Jain and Dhillon}}{{Jain and Dhillon}}}
 \bibcite{ji2009}{{17}{2009}{{Ji and Ye}}{{Ji and Ye}}}
@@ -155,13 +158,13 @@
 \bibcite{ppi_cmf}{{45}{2010}{{Xu {\em  et~al.}}}{{Xu, Xiang, and Yang}}}
 \bibcite{zhang12}{{46}{2012}{{Zhang {\em  et~al.}}}{{Zhang, Cao, and Yeung}}}
 \bibcite{malsar}{{47}{2011}{{Zhou {\em  et~al.}}}{{Zhou, Chen, and Ye}}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref  {sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.}}{18}{table.1}}
-\newlabel{datasets}{{1}{18}{Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref {sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse}{table.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit  {Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}}{19}{table.2}}
-\newlabel{resultsTable}{{2}{19}{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit {Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces AUC-PR on the \textbf  {non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref  {datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}}{20}{table.3}}
-\newlabel{nohomresultsTable}{{3}{20}{AUC-PR on the \textbf {non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref {datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well}{table.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces AUC-PR on the \textbf  {homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit  {Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit  {Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}}{21}{table.4}}
-\newlabel{homresultsTable}{{4}{21}{AUC-PR on the \textbf {homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit {Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit {Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity}{table.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref  {fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value $<$ 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster).}}{22}{table.5}}
-\newlabel{goterms}{{5}{22}{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref {fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value $<$ 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster)}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref  {sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse.}}{19}{table.1}}
+\newlabel{datasets}{{1}{19}{Tasks and their sizes (a column corresponds to one bipartite graph between human proteins and the virus indicated in the column header). More importantly, each task represents several strains of one virus species. We pool together PPI from all strains as the number of interactions per strain is very small and not representative. PPI data from different strains often involves homologous proteins (virus proteins or/and human proteins) as these were curated from different publications/studies involving the virus. The second row gives a conservative estimate of the number of non-homologous PPI. These were obtained by computing BLAST sequence similarity (see Section \ref {sec:phisto} for details). All pathogens are single stranded RNA viruses. The last row shows that each of our graphs is extremely sparse}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit  {Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to.}}{20}{table.2}}
+\newlabel{resultsTable}{{2}{20}{Area Under the Precision-Recall curve (AUC-PR) on the PHISTO dataset. The column header `X\% training' indicates the fraction of the labeled data used for training and tuning the model with the rest (100-X)\% used as test data. We report the average AUC-PR over 10 random train-test splits (stratified splits that maintain the class-skew of 1:100). The standard deviation is also shown. The performance of the best baseline and the overall best method (BSL-MTL) is highlighted in bold. The Homolog baseline performs comparably to our BSL-MTL method on the \textit {Ebola} task. This is explained by the virus-human PPI graph, from several other viruses, that the Homolog baseline has access to}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces AUC-PR on the \textbf  {non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref  {datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well.}}{21}{table.3}}
+\newlabel{nohomresultsTable}{{3}{21}{AUC-PR on the \textbf {non-homologous PPI within each task}, in the 10\% setting. To get an estimate of the relative size of the non-homologous partition for each task, see Table \ref {datasets}. Only the most representative baselines are retained for this experiment. Our model performs better than the others on the non-homologous part of the test data, as it captures non-linear similarities among the interactions within a task and across tasks very well}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces AUC-PR on the \textbf  {homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit  {Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit  {Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity.}}{22}{table.4}}
+\newlabel{homresultsTable}{{4}{22}{AUC-PR on the \textbf {homologous PPI} within each task, in the 10\% setting. The Homolog baseline outperforms all on the \textit {Ebola} task and BSL-MTL beats all other methods on the other tasks. The Homolog method has access to a wider virus-human PPI graph involving several other viruses and is able to infer homologous PPI for \textit {Ebola} better (note that some of the homologous PPI are not redundant examples but involve proteins with very small regions of sequence similarity}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref  {fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value $<$ 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster).}}{23}{table.5}}
+\newlabel{goterms}{{5}{23}{GO terms (for process, function, component) enriched in the highlighted clusters from Figure \ref {fig:pca2}. FuncAssociate GO enrichment tool was used and terms with p-value $<$ 0.001 are shown. The first column also indicates the composition of each cluster (i.e which task's proteins appear in the cluster)}{table.5}{}}

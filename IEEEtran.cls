@@ -4489,7 +4489,7 @@ between column types.}%
 \def\thebibliography#1{\section*{\refname}%
     \addcontentsline{toc}{section}{\refname}%
     % V1.6 add some rubber space here and provide a command trigger
-    \footnotesize\vskip 0.3\baselineskip plus 0.1\baselineskip minus 0.1\baselineskip%
+    \normalsize\vskip 0.3\baselineskip plus 0.1\baselineskip minus 0.1\baselineskip%
     \list{\@biblabel{\@arabic\c@enumiv}}%
     {\settowidth\labelwidth{\@biblabel{#1}}%
     \leftmargin\labelwidth
@@ -5988,7 +5988,7 @@ between column types.}%
                                   % \baselineskip, rounded up
 \def\@IEEEBIOskipN{4\baselineskip}% nominal value of the vskip above the biography
 
-\newenvironment{IEEEbiography}[2][]{\normalfont\@IEEEcompsoconly{\sffamily}\footnotesize%
+\newenvironment{IEEEbiography}[2][]{\normalfont\@IEEEcompsoconly{\sffamily}\normalsize%
 \unitlength 1in\parskip=0pt\par\parindent 1em\interlinepenalty500%
 % we need enough space to support the hanging indent
 % the nominal value of the spacer
@@ -6076,7 +6076,7 @@ between column types.}%
 \refstepcounter{IEEEbiography}%
 % Make an entry for this name into the table of contents 
 \addcontentsline{toc}{subsection}{#1}%
-\normalfont\@IEEEcompsoconly{\sffamily}\footnotesize\interlinepenalty500%
+\normalfont\@IEEEcompsoconly{\sffamily}\normalsize\interlinepenalty500%
 \vskip 4\baselineskip plus 1fil minus 0\baselineskip%
 \parskip=0pt\par%
 \noindent\textbf{#1\ }\@IEEEgobbleleadPARNLSP}{\relax\par\normalfont}
